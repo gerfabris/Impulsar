@@ -1,0 +1,29 @@
+//Tipografía
+$letra__principal: 'Fugaz One', cursive;
+$letra__secundaria: Arial, Helvetica, sans-serif;
+$colorLetra__Principal: #ffff;
+$colorLetra__Secundaria: orange;
+//Paleta colores
+$color_gris: #535558;
+$color_gris_claro: #E0E0E0;
+$color_gris_oscuro: #202124;
+$color_naranja: #F6A23E;
+$color_celeste_claro:#7EC2EC ;
+$color_celeste_oscuro: #57A9DA ;
+$color_amarillo: #57A9DA ;
+
+//Tamaños
+$logo-width:calc(5em + 5vw);
+//Mixins
+@mixin flex__ColumnCenterAll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+};
+@mixin flex__Center{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+};
