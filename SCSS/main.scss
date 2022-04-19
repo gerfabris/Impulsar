@@ -78,7 +78,7 @@ header{
     justify-content: flex-end;
     align-items: center;
 }
-#toggler, .contenedor_burgerMenu, .burger_menu{
+#toggler, .contenedor_burgerMenu, .burger_menu, .center{
     display: none;
 }
 //main
@@ -124,6 +124,34 @@ header{
     nav{
         justify-content: space-between;
     }
+    .center {
+        display: block;
+        top: 50%;
+        right: 10%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        width: 40px;
+    }    
+    .center:before,
+    .center:after,
+    .center div {
+        background: $color_celeste_oscuro;
+        content: "";
+        display: block;
+        height: 6px;
+        border-radius: 3px;
+        margin: 7px 0;
+        transition: .5s;
+    }
+    .center:hover:before {
+        transform: translateY(12px) rotate(135deg);
+    }
+    .center:hover:after {
+        transform: translateY(-12px) rotate(-135deg);
+    }
+    .center:hover div {
+        transform: scale(0);
+    }
     .contenedor_header_secciones{
         width: 100%;
         max-height: 0;
@@ -152,7 +180,7 @@ header{
         padding: .5em;
     }
     #toggler:checked ~ .contenedor_header_secciones{
-        max-height: 100%
+        max-height: 100%;
     }
 }
 
