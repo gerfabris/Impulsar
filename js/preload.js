@@ -2,7 +2,6 @@ let contenedorPreload = document.getElementById("contenedorPreload");
 setTimeout( () =>{
     contenedorPreload.classList.add("preload_cerrar");
 }, 8000)
-
 let sectionPresentacion = document.getElementById("sectionPresentacion");
 setTimeout( () =>{
     sectionPresentacion.style.display = "flex";
