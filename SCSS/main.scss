@@ -1,5 +1,6 @@
 //Imports
-@import "variables";
+@import "variables", "textAnimation";
+
 *{
     margin: 0;
     padding: 0;
@@ -7,16 +8,16 @@
 }
 body{
     font-family: 'Fugaz One', cursive;
+    font-display: swap;
     width: 100vw;
     height: 100%;
     box-sizing: border-box;
     background-color: $color_gris;
 }
-@font-face{
-    font-family: 'Fugaz One', cursive;
-    font-display: swap;
-}
 //Index
+.header_hidden{
+    display: none;
+}
 header{
     width: 100vw;
     height: 2%;
@@ -56,7 +57,20 @@ header{
         }
     }
 }
-
+//preload
+.contenedor_preload{
+    @include flex__Center;
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    background: black;
+    z-index: 99;
+}
+.preload_cerrar{
+    display: none;
+    transform: translateY(-100%);
+    transition: all .5s;
+}
 //logo header
 .contenedor_logo_header{
     width: 40%;
@@ -81,14 +95,67 @@ header{
 #toggler, .contenedor_burgerMenu, .burger_menu, .center{
     display: none;
 }
-//main
-.index_main{
+//Abre main 
+.main{
     width: 100vw;
     height: 80%;
 }
-.section_prueba{
+//abre seccion presentacion
+.section_presentacion{
     width: 100vw;
-    height: 80%;
+    display: none;
+}
+.contenedor_presentacion{
+    width: 100%;
+    background-color: inherit;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2em;
+}
+//text animation
+.container_textAnimation{
+    padding: 2em;
+    width: 100%;
+}
+.textAnimation{
+    stroke: $color_celeste_oscuro;
+    fill: $color_celeste_oscuro;
+    font-family: $letra__principal;
+    font-size: 100px;
+    font-weight: 300;
+}
+//animacion-scroll
+.contenedor_animationScroll{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.scroll-link{
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.mouse{
+    max-width: 1.5rem;
+    width: 100%;
+    height: auto;
+}
+.scroll {
+    animation-name: scroll;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0.650, -0.550, 0.250, 1.500);
+    animation-iteration-count: infinite;
+    transform-origin: 50% 20.5px;
+    will-change: transform;
+}
+.animationScroll_p{
+    font-family: $letra__secundaria;
+    color: $color_celeste_oscuro;
+    font-size: 9px;
 }
 //footer
 .index_footer{
@@ -129,7 +196,7 @@ header{
         top: 50%;
         right: 10%;
         transform: translate(-50%, -50%);
-        position: absolute;
+        position: relative;
         width: 40px;
     }    
     .center:before,
@@ -169,11 +236,14 @@ header{
     }
     .contenedor_burgerMenu{
         display: inline-flex;
-        align-items: center;
         cursor: pointer;
         width: 30%;
+        justify-content: flex-end;
+        align-items: baseline;
     }
     .burger_menu{
+        width: 30px;
+        height: 30px;
         display: flex;
     }
     .anchord_secciones{
@@ -184,10 +254,3 @@ header{
     }
 }
 
-.contenedor_burgerMenu{
-    @include flex__Center;
-}
-.burger_menu{
-    width: 30px;
-    height: 30px;
-}

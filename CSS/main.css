@@ -1,3 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
+@keyframes scroll {
+  0%, 20% {
+    transform: translateY(0) scaleY(1);
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(36px) scaleY(2);
+    opacity: 0.01;
+  }
+}
+.container_textAnimation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container_textAnimation svg {
+  max-width: 45rem;
+  width: 100%;
+  height: auto;
+  fill: #57A9DA;
+  stroke: #202124;
+  stroke-width: 4;
+}
+.container_textAnimation svg tspan > tspan {
+  stroke-dasharray: 1500;
+  stroke-dashoffset: -1500;
+}
+.container_textAnimation svg tspan > tspan:nth-of-type(1) {
+  animation: draw 300ms 150ms forwards;
+}
+.container_textAnimation svg tspan > tspan:nth-of-type(2) {
+  animation: draw 300ms 300ms forwards;
+}
+.container_textAnimation svg tspan > tspan:nth-of-type(3) {
+  animation: draw 300ms 450ms forwards;
+}
+.container_textAnimation svg tspan > tspan:nth-of-type(4) {
+  animation: draw 300ms 600ms forwards;
+}
+.container_textAnimation svg tspan > tspan:nth-of-type(5) {
+  animation: draw 300ms 750ms forwards;
+}
+.container_textAnimation svg tspan > tspan:nth-of-type(6) {
+  animation: draw 300ms 900ms forwards;
+}
+.container_textAnimation svg tspan > tspan:nth-of-type(7) {
+  animation: draw 300ms 1050ms forwards;
+}
+.container_textAnimation svg tspan > tspan:nth-of-type(8) {
+  animation: draw 300ms 1200ms forwards;
+}
+.container_textAnimation svg tspan > tspan:nth-of-type(9) {
+  animation: draw 300ms 1350ms forwards;
+}
+.container_textAnimation svg tspan > tspan:nth-of-type(10) {
+  animation: draw 300ms 1500ms forwards;
+}
+.container_textAnimation svg tspan > tspan:nth-of-type(11) {
+  animation: draw 300ms 1650ms forwards;
+}
+.container_textAnimation svg tspan > tspan:nth-of-type(12) {
+  animation: draw 300ms 1800ms forwards;
+}
+.container_textAnimation svg tspan > tspan:nth-of-type(13) {
+  animation: draw 300ms 1950ms forwards;
+}
+.container_textAnimation svg tspan > tspan:nth-of-type(14) {
+  animation: draw 300ms 2100ms forwards;
+}
+.container_textAnimation svg tspan > tspan:nth-of-type(15) {
+  animation: draw 300ms 2250ms forwards;
+}
+
+@keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -6,16 +87,17 @@
 
 body {
   font-family: "Fugaz One", cursive;
+  font-display: swap;
   width: 100vw;
   height: 100%;
   box-sizing: border-box;
   background-color: #535558;
 }
 
-@font-face {
-  font-family: "Fugaz One", cursive;
-  font-display: swap;
+.header_hidden {
+  display: none;
 }
+
 header {
   width: 100vw;
   height: 2%;
@@ -54,6 +136,24 @@ header nav div ul li:hover {
   color: #57A9DA;
 }
 
+.contenedor_preload {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  background: black;
+  z-index: 99;
+}
+
+.preload_cerrar {
+  display: none;
+  transform: translateY(-100%);
+  transition: all 0.5s;
+}
+
 .contenedor_logo_header {
   width: 40%;
   display: flex;
@@ -84,14 +184,72 @@ header nav div ul li:hover {
   display: none;
 }
 
-.index_main {
+.main {
   width: 100vw;
   height: 80%;
 }
 
-.section_prueba {
+.section_presentacion {
   width: 100vw;
-  height: 80%;
+  display: none;
+}
+
+.contenedor_presentacion {
+  width: 100%;
+  background-color: inherit;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+.container_textAnimation {
+  padding: 2em;
+  width: 100%;
+}
+
+.textAnimation {
+  stroke: #57A9DA;
+  fill: #57A9DA;
+  font-family: "Fugaz One", cursive;
+  font-size: 100px;
+  font-weight: 300;
+}
+
+.contenedor_animationScroll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.scroll-link {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mouse {
+  max-width: 1.5rem;
+  width: 100%;
+  height: auto;
+}
+
+.scroll {
+  animation-name: scroll;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+  animation-iteration-count: infinite;
+  transform-origin: 50% 20.5px;
+  will-change: transform;
+}
+
+.animationScroll_p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #57A9DA;
+  font-size: 9px;
 }
 
 .index_footer {
@@ -137,7 +295,7 @@ header nav div ul li:hover {
     top: 50%;
     right: 10%;
     transform: translate(-50%, -50%);
-    position: absolute;
+    position: relative;
     width: 40px;
   }
 
@@ -185,12 +343,15 @@ header nav div ul li:hover {
 
   .contenedor_burgerMenu {
     display: inline-flex;
-    align-items: center;
     cursor: pointer;
     width: 30%;
+    justify-content: flex-end;
+    align-items: baseline;
   }
 
   .burger_menu {
+    width: 30px;
+    height: 30px;
     display: flex;
   }
 
@@ -201,17 +362,6 @@ header nav div ul li:hover {
   #toggler:checked ~ .contenedor_header_secciones {
     max-height: 100%;
   }
-}
-.contenedor_burgerMenu {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-}
-
-.burger_menu {
-  width: 30px;
-  height: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */
