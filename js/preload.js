@@ -10,3 +10,7 @@ let index_header = document.getElementById("index_header");
 setTimeout( () =>{
     index_header.classList.remove("header_hidden");
 }, 8010)
+let sectionServicios = document.getElementById("sectionServicios");
+setTimeout( () =>{
+    sectionServicios.style.display = "flex";
+}, 8030)
