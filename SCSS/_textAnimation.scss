@@ -26,3 +26,17 @@
 		stroke-dashoffset: 0;
 	}	
 }
+//text animation
+.container_textAnimation{
+    padding: 2em;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.textAnimation{
+    stroke: $color_celeste_oscuro;
+    fill: $color_celeste_oscuro;
+    font-family: $letra__principal;
+    font-size: 100px;
+    font-weight: 300;
+}

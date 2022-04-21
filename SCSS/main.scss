@@ -59,17 +59,23 @@ header{
 }
 //preload
 .contenedor_preload{
-    @include flex__Center;
     position: absolute;
     width: 100%;
-    min-height: 100vh;
+    min-height: 100%;
     background: $color_gris_oscuro;
     z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .preload_cerrar{
     display: none;
     transform: translateY(-100%);
     transition: all .5s;
+}
+.preload{
+    width: 100vw;
+    height: 100vh;
 }
 //logo header
 .contenedor_logo_header{
@@ -113,19 +119,17 @@ header{
     justify-content: space-between;
     padding: 2em;
 }
-//text animation
-.container_textAnimation{
-    padding: 2em;
-    width: 100%;
+.contenedor_presentacion_h1{
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     justify-content: flex-start;
+    align-items: center;
+    font-size: 20px;
 }
-.textAnimation{
-    stroke: $color_celeste_oscuro;
-    fill: $color_celeste_oscuro;
-    font-family: $letra__principal;
-    font-size: 100px;
-    font-weight: 300;
+.presentacion_h1{
+    color: $color_celeste_oscuro;
+    width: 80%;
 }
 //somos impulsar
 .contenedor_somosImpulsar{
@@ -141,6 +145,7 @@ header{
     font-family: $letra__secundaria;
     font-size: 20px;
     text-align: justify;
+    padding: 2em;
 }
 //animacion-scroll
 .contenedor_animationScroll{
@@ -173,7 +178,15 @@ header{
     color: $color_celeste_oscuro;
     font-size: 9px;
 }
-
+.section_servicios{
+    @include secciones;
+}
+.section_somosImpulsar{
+    @include secciones;
+}
+.section_contacto{
+    @include secciones;
+}
 //footer
 .index_footer{
     width: 100vw;

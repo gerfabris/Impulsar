@@ -79,6 +79,21 @@
     stroke-dashoffset: 0;
   }
 }
+.container_textAnimation {
+  padding: 2em;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.textAnimation {
+  stroke: #57A9DA;
+  fill: #57A9DA;
+  font-family: "Fugaz One", cursive;
+  font-size: 100px;
+  font-weight: 300;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -137,21 +152,25 @@ header nav div ul li:hover {
 }
 
 .contenedor_preload {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
   position: absolute;
   width: 100%;
-  min-height: 100vh;
+  min-height: 100%;
   background: #202124;
   z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .preload_cerrar {
   display: none;
   transform: translateY(-100%);
   transition: all 0.5s;
+}
+
+.preload {
+  width: 100vw;
+  height: 100vh;
 }
 
 .contenedor_logo_header {
@@ -203,19 +222,18 @@ header nav div ul li:hover {
   padding: 2em;
 }
 
-.container_textAnimation {
-  padding: 2em;
-  width: 100%;
+.contenedor_presentacion_h1 {
   display: flex;
+  flex-wrap: wrap;
+  width: 100%;
   justify-content: flex-start;
+  align-items: center;
+  font-size: 20px;
 }
 
-.textAnimation {
-  stroke: #57A9DA;
-  fill: #57A9DA;
-  font-family: "Fugaz One", cursive;
-  font-size: 100px;
-  font-weight: 300;
+.presentacion_h1 {
+  color: #57A9DA;
+  width: 80%;
 }
 
 .contenedor_somosImpulsar {
@@ -232,6 +250,7 @@ header nav div ul li:hover {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   text-align: justify;
+  padding: 2em;
 }
 
 .contenedor_animationScroll {
@@ -267,6 +286,30 @@ header nav div ul li:hover {
   font-family: Arial, Helvetica, sans-serif;
   color: #57A9DA;
   font-size: 9px;
+}
+
+.section_servicios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.section_somosImpulsar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.section_contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
 }
 
 .index_footer {

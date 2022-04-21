@@ -27,6 +27,21 @@ $logo-width:calc(5em + 5vw);
     align-content: center;
     align-items: center;
 };
+@mixin margin__Espaciado($ma-t, $ma-b){
+    margin-top: $ma-t;
+    margin-bottom: $ma-b;
+};
+@mixin AltoAncho($w, $h){
+    width: $w;
+    height: $h;    
+};
+@mixin secciones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
 //animaciones
 @keyframes scroll {
     0%, 20% {
