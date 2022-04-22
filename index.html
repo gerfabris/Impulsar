@@ -12,6 +12,8 @@
     <!-- Link Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">    
+    <!-- Fontawesome-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Color Barra Direcciones-->
     <meta name="theme-color" content="#cdb8e0">
     <!-- Title and SEO-->
@@ -24,6 +26,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <header id="index_header" class="header_hidden header">
@@ -55,28 +60,21 @@
     </aside>
     <main id="index_main" class="main">
       <section id="sectionPresentacion" class="section_presentacion">
-        <div id="contenedorPresentacion" class="contenedor_presentacion">
-          <!-- text animation en html y scss aparte si se desea poner-->
-          <!--<div class="contenedor_somosImpulsar">
-            <p class="somosImpulsar_p">Somos IMPULSAR, un equipo interdisciplinario de profesionales que te brindan las herramientas necesarias para que te conozcas como marca o emprendimiento, y a partir de ello impulsarte para destacar en el mercado. Contamos con nuestro propio sistema de construcción y evaluación que nos permite seleccionar las mejores opciones para su emprendimiento</p>
-          </div>-->
-          <!-- Scroll animation-->   
+        <article id="contenedorPresentacion" class="contenedor_presentacion">
           <div class="contenedor_presentacion_h1">
             <h1 class="presentacion_h1">IMPULSAMOS TU CAMINO DIGITAL 🚀</h1>
           </div>
-          <div>
-            <button>Conocé más</button>
+          <div class="contenedor_btn_learnMore">
+            <a href="#" class="btn_learnMore">Conocé más</a>          
           </div>
-          <span id="contenedorAnimationScroll" class="contenedor_animationScroll">
-            <svg class="mouse" xmlns="..." viewBox="0 0 76 130" preserveAspectRatio="xMidYmid meet">
-              <g fill="none" fill-rule="evenodd">
-              <rect width="70" height="118" x="1.5" y="1.5" stroke="#FFF" stroke-width="3" rx="36"/>
-              <circle class="scroll" cx="36.5" cy="31.5" r="4.5" fill="#FFF"/>
-              </g>
-            </svg>
-            <p class="animationScroll_p">Desliza</p>
-          </span>       
-        </div>
+          <div id="contenedorAnimationChevron" class="contenedor_animationChevron">
+            <div class="container_chevron">
+              <div class="chevron"></div>
+              <div class="chevron"></div>
+              <div class="chevron"></div>
+            </div>
+          </div>
+        </article>
       </section>
       <section id="sectionServicios" class="section_servicios">
                   
@@ -88,18 +86,6 @@
         
       </section>
     </main>
-    <!--<footer id="index_footer" class="index_footer">
-      <section id="copyright" class="section_copyright">
-        <div id="contenedor_logo_footer" class="contenedor_logo_footer">
-          <h4 class="texto_copyright">Powered by </h4>          
-          <a class="anchord_logo" href="index.html">
-            <img class="logo_footer" src="./assets/composiciones del logo//COMPOSICION1_LOGO/PNG/LOGO_EN GRIS CLARO-01-recortado.png" alt="Logo Impulsar Dev Solutions">
-          </a>
-          <h4 class="texto_copyright">2022 | All rights reserved</h4>
-          </h4>
-        </div>
-      </section>
-    </footer>-->
     <footer>
       <!-- Abre footer principal-->
       <div class="container text-center text-md-left">    
@@ -163,20 +149,20 @@
               <!-- Grid column Nuestras Redes -->
               <div class="col-md-2 col-lg-2 text-center mx-auto my-4 footer__redes">
               <!-- Social buttons -->
-                  <h5 class="font-weight-bold text-uppercase mb-4">Nuestras Redes</h5>            
+                  <h5 class="font-weight-bold text-uppercase mb-4">Redes</h5>            
                   <div class="socialMedia">
                       <!-- Facebook -->
                       <a href="" type="button" class="socialMedia_anchord">
-                          <img src="./assets/icons/redes/facebook.png" alt="Facebook">            
+                        <i class="fa fa-facebook"></i>
                       </a>
                       <!-- Instagram -->
                       <a href="" type="button" class="socialMedia_anchord">
-                          <img src="./assets/icons/redes/instagram.png" alt="Instagram">        
+                        <i class="fa fa-brands fa-instagram"></i>
                       </a>
                       </a>
-                      <!-- instagram -->
+                      <!-- Whatsapp -->
                       <a href="" type="button" class="socialMedia_anchord">
-                          <img src="./assets/icons/redes/whatsapp-byn.png" alt="WhatsApp"> 
+                        <i class="fa fa-brands fa-whatsapp"></i>  
                       </a>
                   </div>
               </div>
@@ -186,7 +172,8 @@
       <!-- Cierra footer principal-->   
       <!-- Abre Copyright -->
       <div class="container footer__copyright text-center">
-          <a href=""> Copyright © 2022 | Impulsar Dev Solutions</a>
+          <a href=""> Copyright © 2022 | Impulsar Dev Solutions 
+          </a>
       </div>
       <!-- Cierra Copyright -->
     </footer>     

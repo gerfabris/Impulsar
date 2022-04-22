@@ -1,0 +1,31 @@
+.contenedor_animationScroll{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.scroll-link{
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.mouse{
+    max-width: 1.5rem;
+    width: 100%;
+    height: auto;
+}
+.scroll {
+    animation-name: scroll;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0.650, -0.550, 0.250, 1.500);
+    animation-iteration-count: infinite;
+    transform-origin: 50% 20.5px;
+    will-change: transform;
+}
+.animationScroll_p{
+    font-family: $letra__secundaria;
+    color: $color_celeste_oscuro;
+    font-size: 9px;
+}
