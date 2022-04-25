@@ -1,0 +1,20 @@
+//preload
+.contenedor_preload{
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    background: $color_gris_oscuro;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.preload_cerrar{
+    display: none;
+    transform: translateY(-100%);
+    transition: all .5s;
+}
+.preload{
+    width: 100vw;
+    height: 100vh;
+}

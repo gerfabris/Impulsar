@@ -31,7 +31,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header id="index_header" class="header_hidden header">
+    <header id="index_header" class="header">
       <nav id="navbar" class="">
         <div id="contenedor_logo_header" class="contenedor_logo_header">
           <a class="anchord_logo" href="index.html">
@@ -53,17 +53,14 @@
         </div>
       </nav>
     </header>
-    <aside id="contenedorPreload" class="contenedor_preload">
-      <video class="preload" type="video/mp4" autoplay muted preload controls>
-        <source src="./assets/preload/preload.mp4">
-      </video>
-    </aside>
+
     <main id="index_main" class="main">
       <section id="sectionPresentacion" class="section_presentacion">
         <article id="contenedorPresentacion" class="contenedor_presentacion">
           <div class="contenedor_presentacion_h1">
             <h1 class="presentacion_h1">IMPULSAMOS TU CAMINO DIGITAL 🚀</h1>
           </div>
+          <div style="height: 290px;"></div>
           <div class="contenedor_btn_learnMore">
             <a href="#" class="btn_learnMore">Conocé más</a>          
           </div>
@@ -77,7 +74,34 @@
         </article>
       </section>
       <section id="sectionServicios" class="section_servicios">
-                  
+        <article id="containerContentImpulso" class="container_content_impulso">
+          <div id="contenedorImagenImpulsoMarca" class="contenedor_impulso_img">
+            <img src="./assets/composiciones del logo/COHETE_ISOTIPO/PNG/COHETE_ EN BLANCO-11.png" alt="" class="img_impulso">      
+          </div>
+          <div id="containerSpeachImpulsoMarca" class="container_impulso_speach wow animate__animated animate__fadeInLeft delay-1">
+            <h3 class=" h3 impulso_title">IMPULSO DE IDENTIDAD DE MARCA</h3>
+            <p class="impulso_paragraph"> El primer paso es un proceso de descubrimiento, nos interiorizamos en tus objetivos, metas, el corazón de tu marca y su historia.</p>
+          </div>
+        </article>
+        <article id="containerContentImpulso" class="container_content_impulso wow animate__animated animate__fadeInLeft delay-2">
+          <div id="contenedorImagenImpulsoVisual" class="contenedor_impulso_img">
+            <img src="./assets/composiciones del logo/COHETE_ISOTIPO/PNG/COHETE_ EN BLANCO-11.png" alt="" class="img_impulso">      
+          </div>
+          <div id="containerParagraphImpulsoVisual" class="container_impulso_speach">
+            <h3 class=" h3 impulso_title"> IMPULSO DE IDENTIDAD VISUAL </h3>
+            <p class="impulso_paragraph">Continuamos el proceso con el diseño o rediseño de tu emprendimiento, para convertir el resultado del primer proceso en identidad visual.</p>
+          </div>          
+        </article>
+        <article id="containerContentImpulso" class="container_content_impulso wow animate__animated animate__fadeInLeft delay-3">
+          <div id="contenedorImagenImpulsoWeb" class="contenedor_impulso_img">
+            <img src="./assets/composiciones del logo/COHETE_ISOTIPO/PNG/COHETE_ EN BLANCO-11.png" alt="" class="img_impulso">   
+          </div>
+          <div id="containerParagraphImpulsoWeb" class="container_impulso_speach">
+            <h3 class=" h3 impulso_title">IMPULSO WEB</h3>
+            <p class="impulso_paragraph">Como resultado final del proceso, tendrás una página web adaptada a tus necesidades y que te ayudará a plasmar los valores que te definen y a destacar en el mercado.</p>
+          </div>
+        </article>                  
+
       </section>
       <section id="sectionSomosImpulsar" class="section_somosImpulsar">
         
@@ -178,11 +202,13 @@
       <!-- Cierra Copyright -->
     </footer>     
     <!-- Scripts propios-->
-    <script type="text/javascript" src="./js/preload.js"></script>
+    <script type="text/javascript" src="./js/"></script>
     <!-- Script Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!-- Script Wow-->
     <script src="./js/wow.min.js"></script>
-    <script> new WOW().init();</script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>

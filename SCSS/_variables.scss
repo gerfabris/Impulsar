@@ -45,6 +45,24 @@ $logo-width:calc(5em + 5vw);
     width: 100%;
     flex-direction: column;
 }
+@mixin delay-1 {
+    animation-delay:0.2s;
+    -webkit-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+}
+@mixin delay-2 {
+    animation-delay:0.8s;
+    -webkit-animation-delay: 0.8s;
+    -o-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+}
+@mixin delay-3 {
+    animation-delay:1.4s;
+    -webkit-animation-delay: 1.4s;
+    -o-animation-delay: 1.4s;
+    -moz-animation-delay: 1.4s;
+}
 //animaciones
 @keyframes scroll{
     0%, 20% {
