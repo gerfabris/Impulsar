@@ -253,7 +253,7 @@ header{
         justify-content: space-between;
         width: 50%;
         h3{
-            color: $color_celeste_oscuro;
+            color: $color_naranja_cohete;
             font-family: $letra__principal ;
         }
         .contenedor_inputs{
@@ -276,15 +276,15 @@ header{
             font-weight: bold;
         }
     }
-
     .formulario_contenedor_textarea{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         width: 50%;
         h3{
-            color: $color_celeste_oscuro;
-            font-family: $letra__principal ;
+            color: $color_naranja_cohete;
+            font-family: $letra__principal;
+            width: 100%;
         }
         .contenedor_inputs{
             display: flex;
@@ -300,6 +300,7 @@ header{
             width: 100%;
             justify-content: center;
             align-items: center;
+            @include margin__Espaciado(1em,1em);
             .btn_formulario{
                 width: 40%;
                 min-width: 150px;
@@ -308,7 +309,7 @@ header{
                 font-family: $letra__secundaria;
                 font-weight: bold;
                 text-decoration: none;
-                padding: 15px 20px;
+                padding: 10px 15px;
                 border: 3px solid $color_gris_claro;
                 border-radius: 10px;
                 &:hover{
@@ -318,6 +319,26 @@ header{
             }
         }
 
+    }
+}
+.whatsapp{
+    position: fixed;
+    bottom: 1%;
+    font-size: 50px;
+    color: #00bb2d;
+    width:50px;
+    height:50px;
+    line-height: 50px;
+    bottom:20px;
+    right:20px;
+    border-radius:50px;
+    text-align:center;
+    z-index:100;
+    transition: all 300ms ease;
+    &:hover{
+        box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+        color: #ffff;
+        background-color: #00bb2d;
     }
 }
 //footer
@@ -395,72 +416,89 @@ footer{
     .section_servicios{
         .container_content_impulso{
             flex-direction: column;
+            width: 100%;
+            .container_impulso_speach{
+                .impulso_paragraph{
+                    text-align: center;
+                }
+            }
         }
     }
+    .section_nosotros{
+        .container_nosotros{
+            p{
+                text-align: center;
+            }
+        }
+    }
+
 }
 @media screen and (max-width: 900px) {
     header nav{
         justify-content: space-between;
         flex-wrap: wrap;
     }
-    .center {
-        display: block;
-        top: 50%;
-        right: 10%;
-        transform: translate(-50%, -50%);
-        position: relative;
-        width: 40px;
-    }    
-    .center:before,
-    .center:after,
-    .center div {
-        background: $color_celeste_oscuro;
-        content: "";
-        display: block;
-        height: 6px;
-        border-radius: 3px;
-        margin: 7px 0;
-        transition: .5s;
+    header{
+        .center {
+            display: block;
+            top: 50%;
+            right: 10%;
+            transform: translate(-50%, -50%);
+            position: relative;
+            width: 40px;
+        }    
+        .center:before,
+        .center:after,
+        .center div {
+            background: $color_celeste_oscuro;
+            content: "";
+            display: block;
+            height: 6px;
+            border-radius: 3px;
+            margin: 7px 0;
+            transition: .5s;
+        }
+        .center:hover:before {
+            transform: translateY(12px) rotate(135deg);
+        }
+        .center:hover:after {
+            transform: translateY(-12px) rotate(-135deg);
+        }
+        .center:hover div {
+            transform: scale(0);
+        }
+        .contenedor_header_secciones{
+            width: 100%;
+            max-height: 0;
+            overflow: hidden;
+            flex-direction: column;
+        }
+        .list{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .contenedor_burgerMenu{
+            display: inline-flex;
+            cursor: pointer;
+            width: 30%;
+            justify-content: flex-end;
+            align-items: baseline;
+        }
+        .burger_menu{
+            width: 30px;
+            height: 30px;
+            display: flex;
+        }
+        .anchord_secciones{
+            padding: 1em;
+        }
+        #toggler:checked ~ .contenedor_header_secciones{
+            max-height: 100%;
+        }
     }
-    .center:hover:before {
-        transform: translateY(12px) rotate(135deg);
-    }
-    .center:hover:after {
-        transform: translateY(-12px) rotate(-135deg);
-    }
-    .center:hover div {
-        transform: scale(0);
-    }
-    .contenedor_header_secciones{
-        width: 100%;
-        max-height: 0;
-        overflow: hidden;
-        flex-direction: column;
-    }
-    .list{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-    }
-    .contenedor_burgerMenu{
-        display: inline-flex;
-        cursor: pointer;
-        width: 30%;
-        justify-content: flex-end;
-        align-items: baseline;
-    }
-    .burger_menu{
-        width: 30px;
-        height: 30px;
-        display: flex;
-    }
-    .anchord_secciones{
-        padding: 1em;
-    }
-    #toggler:checked ~ .contenedor_header_secciones{
-        max-height: 100%;
-    }
+
 }
 @media screen and (min-width: 768px){
     /*Footer Media +768*/ 
@@ -469,7 +507,26 @@ footer{
     }
     /*CIerra Footer Media +768*/
 }
+@media screen and (max-width: 920px){
+    .section_contacto{
+        .formulario_contenedor_textarea{
+            .contenedor_btn_formulario{
+                .btn_formulario{
+                    min-width: 170px;
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width: 998px){
+    .section_nosotros{
+        .contenedor_nosotros_quienesSomos{
+            width: 80%;
+        }
+        .contenedor_nosotros_Speach{
+            width: 80%;
+        }
+    }
     .section_contacto{
         form{
             flex-direction: column;

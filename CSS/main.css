@@ -371,7 +371,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   width: 50%;
 }
 .section_contacto .formulario_contenedor_datos h3 {
-  color: #57A9DA;
+  color: #F76304;
   font-family: "Fugaz One", cursive;
 }
 .section_contacto .formulario_contenedor_datos .contenedor_inputs {
@@ -400,8 +400,9 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   width: 50%;
 }
 .section_contacto .formulario_contenedor_textarea h3 {
-  color: #57A9DA;
+  color: #F76304;
   font-family: "Fugaz One", cursive;
+  width: 100%;
 }
 .section_contacto .formulario_contenedor_textarea .contenedor_inputs {
   display: flex;
@@ -417,6 +418,8 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   width: 100%;
   justify-content: center;
   align-items: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 .section_contacto .formulario_contenedor_textarea .contenedor_btn_formulario .btn_formulario {
   width: 40%;
@@ -426,13 +429,34 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   text-decoration: none;
-  padding: 15px 20px;
+  padding: 10px 15px;
   border: 3px solid #E0E0E0;
   border-radius: 10px;
 }
 .section_contacto .formulario_contenedor_textarea .contenedor_btn_formulario .btn_formulario:hover {
   color: #F76304;
   animation: pulsate 1s ease-in-out;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 1%;
+  font-size: 50px;
+  color: #00bb2d;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50px;
+  text-align: center;
+  z-index: 100;
+  transition: all 300ms ease;
+}
+.whatsapp:hover {
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  color: white;
+  background-color: #00bb2d;
 }
 
 footer {
@@ -505,6 +529,14 @@ footer .socialMedia_anchord i:hover, footer .socialMedia_anchord img:hover {
 
   .section_servicios .container_content_impulso {
     flex-direction: column;
+    width: 100%;
+  }
+  .section_servicios .container_content_impulso .container_impulso_speach .impulso_paragraph {
+    text-align: center;
+  }
+
+  .section_nosotros .container_nosotros p {
+    text-align: center;
   }
 }
 @media screen and (max-width: 900px) {
@@ -513,7 +545,7 @@ footer .socialMedia_anchord i:hover, footer .socialMedia_anchord img:hover {
     flex-wrap: wrap;
   }
 
-  .center {
+  header .center {
     display: block;
     top: 50%;
     right: 10%;
@@ -521,10 +553,9 @@ footer .socialMedia_anchord i:hover, footer .socialMedia_anchord img:hover {
     position: relative;
     width: 40px;
   }
-
-  .center:before,
-.center:after,
-.center div {
+  header .center:before,
+header .center:after,
+header .center div {
     background: #57A9DA;
     content: "";
     display: block;
@@ -533,52 +564,43 @@ footer .socialMedia_anchord i:hover, footer .socialMedia_anchord img:hover {
     margin: 7px 0;
     transition: 0.5s;
   }
-
-  .center:hover:before {
+  header .center:hover:before {
     transform: translateY(12px) rotate(135deg);
   }
-
-  .center:hover:after {
+  header .center:hover:after {
     transform: translateY(-12px) rotate(-135deg);
   }
-
-  .center:hover div {
+  header .center:hover div {
     transform: scale(0);
   }
-
-  .contenedor_header_secciones {
+  header .contenedor_header_secciones {
     width: 100%;
     max-height: 0;
     overflow: hidden;
     flex-direction: column;
   }
-
-  .list {
+  header .list {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
   }
-
-  .contenedor_burgerMenu {
+  header .contenedor_burgerMenu {
     display: inline-flex;
     cursor: pointer;
     width: 30%;
     justify-content: flex-end;
     align-items: baseline;
   }
-
-  .burger_menu {
+  header .burger_menu {
     width: 30px;
     height: 30px;
     display: flex;
   }
-
-  .anchord_secciones {
+  header .anchord_secciones {
     padding: 1em;
   }
-
-  #toggler:checked ~ .contenedor_header_secciones {
+  header #toggler:checked ~ .contenedor_header_secciones {
     max-height: 100%;
   }
 }
@@ -590,7 +612,19 @@ footer .socialMedia_anchord i:hover, footer .socialMedia_anchord img:hover {
 
   /*CIerra Footer Media +768*/
 }
+@media screen and (max-width: 920px) {
+  .section_contacto .formulario_contenedor_textarea .contenedor_btn_formulario .btn_formulario {
+    min-width: 170px;
+  }
+}
 @media screen and (max-width: 998px) {
+  .section_nosotros .contenedor_nosotros_quienesSomos {
+    width: 80%;
+  }
+  .section_nosotros .contenedor_nosotros_Speach {
+    width: 80%;
+  }
+
   .section_contacto form {
     flex-direction: column;
     justify-content: center;
