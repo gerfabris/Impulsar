@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Link  favicon-->
-    <link rel="shortcut icon" href="./assets/favicon/cohete negro - favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/favicon/cohete blanco - favicon.png" type="image/x-icon">
     <!-- Link animation WOW - Transiciones-->
     <link rel="stylesheet" href="./js/wow.min.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -53,7 +53,6 @@
         </div>
       </nav>
     </header>
-
     <main id="index_main" class="main">
       <section id="sectionPresentacion" class="section_presentacion">
         <article id="contenedorPresentacion" class="contenedor_presentacion">
@@ -74,6 +73,9 @@
         </article>
       </section>
       <section id="sectionServicios" class="section_servicios">
+        <h2 id="sectionServiciosTitle" class="h2 section_servicios_title wow animate__animated animate__fadeInLeft">
+          SERVICIOS
+        </h2>
         <article id="containerContentImpulso" class="container_content_impulso">
           <div id="contenedorImagenImpulsoMarca" class="contenedor_impulso_img">
             <img src="./assets/composiciones del logo/COHETE_ISOTIPO/PNG/COHETE_ EN BLANCO-11.png" alt="" class="img_impulso">      
@@ -101,13 +103,63 @@
             <p class="impulso_paragraph">Como resultado final del proceso, tendrás una página web adaptada a tus necesidades y que te ayudará a plasmar los valores que te definen y a destacar en el mercado.</p>
           </div>
         </article>                  
-
       </section>
-      <section id="sectionSomosImpulsar" class="section_somosImpulsar">
-        
+      <section id="sectionNosotros" class="section_nosotros">
+        <article id="containerNosotros" class="container_nosotros wow animate__animated animate__fadeInLeft">
+          <div id="contenedorNosotrosQuienesSomos" class="contenedor_nosotros_quienesSomos">
+            <h3 id="nosotrosQuienesSomosTitle" class="h3 nosotros_quienesSomos_title">
+              ¿QUIÉNES SOMOS?
+            </h3>
+            <p id="nosotrosQuienesSomosParagraph" class="nosotros_quienesSomos_paragraph">
+              Somos IMPULSAR, un equipo interdisciplinario de profesionales que brindan soluciones integrales a aquellos emprendimientos, marcas personales y empresariales que busquen herramientas para destacarse en el mercado.
+            </p>
+          </div>
+          <div id="contenedorNosotrosSpeach" class="contenedor_nosotros_Speach">
+            <h3 id="nosotrosSpeachTitle" class="h3 nosotros_speach_title">
+              ¿POR QUÉ ELEGIRNOS?
+            </h3>
+            <p id="nosotrosSpeachParagraph" class="nosotros_speach_paragraph">
+              Todas las soluciones en conjunto y en un solo lugar. Un producto final que respeta la identidad de marca e identidad visual que destaque.
+              Al tener un  equipo conectado podrás encontrar las soluciones que se te vuelvan necesarias de manera ágil y eficaz.”
+            </p>
+          </div>
+        </article>
       </section>
       <section id="sectionContacto" class="section_contacto">
-        
+        <h2 class="h2">
+          CONTACTO
+        </h2>
+        <form action="" id="contactoFormulario" class="contacto_formulario" method="post" enctype="">
+          <div id="formularioContenedorDatos" class="formulario_contenedor_datos">
+            <h3 class="h3">DATOS DE CONTACTO</h3>
+            <div class="mb-3 separador-leve contenedor_inputs">
+                <label for="email" name="_replyto" class="form-label">Email</label>
+                <input class="section__formulario__contenedor__form-input" type="email" name="mail" placeholder="Ejemplo: contacto@impulsardev.com.ar" id="correo" required><br>
+            </div>
+            <div class="mb-3 separador-leve contenedor_inputs">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input class="section__formulario__contenedor__form-input" type="text" name="nombre" placeholder="Escribe tus nombres" required><br>
+            </div>
+            <div class="mb-3 separador-leve contenedor_inputs">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input class="section__formulario__contenedor__form-input" type="tel" name="telefono" placeholder="+5492612481549"><br>
+            </div>
+            <div class="mb-3 form-check contenedor_checkbox">
+                <input type="checkbox" class="form-check-input" id="formCheck">
+                <label class="form-check-label" for="formCheck">Acepto los términos y condiciones</label>
+            </div>
+          </div>
+          <div id="formularioContenedorTextarea" class="formulario_contenedor_textarea">  
+            <h3 class="h3">¿En qué podemos ayudarte?</h3>
+            <div class="mb-3 contenedor_inputs">
+                <label for="consulta" class="form-label">¡Cuéntanos!</label>
+                <textarea class="form-control" placeholder="En breve te respondemos 😉" name="message" id="mensaje" rows="3"></textarea>
+            </div>
+            <div id="contenedorBotonFormulario" class="contenedor_btn_formulario">
+              <button type="submit" class="btn btn_formulario">Enviar Consulta</button>
+            </div>
+          </div>
+        </form>
       </section>
     </main>
     <footer>

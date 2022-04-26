@@ -314,7 +314,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.section_nosotros article div h3 {
+.section_nosotros article div h4 {
   width: 100%;
   text-align: left;
   color: #57A9DA;
@@ -335,104 +335,25 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   align-items: center;
   width: 100%;
   flex-direction: column;
-  margin-top: 1em;
-  margin-bottom: 2em;
 }
 .section_contacto h2 {
   font-family: "Fugaz One", cursive;
   color: #57A9DA;
   text-align: center;
   width: 100%;
-  margin-top: 1em;
-  margin-bottom: 1em;
 }
 .section_contacto form {
   width: 80%;
-  max-width: 920px;
+  max-width: 800px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2em;
   border-radius: 20px;
-  box-shadow: rgba(240, 140, 47, 0.884) 3px 4px 17px;
+  box-shadow: rgba(240, 140, 47, 0.884) 5px 20px;
   -moz-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
   -webkit-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
   -o-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
   transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-.section_contacto .formulario_contenedor_datos {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 50%;
-}
-.section_contacto .formulario_contenedor_datos h3 {
-  color: #57A9DA;
-  font-family: "Fugaz One", cursive;
-}
-.section_contacto .formulario_contenedor_datos .contenedor_inputs {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 350px;
-  color: #E0E0E0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-}
-.section_contacto .formulario_contenedor_datos .contenedor_checkbox {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  max-width: 350px;
-  color: #E0E0E0;
-  font-family: Arial, Helvetica, sans-serif;
-  justify-content: space-around;
-  font-weight: bold;
-}
-.section_contacto .formulario_contenedor_textarea {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 50%;
-}
-.section_contacto .formulario_contenedor_textarea h3 {
-  color: #57A9DA;
-  font-family: "Fugaz One", cursive;
-}
-.section_contacto .formulario_contenedor_textarea .contenedor_inputs {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 350px;
-  color: #E0E0E0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-}
-.section_contacto .formulario_contenedor_textarea .contenedor_btn_formulario {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-}
-.section_contacto .formulario_contenedor_textarea .contenedor_btn_formulario .btn_formulario {
-  width: 40%;
-  min-width: 150px;
-  max-width: 200px;
-  color: #E0E0E0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 15px 20px;
-  border: 3px solid #E0E0E0;
-  border-radius: 10px;
-}
-.section_contacto .formulario_contenedor_textarea .contenedor_btn_formulario .btn_formulario:hover {
-  color: #F76304;
-  animation: pulsate 1s ease-in-out;
 }
 
 footer {
@@ -589,34 +510,6 @@ footer .socialMedia_anchord i:hover, footer .socialMedia_anchord img:hover {
   }
 
   /*CIerra Footer Media +768*/
-}
-@media screen and (max-width: 998px) {
-  .section_contacto form {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .section_contacto form h3 {
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-  .section_contacto .formulario_contenedor_datos {
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-  .section_contacto .formulario_contenedor_textarea {
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-  .section_contacto .formulario_contenedor_textarea .contenedor_btn_formulario .btn_formulario {
-    width: 25%;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */

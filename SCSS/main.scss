@@ -1,5 +1,5 @@
 //Imports
-@import "variables", "chevron", "preload";
+@import "variables", "chevron";
 *{
     margin: 0;
     padding: 0;
@@ -11,10 +11,6 @@ body{
     box-sizing: border-box;
     background-color: $color_gris;
 }
-//Index
-.navbar{
-    flex-wrap: nowrap;
-}
 header{
     width: 100%;
     clear: both;
@@ -22,6 +18,9 @@ header{
     position: sticky;
     top: 0;
     z-index: 45;
+    .navbar{
+        flex-wrap: nowrap;
+    }
     nav{
         background-color: $color_gris_oscuro;
         display: flex;
@@ -53,36 +52,34 @@ header{
             }
         }
     }
+    //logo header
+    .contenedor_logo_header{
+        width: 40%;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 2em;
+        padding: 1em;
+    }
+    .anchord_logo{
+        @include flex__ColumnCenterAll;
+    }
+    .logo_header{
+        width: $logo-width
+    }
+    //secciones header
+    .contenedor_header_secciones{
+        width: 60%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    #toggler, .contenedor_burgerMenu, .burger_menu, .center{
+        display: none;
+    }
 }
-//logo header
-.contenedor_logo_header{
-    width: 40%;
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 2em;
-    padding: 1em;
-}
-.anchord_logo{
-    @include flex__ColumnCenterAll;
-}
-.logo_header{
-    width: $logo-width
-}
-//secciones header
-.contenedor_header_secciones{
-    width: 60%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-#toggler, .contenedor_burgerMenu, .burger_menu, .center{
-    display: none;
-}
-//Abre main 
 .main{
     width: 100%;
 }
-//abre seccion presentacion
 .section_presentacion{
     width: 100%;
     display: flex;
@@ -128,13 +125,14 @@ header{
     
     }
 }
-//servicios
-.section_servicios{
-    display: none;
-}
-//servicio servicios 
 .section_servicios{
     @include secciones;
+    h2{
+        color: $color_celeste_oscuro;
+        width: 100%;
+        text-align: center;
+        @include margin__Espaciado(1em,1em);
+    }
     .container_content_impulso{
         display: flex;
         justify-content: space-between;
@@ -191,11 +189,136 @@ header{
         }
     }
 }
-.section_somosImpulsar{
+.section_nosotros{
     @include secciones;
+    article{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 60%;
+            @include margin__Espaciado(1em,1em);
+            h3{
+                width: 100%;
+                text-align: left;
+                color: $color_celeste_oscuro;
+                font-family: $letra__principal;
+            }
+            p{
+                width: 100%;
+                text-align: right;
+                color: $color_gris_claro;
+                font-family: $letra__secundaria; 
+                @include margin__Espaciado(1em,1em);
+            }
+        }
+    }
 }
 .section_contacto{
     @include secciones;
+    @include margin__Espaciado(1em,2em);
+    h2{
+        font-family: $letra__principal;
+        color: $color_celeste_oscuro;
+        text-align: center;
+        width: 100%;
+        @include margin__Espaciado(1em,1em);
+    }
+    form{
+        width: 80%;
+        max-width: 920px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2em;
+        border-radius: 20px;
+        box-shadow: rgba(240, 140, 47, 0.884) 3px 4px 17px;
+        -moz-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
+        -webkit-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
+        -o-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
+        transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
+        @include margin__Espaciado(1em,1em);
+    }
+    .formulario_contenedor_datos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+        h3{
+            color: $color_celeste_oscuro;
+            font-family: $letra__principal ;
+        }
+        .contenedor_inputs{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 350px;
+            color: $color_gris_claro;
+            font-family: $letra__secundaria;
+            font-weight: bold;
+        }
+        .contenedor_checkbox{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            max-width: 350px;
+            color: $color_gris_claro;
+            font-family: $letra__secundaria;
+            justify-content: space-around;
+            font-weight: bold;
+        }
+    }
+
+    .formulario_contenedor_textarea{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+        h3{
+            color: $color_celeste_oscuro;
+            font-family: $letra__principal ;
+        }
+        .contenedor_inputs{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 350px;
+            color: $color_gris_claro;
+            font-family: $letra__secundaria;
+            font-weight: bold;
+        }
+        .contenedor_btn_formulario{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            .btn_formulario{
+                width: 40%;
+                min-width: 150px;
+                max-width: 200px;
+                color: $color_gris_claro;
+                font-family: $letra__secundaria;
+                font-weight: bold;
+                text-decoration: none;
+                padding: 15px 20px;
+                border: 3px solid $color_gris_claro;
+                border-radius: 10px;
+                &:hover{
+                    color: $color_naranja_cohete;
+                    animation: pulsate 1s ease-in-out;
+                };
+            }
+        }
+
+    }
 }
 //footer
 footer{
@@ -261,13 +384,18 @@ footer{
         }
     }
 }
-
+//Responsive
 @media screen and (max-width: 320px){
 
 }
 @media screen and (max-width: 768px){
     .socialMedia_anchord i, .socialMedia_anchord img{
         margin-bottom: 1em;
+    }
+    .section_servicios{
+        .container_content_impulso{
+            flex-direction: column;
+        }
     }
 }
 @media screen and (max-width: 900px) {
@@ -340,6 +468,35 @@ footer{
         width: calc(7em + 7vw);
     }
     /*CIerra Footer Media +768*/
+}
+@media screen and (max-width: 998px){
+    .section_contacto{
+        form{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h3{
+                @include margin__Espaciado(1em,1em);
+            }
+        }
+        .formulario_contenedor_datos{
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            @include margin__Espaciado(1em,1em);
+        }
+        .formulario_contenedor_textarea{
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            @include margin__Espaciado(1em,1em);
+            .contenedor_btn_formulario{
+                .btn_formulario{
+                    width: 25%;
+                }
+            }
+        }
+    }
 }
 @media screen and (min-width: 1200px){
 
