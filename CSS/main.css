@@ -356,7 +356,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   align-items: center;
   padding: 2em;
   border-radius: 20px;
-  box-shadow: rgba(240, 140, 47, 0.884) 3px 4px 17px;
+  box-shadow: rgba(98, 122, 231, 0.884) 3px 4px 17px;
   -moz-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
   -webkit-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
   -o-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
@@ -436,6 +436,80 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
 .section_contacto .formulario_contenedor_textarea .contenedor_btn_formulario .btn_formulario:hover {
   color: #F76304;
   animation: pulsate 1s ease-in-out;
+}
+.section_contacto .contacto_redesUbicacion {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  max-width: 1000px;
+  justify-content: center;
+  align-items: flex-start;
+}
+.section_contacto .contacto_redesUbicacion .containerRedes {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section_contacto .contacto_redesUbicacion .containerRedes h3 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color: #57A9DA;
+  font-family: "Fugaz One", cursive;
+}
+.section_contacto .contacto_redesUbicacion .containerRedes .contacto_redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.section_contacto .contacto_redesUbicacion .containerRedes .contacto_redes .contacto_redes_anchord {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 1em;
+  text-align: center;
+  text-decoration: none;
+  color: #E0E0E0;
+}
+.section_contacto .contacto_redesUbicacion .containerRedes .contacto_redes .contacto_redes_anchord:hover {
+  color: #F76304;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(236, 129, 29, 0.89);
+  transition: all 0.4s ease-in-out;
+  transform: scale(1.2);
+}
+.section_contacto .contacto_redesUbicacion .container_ubicacion {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section_contacto .contacto_redesUbicacion .container_ubicacion h3 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color: #57A9DA;
+  font-family: "Fugaz One", cursive;
+}
+.section_contacto .contacto_redesUbicacion .container_ubicacion p {
+  margin-top: 0;
+  margin-bottom: 1em;
+  color: #E0E0E0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.section_contacto .contacto_redesUbicacion .container_ubicacion iframe {
+  width: 80%;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .whatsapp {
@@ -537,6 +611,23 @@ footer .socialMedia_anchord i:hover, footer .socialMedia_anchord img:hover {
 
   .section_nosotros .container_nosotros p {
     text-align: center;
+  }
+
+  .section_contacto .contacto_redesUbicacion {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .section_contacto .contacto_redesUbicacion .containerRedes {
+    width: 100%;
+  }
+  .section_contacto .contacto_redesUbicacion .containerRedes .contacto_redes {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 80%;
+  }
+  .section_contacto .contacto_redesUbicacion .container_ubicacion {
+    width: 100%;
   }
 }
 @media screen and (max-width: 900px) {
