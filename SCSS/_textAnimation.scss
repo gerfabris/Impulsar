@@ -13,7 +13,7 @@
 		tspan > tspan {
 			stroke-dasharray: 1500;
 			stroke-dashoffset: -1500;			
-			@for $i from 1 through 15 {				
+			@for $i from 1 through 35 {				
 				&:nth-of-type(#{$i}) {
 					animation: draw 300ms #{$i * 150}ms forwards;
 				}				
@@ -27,9 +27,23 @@
 	}	
 }
 //text animation
+.section_presentacion{
+	flex-direction: column;
+}
+.article_caminoDigital{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	width: 100%;
+	justify-content: stretch;
+	align-items: center;
+	p{
+		font-size: calc(2em+2vw);
+	}
+}
 .container_textAnimation{
-    padding: 2em;
-    width: 100%;
+    padding: 0em;
+    width: 50%;
     display: flex;
     justify-content: flex-start;
 }

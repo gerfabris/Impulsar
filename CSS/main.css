@@ -722,6 +722,8 @@ header .center div {
     align-items: center;
   }
   .section_contacto form h3 {
+    width: 100%;
+    text-align: center;
     margin-top: 1em;
     margin-bottom: 1em;
   }
