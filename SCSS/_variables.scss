@@ -45,6 +45,14 @@ $logo-width:calc(5em + 5vw);
     width: 100%;
     flex-direction: column;
 }
+@mixin carousel{
+    width: 100%;
+    height: 100%;
+    min-width: 320px;
+    min-height: 120px;
+    //max-height: 350px;
+    overflow: hidden;
+}
 @mixin delay-1 {
     animation-delay:0.2s;
     -webkit-animation-delay: 0.2s;

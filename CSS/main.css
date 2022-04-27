@@ -98,6 +98,8 @@
   overflow: hidden;
   position: relative;
   border: none;
+  outline: 1px solid #E0E0E0;
+  outline-offset: -8px;
   box-shadow: rgba(240, 140, 47, 0.884) 3px 4px 17px;
   -moz-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
   -webkit-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
@@ -168,77 +170,79 @@
   animation: pulsate 1s ease-in-out;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px) {
   .card {
-    width: 12rem;
-    height: 15rem;
+    width: 14rem;
+    height: 20rem;
   }
 }
-.carousel {
-  width: 80%;
-  max-width: 1000px;
+@media screen and (min-width: 480px) {
+  .card {
+    width: 22rem;
+    height: 17rem;
+  }
 }
+@media screen and (min-width: 768px) {
+  .card {
+    width: 28rem;
+    height: 18rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .card {
+    width: 30rem;
+    height: 20rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 35rem;
+    height: 20rem;
+  }
+}
+/* .carousel_container{
+    @include carousel;
 
-.carousel_container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-
-.carousel_left, .carousel_right {
-  position: absolute;
-  display: block;
-  width: 30px;
-  height: 30px;
-  border: none;
-  cursor: pointer;
-  line-height: 30px;
-  text-align: center;
-  background: none;
-  color: #E0E0E0;
-  opacity: 20%;
+.carousel_content{
+    @include carousel;
 }
-.carousel_left:hover, .carousel_right:hover {
-  opacity: 100%;
-}
-
-.carousel_left {
-  left: -30px;
-}
-
-.carousel_right {
-  right: -30px;
-}
-
-.carousel_lista {
-  overflow: hidden;
-  height: 22rem;
+.carousel-item{
+    @include carousel;
+} */
+.carousel_content {
+  margin-left: -3%;
   padding: 2em;
 }
 
-.carousel_elemento {
-  background-color: none;
+@media screen and (min-width: 320px) {
+  .carousel_content {
+    margin-left: 2%;
+  }
 }
-
-.carousel_indicadores .glider-dot {
-  display: block;
-  width: 30px;
-  height: 4px;
-  background-color: #E0E0E0;
-  opacity: 0.2;
-  border-radius: 0;
+@media screen and (min-width: 480px) {
+  .carousel_content {
+    margin-left: 2%;
+  }
 }
-.carousel_indicadores .glider-dot:hover {
-  opacity: 0.5;
+@media screen and (min-width: 768px) {
+  .carousel_content {
+    margin-left: 12%;
+  }
 }
-.carousel_indicadores .glider-dot.active {
-  opacity: 1;
+@media screen and (min-width: 900px) {
+  .carousel_content {
+    margin-left: 9%;
+  }
 }
-
-@media screen and (max-width: 750px) {
-  .carousel_left, .carousel_right {
-    top: calc(30% + 25px);
+@media screen and (min-width: 1024px) {
+  .carousel_content {
+    margin-left: 15%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .carousel_content {
+    margin-left: 22%;
   }
 }
 * {
