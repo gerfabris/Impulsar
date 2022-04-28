@@ -10,6 +10,7 @@ body{
     font-display: swap;
     box-sizing: border-box;
     background-color: $color_gris;
+    scroll-behavior: smooth;
 }
 header{
     width: 100%;
@@ -18,11 +19,15 @@ header{
     position: sticky;
     top: 0;
     z-index: 45;
+    //background-image: url("../assets/ideas/cementerio_espacial.jpg");
+    //background-repeat: repeat;
+    //background-size: auto;
     .navbar{
         flex-wrap: nowrap;
     }
     nav{
         background-color: $color_gris_oscuro;
+        //background: none;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -127,6 +132,13 @@ header{
 }
 .section_servicios{
     @include secciones;
+    @include margin__Espaciado(4em,2em);
+    hr{
+        color: $color_gris_claro;
+        width: 60%;
+        transition: all .35 ease-in-out;
+        @include margin__Espaciado(3em,3em);
+    }
     h2{
         color: $color_celeste_oscuro;
         width: 100%;
@@ -191,6 +203,13 @@ header{
 }
 .section_nosotros{
     @include secciones;
+    @include margin__Espaciado(2em,2em);
+    hr{
+        color: $color_gris_claro;
+        width: 60%;
+        transition: all .35 ease-in-out;
+        @include margin__Espaciado(3em,3em);
+    }
     article{
         display: flex;
         justify-content: center;
@@ -222,13 +241,19 @@ header{
 }
 .section_contacto{
     @include secciones;
-    @include margin__Espaciado(1em,2em);
+    @include margin__Espaciado(2em,2em);
+    hr{
+        color: $color_gris_claro;
+        width: 60%;
+        transition: all .35 ease-in-out;
+        @include margin__Espaciado(3em,3em);
+    }
     h2{
         font-family: $letra__principal;
         color: $color_celeste_oscuro;
         text-align: center;
         width: 100%;
-        @include margin__Espaciado(1em,1em);
+        @include margin__Espaciado(2em,1em);
     }
     form{
         width: 80%;

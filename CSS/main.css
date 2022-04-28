@@ -222,6 +222,7 @@ body {
   font-display: swap;
   box-sizing: border-box;
   background-color: #535558;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -345,6 +346,15 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   align-items: center;
   width: 100%;
   flex-direction: column;
+  margin-top: 4em;
+  margin-bottom: 2em;
+}
+.section_servicios hr {
+  color: #E0E0E0;
+  width: 60%;
+  transition: all 0.35 ease-in-out;
+  margin-top: 3em;
+  margin-bottom: 3em;
 }
 .section_servicios h2 {
   color: #57A9DA;
@@ -420,6 +430,15 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   align-items: center;
   width: 100%;
   flex-direction: column;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.section_nosotros hr {
+  color: #E0E0E0;
+  width: 60%;
+  transition: all 0.35 ease-in-out;
+  margin-top: 3em;
+  margin-bottom: 3em;
 }
 .section_nosotros article {
   display: flex;
@@ -458,15 +477,22 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   align-items: center;
   width: 100%;
   flex-direction: column;
-  margin-top: 1em;
+  margin-top: 2em;
   margin-bottom: 2em;
+}
+.section_contacto hr {
+  color: #E0E0E0;
+  width: 60%;
+  transition: all 0.35 ease-in-out;
+  margin-top: 3em;
+  margin-bottom: 3em;
 }
 .section_contacto h2 {
   font-family: "Fugaz One", cursive;
   color: #57A9DA;
   text-align: center;
   width: 100%;
-  margin-top: 1em;
+  margin-top: 2em;
   margin-bottom: 1em;
 }
 .section_contacto form {

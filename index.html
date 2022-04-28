@@ -48,9 +48,9 @@
         </label>
         <div id="contenedor_header_secciones" class="contenedor_header_secciones">
           <ul class="list">
-            <li><a class="anchord_secciones" href="./pages/nosotros.html">Nosotros</a></li>
-            <li><a class="anchord_secciones" href="./pages/servicios.html">Servicios</a></li>
-            <li><a class="anchord_secciones" href="./pages/contacto.html">Contacto</a></li>
+            <li><a class="anchord_secciones" href="#serviciosHr">¿Qué ofrecemos?</a></li>
+            <li><a class="anchord_secciones" href="#nosotrosHr">¿Quiénes somos?</a></li>
+            <li><a class="anchord_secciones" href="#contactoHr">Contacto</a></li>
           </ul>
         </div>
       </nav>
@@ -58,13 +58,12 @@
     <main id="index_main" class="main">
       <section id="sectionPresentacion" class="section_presentacion">
         <article id="contenedorPresentacion" class="contenedor_presentacion">
-
           <div class="contenedor_presentacion_h1">
             <h1 class="presentacion_h1">IMPULSAMOS TU CAMINO DIGITAL 🚀</h1>
           </div>
-          <div style="height: 290px;"></div>
+          <div style="height: 290px;">
           <div class="contenedor_btn_learnMore">
-            <a href="#" class="btn_learnMore">Conocé más</a>          
+            <a href="#serviciosHr" class="btn_learnMore">Conocé más</a>          
           </div>
           <div id="contenedorAnimationChevron" class="contenedor_animationChevron">
             <div class="container_chevron">
@@ -76,6 +75,7 @@
         </article>
       </section>
       <section id="sectionServicios" class="section_servicios">
+        <hr id="serviciosHr">
         <h2 id="sectionServiciosTitle" class="h2 section_servicios_title wow animate__animated animate__fadeInLeft">
           ¿QUÉ OFRECEMOS?
         </h2>
@@ -193,6 +193,7 @@
         </article>
       </section>
       <section id="sectionNosotros" class="section_nosotros">
+        <hr id="nosotrosHr">
         <article id="containerNosotros" class="container_nosotros wow animate__animated animate__fadeInLeft">
           <div id="contenedorNosotrosQuienesSomos" class="contenedor_nosotros_quienesSomos">
             <h3 id="nosotrosQuienesSomosTitle" class="h3 nosotros_quienesSomos_title">
@@ -214,10 +215,11 @@
         </article>
       </section>
       <section id="sectionContacto" class="section_contacto">
-        <h2 class="h2">
+        <hr id="contactoHr">
+        <h2 id="contactoTitle" class="h2">
           CONTACTO
         </h2>
-        <form action="" id="contactoFormulario" class="contacto_formulario" method="post" enctype="">
+        <form action="https://formspree.io/f/xoqrplko" id="contactoFormulario" class="contacto_formulario" method="post" enctype="">
           <div id="formularioContenedorDatos" class="formulario_contenedor_datos">
             <h3 class="h3">DATOS DE CONTACTO</h3>
             <div class="mb-3 separador-leve contenedor_inputs">
@@ -233,7 +235,7 @@
                 <input class="section__formulario__contenedor__form-input" type="tel" name="telefono" placeholder="+5492612481549"><br>
             </div>
             <div class="mb-3 form-check contenedor_checkbox">
-                <input type="checkbox" class="form-check-input" id="formCheck">
+                <input type="checkbox" class="form-check-input" id="formCheck" required>
                 <label class="form-check-label" for="formCheck">Acepto los términos y condiciones</label>
             </div>
           </div>
@@ -241,7 +243,7 @@
             <h3 class="h3">¿QUERÉS SABER MÁS?</h3>
             <div class="mb-3 contenedor_inputs">
                 <label for="consulta" class="form-label">¡Preguntanos!</label>
-                <textarea class="form-control" placeholder="En breve te respondemos 😉" name="message" id="mensaje" rows="3"></textarea>
+                <textarea class="form-control" placeholder="En breve te respondemos 😉" name="message" id="mensaje" rows="3" required></textarea>
             </div>
             <div id="contenedorBotonFormulario" class="contenedor_btn_formulario">
               <button type="submit" class="btn btn_formulario">Enviar Consulta</button>
@@ -350,16 +352,16 @@
                   <h5 class="font-weight-bold text-uppercase mb-4">Redes</h5>            
                   <div class="socialMedia">
                       <!-- Facebook -->
-                      <a href="" type="button" class="socialMedia_anchord">
+                      <a href="" type="button" class="socialMedia_anchord" target="_blank">
                         <i class="fa fa-facebook"></i>
                       </a>
                       <!-- Instagram -->
-                      <a href="" type="button" class="socialMedia_anchord">
+                      <a href="" type="button" class="socialMedia_anchord" target="_blank">
                         <i class="fa fa-brands fa-instagram"></i>
                       </a>
                       </a>
                       <!-- Whatsapp -->
-                      <a href="" type="button" class="socialMedia_anchord">
+                      <a href="" type="button" class="socialMedia_anchord" target="_blank">
                         <i class="fa fa-brands fa-whatsapp"></i>  
                       </a>
                   </div>
@@ -381,6 +383,8 @@
     <!-- Swipper-->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="./js/carouselSwipper.js"></script>
+    <!-- Vest-->
+    <script src="https://unpkg.com/vest@4/dist/umd/vest.production.js"></script>
     <!-- Script Wow-->
     <script src="./js/wow.min.js"></script>
     <script>
