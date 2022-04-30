@@ -10,7 +10,7 @@
     border: none;
     outline: 1px solid $color_gris_claro;
     outline-offset: -8px;
-    box-shadow: rgba(240, 140, 47, 0.884) 3px 4px 17px;
+    box-shadow: rgba(87, 169, 218, 0.884) 3px 4px 17px;
     -moz-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
     -webkit-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
     -o-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
@@ -31,6 +31,7 @@
     height: 100%;
     position: absolute;
     transition: all 1s ease-in-out;
+    padding: 1em;
     .card_title{
         font-family: $letra__principal;
         color: $color_gris_claro;
@@ -47,6 +48,7 @@
     width: 100%;
     height: 100%;
     opacity: 0;
+    padding: 1em;
     transform: translateY(-15rem);
     transition: all 1s ease-in-out;
     .card_paragraph{

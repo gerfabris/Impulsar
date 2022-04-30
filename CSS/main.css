@@ -100,7 +100,7 @@
   border: none;
   outline: 1px solid #E0E0E0;
   outline-offset: -8px;
-  box-shadow: rgba(240, 140, 47, 0.884) 3px 4px 17px;
+  box-shadow: rgba(87, 169, 218, 0.884) 3px 4px 17px;
   -moz-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
   -webkit-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
   -o-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
@@ -122,6 +122,7 @@
   height: 100%;
   position: absolute;
   transition: all 1s ease-in-out;
+  padding: 1em;
 }
 .dp .card_title {
   font-family: "Fugaz One", cursive;
@@ -139,6 +140,7 @@
   width: 100%;
   height: 100%;
   opacity: 0;
+  padding: 1em;
   transform: translateY(-15rem);
   transition: all 1s ease-in-out;
 }
@@ -211,6 +213,173 @@
   padding: 1em;
 }
 
+.adn_container {
+  width: 800px;
+  height: 100px;
+  perspective: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(90deg);
+  margin-top: 2em;
+  margin-bottom: 5em;
+}
+
+.adn_box {
+  width: 10%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: rotar 4s infinite linear;
+  margin-bottom: 20em;
+}
+
+.adn_items {
+  width: 100%;
+  height: none;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  transform-style: preserve-3d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.adn_botton {
+  width: 10px;
+  height: 10px;
+  border-radius: 70%;
+  background-color: #57A9DA;
+  transform: rotateY(90deg) rotateX(-20deg) translateZ(5px);
+}
+
+.adn_botton:nth-child(3) {
+  transform: rotateY(90deg) translateZ(3px);
+}
+
+.adn_line {
+  width: 100%;
+  height: none;
+  border: 1px solid #57A9DA;
+}
+
+.adn_items:nth-child(1) {
+  transform: rotateY(15deg);
+}
+
+.adn_items:nth-child(2) {
+  transform: rotateY(30deg);
+}
+
+.adn_items:nth-child(3) {
+  transform: rotateY(45deg);
+}
+
+.adn_items:nth-child(4) {
+  transform: rotateY(60deg);
+}
+
+.adn_items:nth-child(5) {
+  transform: rotateY(75deg);
+}
+
+.adn_items:nth-child(6) {
+  transform: rotateY(90deg);
+}
+
+.adn_items:nth-child(7) {
+  transform: rotateY(105deg);
+}
+
+.adn_items:nth-child(8) {
+  transform: rotateY(120deg);
+}
+
+.adn_items:nth-child(9) {
+  transform: rotateY(135deg);
+}
+
+.adn_items:nth-child(10) {
+  transform: rotateY(150deg);
+}
+
+.adn_items:nth-child(11) {
+  transform: rotateY(165deg);
+}
+
+.adn_items:nth-child(12) {
+  transform: rotateY(180deg);
+}
+
+.adn_items:nth-child(13) {
+  transform: rotateY(195deg);
+}
+
+.adn_items:nth-child(14) {
+  transform: rotateY(210deg);
+}
+
+.adn_items:nth-child(15) {
+  transform: rotateY(225deg);
+}
+
+.adn_items:nth-child(16) {
+  transform: rotateY(240deg);
+}
+
+.adn_items:nth-child(17) {
+  transform: rotateY(255deg);
+}
+
+.adn_items:nth-child(18) {
+  transform: rotateY(270deg);
+}
+
+.adn_items:nth-child(19) {
+  transform: rotateY(285deg);
+}
+
+.adn_items:nth-child(20) {
+  transform: rotateY(300deg);
+}
+
+.adn_items:nth-child(21) {
+  transform: rotateY(315deg);
+}
+
+.adn_items:nth-child(22) {
+  transform: rotateY(330deg);
+}
+
+.adn_items:nth-child(23) {
+  transform: rotateY(345deg);
+}
+
+@keyframes rotar {
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+@media screen and (max-width: 768px) {
+  .adn_container {
+    transform: rotate(180deg);
+    margin-top: 14em;
+    margin-bottom: 9em;
+  }
+
+  .adn_box {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 468px) {
+  .adn_box {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .adn_box {
+    width: 60%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -248,7 +417,7 @@ header nav {
   width: 100%;
 }
 header nav div ul {
-  width: 70%;
+  width: 90%;
   display: flex;
   justify-content: space-evenly;
   list-style: none;
@@ -298,6 +467,8 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
 .section_presentacion {
   width: 100%;
   display: flex;
+  margin-top: 0;
+  margin-bottom: 2em;
 }
 .section_presentacion .contenedor_presentacion {
   width: 100%;
@@ -306,6 +477,8 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   flex-direction: column;
   justify-content: space-between;
   padding: 2em;
+  margin-top: 3em;
+  margin-bottom: 3em;
 }
 .section_presentacion .contenedor_presentacion .contenedor_presentacion_h1 {
   display: flex;
@@ -314,6 +487,8 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   justify-content: flex-start;
   align-items: center;
   font-size: 20px;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 .section_presentacion .contenedor_presentacion .contenedor_presentacion_h1 .presentacion_h1 {
   color: #57A9DA;
@@ -340,6 +515,84 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   animation: pulsate 1s ease-in-out;
 }
 
+.section_nosotros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.section_nosotros hr {
+  color: #E0E0E0;
+  width: 60%;
+  transition: all 0.35 ease-in-out;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+.section_nosotros article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+}
+.section_nosotros article .contenedor_nosotros_quienesSomos, .section_nosotros article .contenedor_nosotros_Speach {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.section_nosotros article .contenedor_nosotros_quienesSomos h2, .section_nosotros article .contenedor_nosotros_Speach h2 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  width: 100%;
+  text-align: center;
+  color: #57A9DA;
+  font-family: "Fugaz One", cursive;
+}
+.section_nosotros article .contenedor_nosotros_quienesSomos p, .section_nosotros article .contenedor_nosotros_Speach p {
+  width: 100%;
+  text-align: left;
+  color: #E0E0E0;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.section_nosotros article .contenedor_nosotros_quienesSomos span, .section_nosotros article .contenedor_nosotros_Speach span {
+  color: #57A9DA;
+  font-family: "Fugaz One", cursive;
+}
+.section_nosotros .nosotros_valores_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+}
+.section_nosotros .nosotros_valores_container .valores_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+.section_nosotros .nosotros_valores_container .valores_container .valores_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+.section_nosotros .nosotros_valores_container .valores_container .valores_content p {
+  text-align: center;
+  color: #E0E0E0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .section_servicios {
   display: flex;
   justify-content: center;
@@ -360,7 +613,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   color: #57A9DA;
   width: 100%;
   text-align: center;
-  margin-top: 1em;
+  margin-top: 2em;
   margin-bottom: 1em;
 }
 .section_servicios .container_content_impulso {
@@ -424,53 +677,6 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   margin-bottom: 1em;
 }
 
-.section_nosotros {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  flex-direction: column;
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-.section_nosotros hr {
-  color: #E0E0E0;
-  width: 60%;
-  transition: all 0.35 ease-in-out;
-  margin-top: 3em;
-  margin-bottom: 3em;
-}
-.section_nosotros article {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 90%;
-}
-.section_nosotros article div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 60%;
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-.section_nosotros article div h3 {
-  width: 100%;
-  text-align: left;
-  color: #57A9DA;
-  font-family: "Fugaz One", cursive;
-}
-.section_nosotros article div p {
-  width: 100%;
-  text-align: right;
-  color: #E0E0E0;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
 .section_contacto {
   display: flex;
   justify-content: center;
@@ -505,7 +711,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   align-items: center;
   padding: 2em;
   border-radius: 20px;
-  box-shadow: rgba(98, 122, 231, 0.884) 3px 4px 17px;
+  box-shadow: rgb(87, 169, 218) 3px 4px 17px;
   -moz-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
   -webkit-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
   -o-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
@@ -758,8 +964,12 @@ footer .socialMedia_anchord i:hover, footer .socialMedia_anchord img:hover {
     text-align: center;
   }
 
-  .section_nosotros .container_nosotros p {
-    text-align: center;
+  .section_nosotros .nosotros_valores_container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .section_nosotros .nosotros_valores_container .valores_container {
+    flex-direction: column;
   }
 
   .section_contacto .contacto_redesUbicacion {

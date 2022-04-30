@@ -1,0 +1,79 @@
+@mixin tamaños($height:height,$widht:width){
+    height: $height;
+    width: $widht;
+}
+.adn_container{
+    //width: 90%;
+    width: 800px;
+    height: 100px;
+    perspective: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(90deg);
+    margin-top: 2em;
+    margin-bottom: 5em;
+}
+.adn_box{
+    width: 10%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotar 4s infinite linear;
+    margin-bottom: 20em;
+}
+.adn_items{
+    width: 100%;
+    height: none;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    transform-style: preserve-3d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.adn_botton{
+    width: 10px;
+    height: 10px;
+    border-radius: 70%;
+    background-color: $color_celeste_oscuro;
+    transform: rotateY(90deg) rotateX(-20deg) translateZ(5px);
+}
+.adn_botton:nth-child(3){
+    transform: rotateY(90deg) translateZ(3px);
+}
+.adn_line{
+    width: 100%;
+    height: none;
+    border: 1px solid $color_celeste_oscuro;
+}
+@for $var from 1 to 24{
+    .adn_items:nth-child(#{$var}){
+        transform: rotateY(15deg * $var);
+    }
+}
+
+@keyframes rotar{
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+@media screen and (max-width: 768px) {
+    .adn_container{
+        transform: rotate(180deg);
+        margin-top: 14em;
+        margin-bottom: 9em;
+    }
+    .adn_box{
+        width: 25%;
+    }
+}
+@media screen and (max-width: 468px) {
+    .adn_box{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 320px) {
+    .adn_box{
+        width: 60%;
+    }
+}
