@@ -1,5 +1,5 @@
 //Imports
-@import "variables", "chevron", "cards", "carouselSwipper", "adn";
+@import "variables", "chevron", "cards", "carouselSwipper", "adn", "borderEfect";
 *{
     margin: 0;
     padding: 0;
@@ -175,6 +175,26 @@ header{
             }
         }
     }
+    .nosotros_valores_title_container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @include margin__Espaciado(1em,1em);
+        h3{
+            text-align: center;
+            color: $color_naranja_cohete;
+            font-family: $letra__principal;
+        }
+        .nosotros_valores_paragraph{
+            width: 60%;
+            text-align: left;
+            color: $color_gris_claro;
+            font-family: $letra__secundaria; 
+            @include margin__Espaciado(1em,1em); 
+        }
+    }
     .nosotros_valores_container{
         display: flex;
         justify-content: center;
@@ -184,7 +204,7 @@ header{
         .valores_container{
             width: 100%;
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-around;
             align-items: center;
             flex-direction: row;
             .valores_content{
@@ -192,14 +212,20 @@ header{
                 justify-content: center;
                 align-items: center;
                 padding: 1em;
+                overflow: hidden;
+                //width: 100px;
+                //height: 50px;
+                position: relative;
                 p{
                     text-align: center;
                     color: $color_gris_claro;
                     font-family: $letra__secundaria;
+                    @include margin__Espaciado(1em,1em)
                 }
             }
         }
     }
+
 }
 .section_servicios{
     @include secciones;
@@ -554,12 +580,26 @@ footer{
         }
     }
     .section_nosotros{
+        article{
+            .contenedor_nosotros_quienesSomos,.contenedor_nosotros_Speach{
+                width: 90%;
+            }
+        }
+        .nosotros_valores_title_container{
+            .nosotros_valores_paragraph{
+                width: 90%;
+            }
+        }
         //adn valores
         .nosotros_valores_container{
             flex-direction: row;
             flex-wrap: nowrap;
             .valores_container{
                 flex-direction: column;
+                .valores_content{
+                    @include margin__Espaciado(1em,1em);
+                    min-width: 130px;
+                }
             }
         }
     }
