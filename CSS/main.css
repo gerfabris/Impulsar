@@ -528,6 +528,11 @@
   text-align: center;
 }
 
+@keyframes girar {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -867,7 +872,8 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  width: 65%;
 }
 .section_servicios .servicio_principal_container .containerStar .servicioPrincipal_title {
   color: #F76304;
@@ -877,6 +883,9 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
 .section_servicios .servicio_principal_container .containerStar .servicioPrincipal_star {
   width: 50px;
   height: 50px;
+  animation: girar 5s infinite linear;
+  transform-style: preserve-3d;
+  perspective: 1000px;
 }
 .section_servicios .servicio_principal_container .caminoDigital_Title {
   color: #57A9DA;
@@ -892,14 +901,17 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   color: #E0E0E0;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 .section_servicios .servicio_principal_container .impulsos_container {
-  width: 100%;
+  width: 80%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 .section_servicios .servicio_principal_container .impulsos_container .impulsos_content {
   display: flex;
@@ -908,10 +920,19 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   padding: 1em;
   overflow: hidden;
   position: relative;
+  min-width: 300px;
 }
 .section_servicios .servicio_principal_container .impulsos_container .impulsos_content p {
-  text-align: center;
+  text-align: left;
   color: #E0E0E0;
+  font-family: "Fugaz One", cursive;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.section_servicios .servicio_principal_container .caminoDigital_pie {
+  width: 60%;
+  color: #F76304;
+  text-align: left;
   font-family: "Fugaz One", cursive;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -969,7 +990,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   width: 100%;
 }
 .section_servicios .container_content_impulso .container_impulso_speach .impulso_paragraph {
-  text-align: end;
+  text-align: left;
   color: #E0E0E0;
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
@@ -979,10 +1000,31 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
 .section_servicios .carousel_title {
   color: #F76304;
   font-family: "Fugaz One", cursive;
-  width: 100%;
-  text-align: center;
+  width: 60%;
+  text-align: left;
   margin-top: 2em;
   margin-bottom: 2em;
+}
+.section_servicios .asesorate {
+  display: flex;
+  width: 80%;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.section_servicios .asesorate .asesorate_btn {
+  color: #E0E0E0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 15px 20px;
+  border: 3px solid #E0E0E0;
+  border-radius: 10px;
+}
+.section_servicios .asesorate .asesorate_btn:hover {
+  color: #F76304;
+  animation: pulsate 1s ease-in-out;
 }
 
 .section_contacto {
@@ -1008,6 +1050,43 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   width: 100%;
   margin-top: 2em;
   margin-bottom: 1em;
+}
+.section_contacto .contacto_redes_container {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  max-width: 1000px;
+  justify-content: center;
+  align-items: flex-start;
+}
+.section_contacto .contacto_redes_container .contacto_redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+}
+.section_contacto .contacto_redes_container .contacto_redes .contacto_redes_anchord {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 1em;
+  text-align: center;
+  text-decoration: none;
+  color: #E0E0E0;
+}
+.section_contacto .contacto_redes_container .contacto_redes .contacto_redes_anchord:hover {
+  color: #F76304;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(236, 129, 29, 0.89);
+  transition: all 0.4s ease-in-out;
+  transform: scale(1.2);
 }
 .section_contacto form {
   width: 80%;
@@ -1173,6 +1252,29 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   width: 80%;
   margin-top: 1em;
   margin-bottom: 1em;
+}
+.section_contacto .contacto_calendly {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  flex-direction: column;
+}
+.section_contacto .contacto_calendly .contacto_calendly_title {
+  color: #F76304;
+  width: 60%;
+  text-align: left;
+  font-family: "Fugaz One", cursive;
+}
+.section_contacto .contacto_calendly .calendly {
+  width: 60%;
+  height: 50%;
+  max-height: 400px;
+  background-color: #535558;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .whatsapp {
@@ -1392,11 +1494,20 @@ header .center div {
     width: 90%;
   }
   .section_servicios .servicio_principal_container .impulsos_container {
-    flex-wrap: wrap;
+    width: 90%;
   }
   .section_servicios .servicio_principal_container .impulsos_container .impulsos_content {
-    min-width: 30%;
+    min-width: 280px;
     margin: 1em;
+  }
+  .section_servicios .servicio_principal_container .containerStar {
+    width: 90%;
+  }
+  .section_servicios .caminoDigital_pie {
+    width: 90%;
+  }
+  .section_servicios .carousel_title {
+    width: 80%;
   }
 
   .section_nosotros article .contenedor_nosotros_quienesSomos, .section_nosotros article .contenedor_nosotros_Speach {
@@ -1437,6 +1548,9 @@ header .center div {
   .section_contacto .contacto_redesUbicacion .container_ubicacion {
     width: 100%;
   }
+  .section_contacto .contacto_calendly .contacto_calendly_title {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 468px) {
   .section_nosotros .beneficios_container {
@@ -1455,6 +1569,10 @@ header .center div {
   }
   .section_servicios .servicio_principal_container .impulsos_container .impulsos_content {
     min-width: 80%;
+  }
+
+  .section_contacto .contacto_redes_container .contacto_redes {
+    width: 80%;
   }
 }
 @media screen and (max-width: 320px) {

@@ -1,5 +1,5 @@
 //Imports
-@import "variables", "chevron", "cards", "carouselSwipper", "adn", "borderEfect", "circle";
+@import "variables", "chevron", "cards", "carouselSwipper", "adn", "borderEfect", "circle", "rotate";
 *{
     margin: 0;
     padding: 0;
@@ -315,7 +315,8 @@ header{
             display: flex;
             flex-direction: row;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
+            width: 65%;
             .servicioPrincipal_title{
                 color: $color_naranja_cohete;
                 text-align: center;
@@ -324,6 +325,9 @@ header{
             .servicioPrincipal_star{
                 width: 50px;
                 height: 50px;
+                animation: girar 5s infinite linear;
+                transform-style: preserve-3d;
+                perspective: 1000px;
             }
         }
         .caminoDigital_Title{
@@ -338,14 +342,16 @@ header{
             width: 60%;
             color: $color_gris_claro;
             font-family: $letra__secundaria;
-            @include margin__Espaciado(1em,1em)
+            @include margin__Espaciado(1em,2em)
         }
         .impulsos_container{
-            width: 100%;
+            width: 80%;
             display: flex;
             justify-content: space-around;
             align-items: center;
             flex-direction: row;
+            flex-wrap: wrap;
+            @include margin__Espaciado(1em,1em);
             .impulsos_content{
                 display: flex;
                 justify-content: center;
@@ -355,13 +361,21 @@ header{
                 //width: 100px;
                 //height: 50px;
                 position: relative;
+                min-width: 300px;
                 p{
-                    text-align: center;
+                    text-align: left;
                     color: $color_gris_claro;
                     font-family: $letra__principal;
                     @include margin__Espaciado(1em,1em)
                 }
             }
+        }
+        .caminoDigital_pie{
+            width: 60%;
+            color: $color_naranja_cohete;
+            text-align: left;
+            font-family: $letra__principal;
+            @include margin__Espaciado(1em,1em)
         }
     }
     .container_content_impulso{
@@ -411,7 +425,7 @@ header{
                 width: 100%;
             }
             .impulso_paragraph{
-                text-align: end;
+                text-align: left;
                 color: $color_gris_claro;
                 font-family: $letra__secundaria;
                 width: 100%;
@@ -422,9 +436,30 @@ header{
     .carousel_title{
         color: $color_naranja_cohete;
         font-family: $letra__principal;
-        width: 100%;
-        text-align: center;
+        width: 60%;
+        text-align: left;
         @include margin__Espaciado(2em,2em);
+    }
+    .asesorate{
+        display: flex;
+        width: 80%;
+        justify-content: flex-end;
+        align-items: center;
+        @include margin__Espaciado(1em,1em);
+        .asesorate_btn{
+            color: $color_gris_claro;
+            font-family: $letra__secundaria;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 15px 20px;
+            border: 3px solid $color_gris_claro;
+            border-radius: 10px;
+            &:hover{
+                color: $color_naranja_cohete;
+                animation: pulsate 1s ease-in-out;
+            };
+        }
+
     }
 }
 .section_contacto{
@@ -442,6 +477,42 @@ header{
         text-align: center;
         width: 100%;
         @include margin__Espaciado(2em,1em);
+    }
+    .contacto_redes_container{
+        @include margin__Espaciado(1em,1em);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 80%;
+        max-width: 1000px;
+        justify-content: center;
+        align-items: flex-start;
+        .contacto_redes{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 50%;
+            .contacto_redes_anchord{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 30px;
+                width: 40px;
+                height: 40px;
+                margin-bottom: 1em;
+                text-align: center;
+                text-decoration: none;
+                color: $color_gris_claro;
+                &:hover{
+                    color: $color_naranja_cohete;
+                    border-radius: 50%;
+                    box-shadow: 2px 2px 5px rgba(236, 129, 29, 0.89);
+                    transition: all .4s ease-in-out;
+                    transform: scale(1.2);
+                };
+            }
+        }
     }
     form{
         width: 80%;
@@ -602,6 +673,28 @@ header{
                 width: 80%;
                 @include margin__Espaciado(1em,1em);
             }
+        }
+    }
+    .contacto_calendly{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        @include margin__Espaciado(1em,1em);
+        flex-direction: column;
+        .contacto_calendly_title{
+            color: $color_naranja_cohete;
+            width: 60%;
+            text-align: left;
+            font-family: $letra__principal;
+        }
+        .calendly{
+            width: 60%;
+            height: 50%;
+            max-height: 400px;
+            background-color: $color_gris;
+            @include margin__Espaciado(2em,2em);
+            //overflow: auto;
         }
     }
 }
@@ -838,12 +931,21 @@ footer{
                 width: 90%;
             }
             .impulsos_container{
-                flex-wrap: wrap;
+                width: 90%;
                 .impulsos_content{
-                    min-width: 30%;
+                    min-width: 280px;
                     margin: 1em;
                 }
             }
+            .containerStar{
+                width: 90%;
+            }
+        }
+        .caminoDigital_pie{
+            width: 90%;
+        }
+        .carousel_title {
+            width: 80%;
         }
     }
     .section_nosotros{
@@ -892,6 +994,11 @@ footer{
                 width: 100%;
             }          
         }
+        .contacto_calendly{
+            .contacto_calendly_title{
+                width: 90%;
+            }
+        }
     }
 }
 @media screen and (max-width: 468px) {
@@ -915,6 +1022,13 @@ footer{
                     min-width: 80%;
                 }
             }   
+        }
+    }
+    .section_contacto{
+        .contacto_redes_container{
+            .contacto_redes{
+                width: 80%;
+            }
         }
     }
 }
