@@ -149,6 +149,7 @@
   color: #E0E0E0;
   width: 100%;
   text-align: center;
+  margin-top: 1em;
 }
 .card_content .contenedor_btn_card {
   width: 100%;
@@ -720,6 +721,9 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   color: #57A9DA;
   font-family: "Fugaz One", cursive;
 }
+.section_nosotros article .contenedor_nosotros_Speach {
+  margin-top: 0;
+}
 .section_nosotros .nosotros_valores_title_container {
   width: 100%;
   display: flex;
@@ -822,6 +826,8 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 .section_nosotros .beneficios_container .beneficio_content {
   display: flex;
@@ -1145,6 +1151,8 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   color: #F76304;
   font-family: "Fugaz One", cursive;
   width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 .section_contacto .formulario_contenedor_textarea .contenedor_inputs {
   display: flex;
@@ -1267,6 +1275,8 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   width: 60%;
   text-align: left;
   font-family: "Fugaz One", cursive;
+  margin-top: 2em;
+  margin-bottom: 1em;
 }
 .section_contacto .contacto_calendly .calendly {
   width: 60%;
@@ -1322,7 +1332,9 @@ footer p:hover {
   color: #57A9DA;
 }
 footer .footer__logo {
-  width: calc(5em + 5vw);
+  width: calc(8em + 8vw);
+  margin-top: 1em;
+  margin-bottom: 2em;
 }
 footer .footer__redes {
   display: flex;
@@ -1586,11 +1598,14 @@ header .center div {
 }
 @media screen and (min-width: 768px) {
   /*Footer Media +768*/
-  .footer__logo {
-    width: calc(7em + 7vw);
+  footer {
+    /*CIerra Footer Media +768*/
   }
-
-  /*CIerra Footer Media +768*/
+  footer .footer__logo {
+    width: calc(6em + 6vw);
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

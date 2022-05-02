@@ -174,6 +174,9 @@ header{
                 font-family: $letra__principal;
             }
         }
+        .contenedor_nosotros_Speach{
+            margin-top: 0;
+        }
     }
     .nosotros_valores_title_container{
         width: 100%;
@@ -273,6 +276,7 @@ header{
         justify-content: space-around;
         align-items: center;
         flex-direction: row;
+        @include margin__Espaciado(1em,1em);
         .beneficio_content{
             display: flex;
             justify-content: center;
@@ -571,6 +575,7 @@ header{
             color: $color_naranja_cohete;
             font-family: $letra__principal;
             width: 100%;
+            @include margin__Espaciado(1em,1em);
         }
         .contenedor_inputs{
             display: flex;
@@ -687,6 +692,7 @@ header{
             width: 60%;
             text-align: left;
             font-family: $letra__principal;
+            @include margin__Espaciado(2em,1em);
         }
         .calendly{
             width: 60%;
@@ -742,7 +748,8 @@ footer{
         color: $color_celeste_oscuro;
     }
     .footer__logo{
-        width: calc(5em + 5vw);
+        width: calc(8em + 8vw);
+        @include margin__Espaciado(1em,2em);
     }
     .footer__redes{
         display: flex;
@@ -1045,10 +1052,14 @@ footer{
 }
 @media screen and (min-width: 768px){
     /*Footer Media +768*/ 
-    .footer__logo{
-        width: calc(7em + 7vw);
+    footer{
+        .footer__logo{
+            width: calc(6em + 6vw);
+            @include margin__Espaciado(0,0);
+        }
+        /*CIerra Footer Media +768*/
     }
-    /*CIerra Footer Media +768*/
+
 }
 @media screen and (min-width: 1200px){
 
