@@ -1381,6 +1381,9 @@ footer .socialMedia_anchord i:hover, footer .socialMedia_anchord img:hover {
   -o-transform: scale(1.2);
   -moz-transform: scale(1.2);
 }
+footer .footer__copyright {
+  width: 70%;
+}
 
 @media screen and (max-width: 1100px) {
   header .contenedor_logo_header {
