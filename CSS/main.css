@@ -101,17 +101,26 @@
   outline: 1px solid #E0E0E0;
   outline-offset: -8px;
   box-shadow: rgba(87, 169, 218, 0.884) 3px 4px 17px;
+  /*     -moz-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
+      -webkit-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
+      -o-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1); */
+  transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
   -moz-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
   -webkit-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
   -o-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
 .card:hover .card_content {
   opacity: 1;
   transform: translateY(0rem);
+  -webkit-transform: translateY(0rem);
+  -o-transform: translateY(0rem);
+  -moz-transform: translateY(0rem);
 }
 .card:hover .dp {
   transform: translateY(15rem);
+  -webkit-transform: translateY(15rem);
+  -o-transform: translateY(15rem);
+  -moz-transform: translateY(15rem);
 }
 
 .dp {
@@ -122,6 +131,9 @@
   height: 100%;
   position: absolute;
   transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
   padding: 1em;
 }
 .dp .card_title {
@@ -143,6 +155,12 @@
   padding: 1em;
   transform: translateY(-15rem);
   transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -webkit-transform: translateY(-15rem);
+  -o-transform: translateY(-15rem);
+  -moz-transform: translateY(-15rem);
 }
 .card_content .card_paragraph {
   font-family: Arial, Helvetica, sans-serif;
@@ -452,83 +470,6 @@
     transform: translateY(-100%);
   }
 }
-.nosotros_mision_content_container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-}
-.nosotros_mision_content_container:hover .circle_content {
-  opacity: 1;
-  transform: translateY(0%);
-}
-.nosotros_mision_content_container:hover .circle_container_dp {
-  transform: translateY(100%);
-}
-
-.circle_container_dp {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transition: all 1s ease-in-out;
-  padding: 1em;
-}
-
-.circle_content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  padding: 1em;
-  transform: translateY(-100%);
-  transition: all 1s ease-in-out;
-}
-.circle_content .circleRocket {
-  width: 80px;
-  height: 80px;
-}
-.circle_content .circle__content_paragraph {
-  font-family: "Fugaz One", cursive;
-  color: #E0E0E0;
-  width: 70%;
-  text-align: left;
-}
-
-.circle {
-  width: 15rem;
-  height: 10rem;
-  padding: 1em;
-  display: flex;
-  background: none;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  border-radius: 50%;
-  outline: 1px solid #E0E0E0;
-  outline-offset: -8px;
-  box-shadow: rgba(87, 169, 218, 0.884) 3px 4px 17px;
-  -moz-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
-  -webkit-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
-  -o-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
-}
-.circle .circle_title {
-  font-family: "Fugaz One", cursive;
-  color: #E0E0E0;
-  width: 100%;
-  text-align: center;
-}
-
 @keyframes girar {
   100% {
     transform: rotateZ(360deg);
@@ -571,9 +512,9 @@ header nav {
   width: 100%;
 }
 header nav div ul {
-  width: 90%;
+  width: 95%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   list-style: none;
 }
 header nav div ul li {
@@ -588,8 +529,50 @@ header nav div ul li a {
 header nav div ul li:hover {
   color: #57A9DA;
 }
+header nav div ul .socialMedia {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 10rem;
+  height: 100%;
+}
+header nav div ul .socialMedia_anchord {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  text-decoration: none;
+}
+header nav div ul .socialMedia_anchord i, header nav div ul .socialMedia_anchord img {
+  background: none;
+  color: #E0E0E0;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 32px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+header nav div ul .socialMedia_anchord i:hover, header nav div ul .socialMedia_anchord img:hover {
+  color: #57A9DA;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+}
 header .contenedor_logo_header {
-  width: 40%;
+  width: 35%;
   display: flex;
   justify-content: flex-start;
   margin-left: 2em;
@@ -605,7 +588,7 @@ header .logo_header {
   width: calc(5em + 5vw);
 }
 header .contenedor_header_secciones {
-  width: 60%;
+  width: 90%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -648,14 +631,15 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   color: #57A9DA;
   width: 80%;
 }
-.section_presentacion .contenedor_btn_learnMore {
+
+.contenedor_btn_pulse {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
 }
-.section_presentacion .contenedor_btn_learnMore .btn_learnMore {
+.contenedor_btn_pulse .btn_pulse {
   color: #E0E0E0;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -664,7 +648,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   border: 3px solid #E0E0E0;
   border-radius: 10px;
 }
-.section_presentacion .contenedor_btn_learnMore .btn_learnMore:hover {
+.contenedor_btn_pulse .btn_pulse:hover {
   color: #F76304;
   animation: pulsate 1s ease-in-out;
 }
@@ -687,16 +671,16 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
 }
 .section_nosotros article {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 90%;
 }
 .section_nosotros article .contenedor_nosotros_quienesSomos, .section_nosotros article .contenedor_nosotros_Speach {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 60%;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -728,8 +712,8 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   margin-top: 1em;
   margin-bottom: 1em;
 }
@@ -739,18 +723,19 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   font-family: "Fugaz One", cursive;
 }
 .section_nosotros .nosotros_valores_title_container .nosotros_valores_paragraph {
-  width: 60%;
+  width: 100%;
   text-align: left;
   color: #E0E0E0;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 1em;
   margin-bottom: 1em;
+  width: 60%;
 }
 .section_nosotros .nosotros_valores_container {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 90%;
 }
 .section_nosotros .nosotros_valores_container .valores_container {
@@ -793,12 +778,13 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   font-family: "Fugaz One", cursive;
 }
 .section_nosotros .nosotros_mision_container .nosotros_mision_paragraph {
-  width: 60%;
+  width: 100%;
   text-align: left;
   color: #E0E0E0;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 1em;
   margin-bottom: 1em;
+  width: 60%;
 }
 .section_nosotros .nosotros_mision_container .nosotros_mision_hashtag_container {
   width: 100%;
@@ -862,17 +848,18 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   margin-bottom: 3em;
 }
 .section_servicios h2 {
-  color: #57A9DA;
-  width: 100%;
-  text-align: center;
   margin-top: 2em;
   margin-bottom: 1em;
+  width: 100%;
+  text-align: center;
+  color: #57A9DA;
+  font-family: "Fugaz One", cursive;
 }
 .section_servicios .servicio_principal_container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
 }
 .section_servicios .servicio_principal_container .containerStar {
   display: flex;
@@ -968,26 +955,30 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
 .section_servicios .container_content_impulso .contenedor_impulso_img .img_impulso {
   width: 100%;
   height: 100%;
+  /*                 -moz-transition: all 500ms ease;
+                  -webkit-transition: all 500ms ease;
+                  -o-transition: all 500ms ease; */
+  transition: all 500ms ease;
   -moz-transition: all 500ms ease;
   -webkit-transition: all 500ms ease;
   -o-transition: all 500ms ease;
-  transition: all 500ms ease;
 }
 .section_servicios .container_content_impulso .contenedor_impulso_img .img_impulso:hover {
+  /*                     -webkit-transform: scale(1.2);
+                      -o-transform: scale(1.2);
+                      -moz-transform: scale(1.2); */
+  transform: scale(1.2);
   -webkit-transform: scale(1.2);
   -o-transform: scale(1.2);
   -moz-transform: scale(1.2);
-  transform: scale(1.2);
 }
 .section_servicios .container_content_impulso .container_impulso_speach {
   width: 70%;
   height: 100%;
-  justify-content: center;
-  align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 .section_servicios .container_content_impulso .container_impulso_speach .impulso_title {
   text-align: left;
@@ -996,10 +987,10 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   width: 100%;
 }
 .section_servicios .container_content_impulso .container_impulso_speach .impulso_paragraph {
+  width: 100%;
   text-align: left;
   color: #E0E0E0;
   font-family: Arial, Helvetica, sans-serif;
-  width: 100%;
   margin-top: 1em;
   margin-bottom: 1em;
 }
@@ -1050,12 +1041,12 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   margin-bottom: 3em;
 }
 .section_contacto h2 {
-  font-family: "Fugaz One", cursive;
-  color: #57A9DA;
-  text-align: center;
-  width: 100%;
   margin-top: 2em;
   margin-bottom: 1em;
+  width: 100%;
+  text-align: center;
+  color: #57A9DA;
+  font-family: "Fugaz One", cursive;
 }
 .section_contacto .contacto_redes_container {
   margin-top: 1em;
@@ -1093,6 +1084,9 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   box-shadow: 2px 2px 5px rgba(236, 129, 29, 0.89);
   transition: all 0.4s ease-in-out;
   transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -moz-transform: scale(1.2);
 }
 .section_contacto form {
   width: 80%;
@@ -1105,10 +1099,13 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   padding: 2em;
   border-radius: 20px;
   box-shadow: rgb(87, 169, 218) 3px 4px 17px;
+  /*         -moz-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
+          -webkit-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
+          -o-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1); */
+  transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
   -moz-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
   -webkit-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
   -o-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
   margin-top: 1em;
   margin-bottom: 1em;
 }
@@ -1235,6 +1232,9 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   border-radius: 50%;
   box-shadow: 2px 2px 5px rgba(236, 129, 29, 0.89);
   transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
   transform: scale(1.2);
 }
 .section_contacto .contacto_redesUbicacion .container_ubicacion {
@@ -1301,6 +1301,9 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   text-align: center;
   z-index: 100;
   transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -webkit-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
 }
 .whatsapp:hover {
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
@@ -1368,12 +1371,22 @@ footer .socialMedia_anchord i, footer .socialMedia_anchord img {
   justify-content: center;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
 }
 footer .socialMedia_anchord i:hover, footer .socialMedia_anchord img:hover {
   transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -moz-transform: scale(1.2);
 }
 
 @media screen and (max-width: 1100px) {
+  header .contenedor_logo_header {
+    width: 30%;
+  }
+
   .section_nosotros .beneficios_container {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1384,6 +1397,13 @@ footer .socialMedia_anchord i:hover, footer .socialMedia_anchord img:hover {
   }
 }
 @media screen and (max-width: 998px) {
+  header .contenedor_logo_header {
+    width: 20%;
+  }
+  header .contenedor_header_secciones {
+    width: 80%;
+  }
+
   .section_nosotros .contenedor_nosotros_quienesSomos {
     width: 80%;
   }
@@ -1431,6 +1451,9 @@ footer .socialMedia_anchord i:hover, footer .socialMedia_anchord img:hover {
     top: 50%;
     right: 10%;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
     position: relative;
     width: 40px;
   }
@@ -1444,15 +1467,27 @@ header .center div {
     border-radius: 3px;
     margin: 7px 0;
     transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
   }
   header .center:hover:before {
     transform: translateY(12px) rotate(135deg);
+    -webkit-transform: translateY(12px) rotate(135deg);
+    -o-transform: translateY(12px) rotate(135deg);
+    -moz-transform: translateY(12px) rotate(135deg);
   }
   header .center:hover:after {
     transform: translateY(-12px) rotate(-135deg);
+    -webkit-transform: translateY(-12px) rotate(-135deg);
+    -o-transform: translateY(-12px) rotate(-135deg);
+    -moz-transform: translateY(-12px) rotate(-135deg);
   }
   header .center:hover div {
     transform: scale(0);
+    -webkit-transform: scale(0);
+    -o-transform: scale(0);
+    -moz-transform: scale(0);
   }
   header .contenedor_header_secciones {
     width: 100%;
@@ -1483,6 +1518,10 @@ header .center div {
   }
   header #toggler:checked ~ .contenedor_header_secciones {
     max-height: 100%;
+  }
+  header .socialMedia {
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
 }
 @media screen and (max-width: 920px) {

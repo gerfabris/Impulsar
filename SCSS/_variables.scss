@@ -71,6 +71,36 @@ $logo-width:calc(5em + 5vw);
     -o-animation-delay: 1.4s;
     -moz-animation-delay: 1.4s;
 }
+@mixin hr{
+    color: $color_gris_claro;
+    width: 60%;
+    transition: all .35 ease-in-out;
+    @include margin__Espaciado(3em,3em);
+}
+@mixin h2{
+    @include margin__Espaciado(2em,1em);
+    width: 100%;
+    text-align: center;
+    color: $color_celeste_oscuro;
+    font-family: $letra__principal;
+}
+@mixin p{
+    width: 100%;
+    text-align: left;
+    color: $color_gris_claro;
+    font-family: $letra__secundaria; 
+    @include margin__Espaciado(1em,1em);
+}
+@mixin compatibilidad_transition($config){
+    -moz-transition: $config;
+    -webkit-transition: $config;
+    -o-transition: $config;
+}
+@mixin compatibilidad_transform($config){
+    -webkit-transform: $config;
+    -o-transform: $config;
+    -moz-transform: $config;
+}
 //animaciones
 @keyframes scroll{
     0%, 20% {

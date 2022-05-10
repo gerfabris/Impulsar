@@ -1,5 +1,5 @@
 //Imports
-@import "variables", "chevron", "cards", "carouselSwipper", "adn", "borderEfect", "circle", "rotate";
+@import "variables", "chevron", "cards", "carouselSwipper", "adn", "borderEfect", "rotate";
 *{
     margin: 0;
     padding: 0;
@@ -38,9 +38,9 @@ header{
         width: 100%;
         div{
             ul{
-                width: 90%;
+                width: 95%;
                 display: flex;
-                justify-content: space-evenly;
+                justify-content: space-around;
                 list-style: none;
                 li{
                     display: flex;
@@ -54,12 +54,50 @@ header{
                 li:hover{
                     color: $color_celeste_oscuro;
                 }
+                .socialMedia{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    width: 10rem;
+                    height: 100%;
+                }
+                .socialMedia_anchord{
+                    width: 100%;
+                    height: 20%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 20px;
+                    text-decoration: none;
+                    i,img{
+                        background: none;
+                        color: $color_gris_claro;
+                        border-radius: 50%;
+                        width: 30px;
+                        height: 30px;
+                        text-align: center;
+                        line-height: 32px;
+                        align-items: center;
+                        display: flex;
+                        justify-content: center;
+                        box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+                        transition: all .4s ease-in-out;
+                        @include compatibilidad_transition(all .4s ease-in-out);
+                    }
+                    i:hover,img:hover {
+                        color: $color_celeste_oscuro;
+                        transform: scale(1.2);
+                        @include compatibilidad_transform(scale(1.2));
+                    }
+                }
             }
         }
     }
     //logo header
     .contenedor_logo_header{
-        width: 40%;
+        width: 35%;
         display: flex;
         justify-content: flex-start;
         margin-left: 2em;
@@ -73,7 +111,7 @@ header{
     }
     //secciones header
     .contenedor_header_secciones{
-        width: 60%;
+        width: 90%;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -111,63 +149,46 @@ header{
             }
         }
     }
-    .contenedor_btn_learnMore{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: flex-end;
-        justify-content: flex-end;
-        .btn_learnMore{
-            color: $color_gris_claro;
-            font-family: $letra__secundaria;
-            font-weight: bold;
-            text-decoration: none;
-            padding: 15px 20px;
-            border: 3px solid $color_gris_claro;
-            border-radius: 10px;
-            &:hover{
-                color: $color_naranja_cohete;
-                animation: pulsate 1s ease-in-out;
-            };
-        }
-    
-    }
+
+}
+.contenedor_btn_pulse{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    .btn_pulse{
+        color: $color_gris_claro;
+        font-family: $letra__secundaria;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 15px 20px;
+        border: 3px solid $color_gris_claro;
+        border-radius: 10px;
+        &:hover{
+            color: $color_naranja_cohete;
+            animation: pulsate 1s ease-in-out;
+        };
+    }    
 }
 .section_nosotros{
     @include secciones;
     @include margin__Espaciado(2em,2em);
     hr{
-        color: $color_gris_claro;
-        width: 60%;
-        transition: all .35 ease-in-out;
-        @include margin__Espaciado(3em,3em);
+        @include hr;
     }
     article{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        @include flex__ColumnCenterAll;
         width: 90%;
         .contenedor_nosotros_quienesSomos,.contenedor_nosotros_Speach{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+            @include flex__ColumnCenterAll;
             width: 60%;
             @include margin__Espaciado(1em,1em);
             h2{
-                @include margin__Espaciado(2em,1em);
-                width: 100%;
-                text-align: center;
-                color: $color_celeste_oscuro;
-                font-family: $letra__principal;
+                @include h2;
             }
             p{
-                width: 100%;
-                text-align: left;
-                color: $color_gris_claro;
-                font-family: $letra__secundaria; 
-                @include margin__Espaciado(1em,1em);
+                @include p;
             }
             span{
                 color: $color_celeste_oscuro;
@@ -180,10 +201,7 @@ header{
     }
     .nosotros_valores_title_container{
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex__ColumnCenterAll;
         @include margin__Espaciado(1em,1em);
         h3{
             text-align: center;
@@ -191,18 +209,12 @@ header{
             font-family: $letra__principal;
         }
         .nosotros_valores_paragraph{
+            @include p;
             width: 60%;
-            text-align: left;
-            color: $color_gris_claro;
-            font-family: $letra__secundaria; 
-            @include margin__Espaciado(1em,1em); 
         }
     }
     .nosotros_valores_container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        @include flex__ColumnCenterAll;
         width: 90%;
         .valores_container{
             width: 100%;
@@ -243,11 +255,8 @@ header{
             font-family: $letra__principal;
         }
         .nosotros_mision_paragraph{
+            @include p;
             width: 60%;
-            text-align: left;
-            color: $color_gris_claro;
-            font-family: $letra__secundaria; 
-            @include margin__Espaciado(1em,1em);
         }
         .nosotros_mision_hashtag_container{
             width: 100%;
@@ -299,22 +308,13 @@ header{
     @include secciones;
     @include margin__Espaciado(4em,2em);
     hr{
-        color: $color_gris_claro;
-        width: 60%;
-        transition: all .35 ease-in-out;
-        @include margin__Espaciado(3em,3em);
+        @include hr;
     }
     h2{
-        color: $color_celeste_oscuro;
-        width: 100%;
-        text-align: center;
-        @include margin__Espaciado(2em,1em);
+        @include h2;
     }
     .servicio_principal_container{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+        @include flex__ColumnCenterAll;
         .containerStar{
             display: flex;
             flex-direction: row;
@@ -401,27 +401,24 @@ header{
             .img_impulso{
                 width: 100%;
                 height: 100%;
-                -moz-transition: all 500ms ease;
+/*                 -moz-transition: all 500ms ease;
                 -webkit-transition: all 500ms ease;
-                -o-transition: all 500ms ease;
+                -o-transition: all 500ms ease; */
                 transition: all 500ms ease;
+                @include compatibilidad_transition(all 500ms ease);
                 &:hover{
-                    -webkit-transform: scale(1.2);
+/*                     -webkit-transform: scale(1.2);
                     -o-transform: scale(1.2);
-                    -moz-transform: scale(1.2);
+                    -moz-transform: scale(1.2); */
                     transform: scale(1.2);
+                    @include compatibilidad_transform(scale(1.2));
                 }
             } 
         }   
         .container_impulso_speach{
             width: 70%;
             height: 100%;
-            justify-content: center;
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include flex__ColumnCenterAll;
             .impulso_title{
                 text-align: left;
                 font-family: $letra__principal;
@@ -429,11 +426,7 @@ header{
                 width: 100%;
             }
             .impulso_paragraph{
-                text-align: left;
-                color: $color_gris_claro;
-                font-family: $letra__secundaria;
-                width: 100%;
-                @include margin__Espaciado(1em,1em);
+                @include p;
             }
         }
     }
@@ -470,17 +463,10 @@ header{
     @include secciones;
     @include margin__Espaciado(2em,2em);
     hr{
-        color: $color_gris_claro;
-        width: 60%;
-        transition: all .35 ease-in-out;
-        @include margin__Espaciado(3em,3em);
+        @include hr;
     }
     h2{
-        font-family: $letra__principal;
-        color: $color_celeste_oscuro;
-        text-align: center;
-        width: 100%;
-        @include margin__Espaciado(2em,1em);
+        @include h2;
     }
     .contacto_redes_container{
         @include margin__Espaciado(1em,1em);
@@ -514,6 +500,7 @@ header{
                     box-shadow: 2px 2px 5px rgba(236, 129, 29, 0.89);
                     transition: all .4s ease-in-out;
                     transform: scale(1.2);
+                    @include compatibilidad_transform(scale(1.2));
                 };
             }
         }
@@ -531,10 +518,11 @@ header{
         box-shadow: rgba(87, 169, 218) 3px 4px 17px;
         //box-shadow: rgba(98, 122, 231, 0.884) 3px 4px 17px;
         //box-shadow: rgba(240, 140, 47, 0.884) 3px 4px 17px;
-        -moz-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
+/*         -moz-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
         -webkit-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
-        -o-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
+        -o-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1); */
         transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
+        @include compatibilidad_transition(2.5s cubic-bezier(0.4, 0.2, 0.2, 1));
         @include margin__Espaciado(1em,1em);
     }
     .formulario_contenedor_datos{
@@ -653,6 +641,7 @@ header{
                         border-radius: 50%;
                         box-shadow: 2px 2px 5px rgba(236, 129, 29, 0.89);
                         transition: all .4s ease-in-out;
+                        @include compatibilidad_transition(all .4s ease-in-out);
                         transform: scale(1.2);
                     };
                 }
@@ -718,6 +707,7 @@ header{
     text-align:center;
     z-index:100;
     transition: all 300ms ease;
+    @include compatibilidad_transition(all 300ms ease);
     &:hover{
         box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
         color: #ffff;
@@ -783,14 +773,21 @@ footer{
             justify-content: center;
             box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
             transition: all .4s ease-in-out;
+            @include compatibilidad_transition(all .4s ease-in-out);
         }
         i:hover,img:hover {
             transform: scale(1.2);
+            @include compatibilidad_transform(scale(1.2));
         }
     }
 }
 //Responsive
 @media screen and (max-width: 1100px) {
+    header{
+        .contenedor_logo_header{
+            width: 30%;
+        }
+    }
     .section_nosotros{
         .beneficios_container{
             flex-direction: row;
@@ -803,6 +800,14 @@ footer{
     }
 }
 @media screen and (max-width: 998px){
+    header{
+        .contenedor_logo_header{
+            width: 20%;
+        }
+        .contenedor_header_secciones{
+            width: 80%;
+        }
+    }
     .section_nosotros{
         .contenedor_nosotros_quienesSomos{
             width: 80%;
@@ -852,6 +857,7 @@ footer{
             top: 50%;
             right: 10%;
             transform: translate(-50%, -50%);
+            @include compatibilidad_transform(translate(-50%, -50%));
             position: relative;
             width: 40px;
         }    
@@ -865,15 +871,19 @@ footer{
             border-radius: 3px;
             margin: 7px 0;
             transition: .5s;
+            @include compatibilidad_transition(.5s)
         }
         .center:hover:before {
             transform: translateY(12px) rotate(135deg);
+            @include compatibilidad_transform(translateY(12px) rotate(135deg));
         }
         .center:hover:after {
             transform: translateY(-12px) rotate(-135deg);
+            @include compatibilidad_transform(translateY(-12px) rotate(-135deg));
         }
         .center:hover div {
             transform: scale(0);
+            @include compatibilidad_transform(scale(0));
         }
         .contenedor_header_secciones{
             width: 100%;
@@ -904,6 +914,9 @@ footer{
         }
         #toggler:checked ~ .contenedor_header_secciones{
             max-height: 100%;
+        }
+        .socialMedia{
+            @include margin__Espaciado(1em,1em);
         }
     }
 
