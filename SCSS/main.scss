@@ -168,8 +168,203 @@ header{
         &:hover{
             color: $color_naranja_cohete;
             animation: pulsate 1s ease-in-out;
+            border: 3px solid $color_naranja_cohete
         };
     }    
+}
+.section_servicios{
+    @include secciones;
+    @include margin__Espaciado(4em,2em);
+    hr{
+        @include hr;
+    }
+    h2{
+        @include h2;
+    }
+    .servicio_principal_container{
+        @include flex__ColumnCenterAll;
+        width: 100%;
+        @include margin__Espaciado(2em,2em);
+        .containerStar{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 60%;
+            .servicioPrincipal_title{
+                color: $color_naranja_cohete;
+                text-align: center;
+                margin: 1em;
+            }
+            .servicioPrincipal_star{
+                width: 50px;
+                height: 50px;
+                animation: girar 5s infinite linear;
+                transform-style: preserve-3d;
+                perspective: 1000px;
+            }
+            .stars_icon{
+                font-size: 40px;
+                width: 40px;
+                height: 40px;
+                color: $color_gris_claro;
+                animation: girar 5s infinite linear;
+                transform-style: preserve-3d;
+                perspective: 1000px;
+                text-shadow: 0 0 30px $color_celeste_oscuro;
+            }
+        }
+        .caminoDigital_Title{
+            color: $color_celeste_oscuro;
+            width: 100%;
+            text-align: center;
+            font-family: $letra__principal;
+            @include margin__Espaciado(1em,1em)
+        }
+        .caminoDigital_paragraph{
+            text-align: left;
+            width: 60%;
+            color: $color_gris_claro;
+            font-family: $letra__secundaria;
+            @include margin__Espaciado(1em,2em)
+        }
+        .impulsos_container{
+            width: 80%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            @include margin__Espaciado(1em,1em);
+            .impulsos_content{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 1em;
+                overflow: hidden;
+                //width: 100px;
+                //height: 50px;
+                position: relative;
+                min-width: 300px;
+                p{
+                    text-align: left;
+                    color: $color_gris_claro;
+                    font-family: $letra__principal;
+                    @include margin__Espaciado(1em,1em)
+                }
+            }
+        }
+        .caminoDigital_pie{
+            width: 60%;
+            color: $color_naranja_cohete;
+            text-align: left;
+            font-family: $letra__principal;
+            @include margin__Espaciado(1em,1em)
+        }
+    }
+    .cardsImpulsos_container{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+        height: 100%;
+        @include margin__Espaciado(2em,2em);
+    }
+    .container_content_impulso{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 25%;
+        min-width: 22rem;
+        max-width: 20rem;
+        height: 100%;
+        min-height: 38rem;
+        @include margin__Espaciado(1em,1em);
+        box-shadow: rgba(87, 169, 218, 0.884) 3px 4px 17px;
+        border-radius: 15pt;
+        .contenedor_impulso_img{
+            width: 8rem;
+            height: 8rem;
+            @include flex__Center;
+            max-width: 10rem;
+            max-height: 10rem;
+            overflow: hidden;
+            .img_impulso{
+                width: 100%;
+                height: 100%;
+                transition: all 500ms ease;
+                @include compatibilidad_transition(all 500ms ease);
+                &:hover{
+                    transform: scale(1.2);
+                    @include compatibilidad_transform(scale(1.2));
+                }
+            } 
+        }
+        .contenedor_btns{
+            width: 100%;
+            @include flex__ColumnCenterAll;
+            @include margin__Espaciado(1em,2em);
+        }   
+        .container_impulso_speach{
+            width: 90%;
+            height: 100%;
+            min-height: 15rem;
+            @include flex__ColumnCenterAll;
+            .impulso_title{
+                text-align: center;
+                font-family: $letra__principal;
+                color: $color_celeste_oscuro;
+                width: 100%;
+            }
+            .impulso_paragraph{
+                @include p;
+                font-weight: bold;
+                width: 85%;
+            }
+        }
+        .btn_impulsos{
+            @include margin__Espaciado(1em,1em);
+            @include flex__Center;
+            a{
+                min-width: 200px;
+                min-height: 50px;
+                text-align: center;
+                padding: 10px 15px;
+                @include flex__Center;
+            }
+        }
+    }
+    .carousel_title{
+        color: $color_naranja_cohete;
+        font-family: $letra__principal;
+        width: 60%;
+        text-align: left;
+        @include margin__Espaciado(2em,2em);
+    }
+    .asesorate{
+        display: flex;
+        width: 80%;
+        justify-content: flex-end;
+        align-items: center;
+        @include margin__Espaciado(1em,1em);
+        .asesorate_btn{
+            color: $color_gris_claro;
+            font-family: $letra__secundaria;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 15px 20px;
+            border: 3px solid $color_gris_claro;
+            border-radius: 10px;
+            &:hover{
+                color: $color_naranja_cohete;
+                animation: pulsate 1s ease-in-out;
+            };
+        }
+
+    }
 }
 .section_nosotros{
     @include secciones;
@@ -302,161 +497,6 @@ header{
                 @include margin__Espaciado(1em,1em)
             }
         }
-    }
-}
-.section_servicios{
-    @include secciones;
-    @include margin__Espaciado(4em,2em);
-    hr{
-        @include hr;
-    }
-    h2{
-        @include h2;
-    }
-    .servicio_principal_container{
-        @include flex__ColumnCenterAll;
-        .containerStar{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: flex-start;
-            width: 65%;
-            .servicioPrincipal_title{
-                color: $color_naranja_cohete;
-                text-align: center;
-                margin: 1em;
-            }
-            .servicioPrincipal_star{
-                width: 50px;
-                height: 50px;
-                animation: girar 5s infinite linear;
-                transform-style: preserve-3d;
-                perspective: 1000px;
-            }
-        }
-        .caminoDigital_Title{
-            color: $color_celeste_oscuro;
-            width: 100%;
-            text-align: center;
-            font-family: $letra__principal;
-            @include margin__Espaciado(1em,1em)
-        }
-        .caminoDigital_paragraph{
-            text-align: left;
-            width: 60%;
-            color: $color_gris_claro;
-            font-family: $letra__secundaria;
-            @include margin__Espaciado(1em,2em)
-        }
-        .impulsos_container{
-            width: 80%;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-direction: row;
-            flex-wrap: wrap;
-            @include margin__Espaciado(1em,1em);
-            .impulsos_content{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 1em;
-                overflow: hidden;
-                //width: 100px;
-                //height: 50px;
-                position: relative;
-                min-width: 300px;
-                p{
-                    text-align: left;
-                    color: $color_gris_claro;
-                    font-family: $letra__principal;
-                    @include margin__Espaciado(1em,1em)
-                }
-            }
-        }
-        .caminoDigital_pie{
-            width: 60%;
-            color: $color_naranja_cohete;
-            text-align: left;
-            font-family: $letra__principal;
-            @include margin__Espaciado(1em,1em)
-        }
-    }
-    .container_content_impulso{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 60%;
-        height: 30%;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        @include margin__Espaciado(1em,1em);
-        .contenedor_impulso_img{
-            width: 30%;
-            height: 100%;
-            @include flex__Center;
-            max-width: 10rem;
-            max-height: 10rem;
-            overflow: hidden;
-            .img_impulso{
-                width: 100%;
-                height: 100%;
-/*                 -moz-transition: all 500ms ease;
-                -webkit-transition: all 500ms ease;
-                -o-transition: all 500ms ease; */
-                transition: all 500ms ease;
-                @include compatibilidad_transition(all 500ms ease);
-                &:hover{
-/*                     -webkit-transform: scale(1.2);
-                    -o-transform: scale(1.2);
-                    -moz-transform: scale(1.2); */
-                    transform: scale(1.2);
-                    @include compatibilidad_transform(scale(1.2));
-                }
-            } 
-        }   
-        .container_impulso_speach{
-            width: 70%;
-            height: 100%;
-            @include flex__ColumnCenterAll;
-            .impulso_title{
-                text-align: left;
-                font-family: $letra__principal;
-                color: $color_naranja_cohete;
-                width: 100%;
-            }
-            .impulso_paragraph{
-                @include p;
-            }
-        }
-    }
-    .carousel_title{
-        color: $color_naranja_cohete;
-        font-family: $letra__principal;
-        width: 60%;
-        text-align: left;
-        @include margin__Espaciado(2em,2em);
-    }
-    .asesorate{
-        display: flex;
-        width: 80%;
-        justify-content: flex-end;
-        align-items: center;
-        @include margin__Espaciado(1em,1em);
-        .asesorate_btn{
-            color: $color_gris_claro;
-            font-family: $letra__secundaria;
-            font-weight: bold;
-            text-decoration: none;
-            padding: 15px 20px;
-            border: 3px solid $color_gris_claro;
-            border-radius: 10px;
-            &:hover{
-                color: $color_naranja_cohete;
-                animation: pulsate 1s ease-in-out;
-            };
-        }
-
     }
 }
 .section_contacto{
@@ -801,6 +841,16 @@ footer{
             }
         }
     }
+    .section_servicios{
+        .cardsImpulsos_container{
+            flex-wrap: wrap;
+        }
+        .container_content_impulso{
+            margin-right: 2em;
+            margin-left: 2em;
+            width: 30%;
+        }
+    }
 }
 @media screen and (max-width: 998px){
     header{
@@ -943,11 +993,8 @@ footer{
         .container_content_impulso{
             flex-direction: column;
             width: 100%;
-            .container_impulso_speach{
-                .impulso_paragraph{
-                    text-align: left;
-                }
-            }
+            min-width: 16rem;
+            @include margin__Espaciado(1em,2em);
         }
         .servicio_principal_container{
             .caminoDigital_paragraph{
@@ -1038,6 +1085,9 @@ footer{
         .servicio_principal_container{
             .containerStar{
                 flex-direction: column;
+                .servicioPrincipal_title{
+                    width: 90%;
+                }
             }
             .impulsos_container{
                 flex-direction: column;
