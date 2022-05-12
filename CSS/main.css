@@ -954,6 +954,9 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   color: #57A9DA;
   font-family: "Fugaz One", cursive;
 }
+.section_servicios .particles-js-canvas-el {
+  position: absolute;
+}
 .section_servicios .servicio_principal_container {
   display: flex;
   flex-direction: column;
@@ -962,6 +965,8 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   width: 100%;
   margin-top: 2em;
   margin-bottom: 2em;
+  position: relative;
+  background-color: #202124;
 }
 .section_servicios .servicio_principal_container .containerStar {
   display: flex;
@@ -978,7 +983,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
               } */
 }
 .section_servicios .servicio_principal_container .containerStar .servicioPrincipal_title {
-  color: #F76304;
+  color: #E0E0E0;
   text-align: center;
   margin: 1em;
 }
@@ -1161,15 +1166,15 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   margin-top: 2em;
   margin-bottom: 2em;
 }
-.section_servicios .asesorate {
+.section_servicios .asesorate_container {
   display: flex;
   width: 80%;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.section_servicios .asesorate .asesorate_btn {
+.section_servicios .asesorate_container .asesorate_btn {
   color: #E0E0E0;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -1178,9 +1183,10 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   border: 3px solid #E0E0E0;
   border-radius: 10px;
 }
-.section_servicios .asesorate .asesorate_btn:hover {
+.section_servicios .asesorate_container .asesorate_btn:hover {
   color: #F76304;
   animation: pulsate 1s ease-in-out;
+  border: 3px solid #F76304;
 }
 
 .section_nosotros {
