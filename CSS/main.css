@@ -1366,6 +1366,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
 
 footer {
   background-color: #202124;
+  overflow: hidden;
 }
 footer hr {
   color: #E0E0E0;

@@ -757,6 +757,7 @@ header{
 //footer
 footer{
     background-color: $color_gris_oscuro;
+    overflow: hidden;
     hr{
         color: $color_gris_claro;
     }
