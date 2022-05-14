@@ -1,5 +1,5 @@
 //Imports
-@import "variables", "responsive" ,"chevron", "cards", "carouselSwipper", "adn", "borderEfect", "rotate";
+@import "variables" ,"chevron", "cards", "carouselSwipper", "adn", "borderEfect", "rotate";
 *{
     margin: 0;
     padding: 0;
@@ -842,3 +842,4 @@ footer{
     }
 }
 
+@import "responsive"
