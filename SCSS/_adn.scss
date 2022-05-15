@@ -37,6 +37,7 @@
     border-radius: 70%;
     background-color: $color_celeste_oscuro;
     transform: rotateY(90deg) rotateX(-20deg) translateZ(5px);
+    transition: all .7s ease-in-out;
 }
 .adn_botton:nth-child(3){
     transform: rotateY(90deg) translateZ(3px);
@@ -45,10 +46,22 @@
     width: 100%;
     height: none;
     border: 1px solid $color_celeste_oscuro;
+    transition: all .7s ease-in-out;
 }
 @for $var from 1 to 24{
     .adn_items:nth-child(#{$var}){
         transform: rotateY(15deg * $var);
+    }
+}
+
+.adn_container{
+    &:hover{
+        .adn_botton{
+            background-color: $color_naranja_cohete;
+        }; 
+        .adn_line{
+            border: 1px solid $color_naranja_cohete;
+        };
     }
 }
 

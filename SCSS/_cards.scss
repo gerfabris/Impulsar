@@ -25,6 +25,12 @@
         transform: translateY(15rem);
         @include compatibilidad_transform(translateY(15rem));
     };
+    &:hover{
+        box-shadow: rgba(236, 129, 29, 0.89) 3px 4px 17px;
+        .card_title{
+            color: $color_naranja_cohete;
+        }
+    };
 }
 .dp{
     display: flex;
@@ -41,6 +47,7 @@
         color: $color_gris_claro;
         width: 100%;
         text-align: center;
+        transition: all .5s ease-in-out;
     }
 }
 .card_content{
@@ -81,6 +88,7 @@
             &:hover{
                 color: $color_naranja_cohete;
                 animation: pulsate 1s ease-in-out;
+                border: 3px solid $color_naranja_cohete;
             };
         }
     }

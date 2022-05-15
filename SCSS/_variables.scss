@@ -101,6 +101,18 @@ $logo-width:calc(5em + 5vw);
     -o-transform: $config;
     -moz-transform: $config;
 }
+@mixin camuflaje{
+    transition: all 1s ease-in-out;
+    &:hover{
+        color: $color_naranja_cohete;
+    }
+}
+@mixin camuflaje_background{
+    transition: all 1s ease-in-out;
+    &:hover{
+        background-color: $color_naranja_cohete;
+    }
+}
 //animaciones
 @keyframes scroll{
     0%, 20% {

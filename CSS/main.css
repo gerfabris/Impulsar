@@ -122,6 +122,12 @@
   -o-transform: translateY(15rem);
   -moz-transform: translateY(15rem);
 }
+.card:hover {
+  box-shadow: rgba(236, 129, 29, 0.89) 3px 4px 17px;
+}
+.card:hover .card_title {
+  color: #F76304;
+}
 
 .dp {
   display: flex;
@@ -141,6 +147,7 @@
   color: #E0E0E0;
   width: 100%;
   text-align: center;
+  transition: all 0.5s ease-in-out;
 }
 
 .card_content {
@@ -189,6 +196,7 @@
 .card_content .contenedor_btn_card .btn_card:hover {
   color: #F76304;
   animation: pulsate 1s ease-in-out;
+  border: 3px solid #F76304;
 }
 
 /* @media screen and (min-width: 320px) {
@@ -269,6 +277,7 @@
   border-radius: 70%;
   background-color: #57A9DA;
   transform: rotateY(90deg) rotateX(-20deg) translateZ(5px);
+  transition: all 0.7s ease-in-out;
 }
 
 .adn_botton:nth-child(3) {
@@ -279,6 +288,7 @@
   width: 100%;
   height: none;
   border: 1px solid #57A9DA;
+  transition: all 0.7s ease-in-out;
 }
 
 .adn_items:nth-child(1) {
@@ -371,6 +381,13 @@
 
 .adn_items:nth-child(23) {
   transform: rotateY(345deg);
+}
+
+.adn_container:hover .adn_botton {
+  background-color: #F76304;
+}
+.adn_container:hover .adn_line {
+  border: 1px solid #F76304;
 }
 
 @keyframes rotar {
@@ -470,6 +487,19 @@
     transform: translateY(-100%);
   }
 }
+.valores_content:hover span:nth-child(1), .beneficio_content:hover span:nth-child(1) {
+  background: linear-gradient(to right, transparent, #F76304);
+}
+.valores_content:hover span:nth-child(2), .beneficio_content:hover span:nth-child(2) {
+  background: linear-gradient(to bottom, transparent, #F76304);
+}
+.valores_content:hover span:nth-child(3), .beneficio_content:hover span:nth-child(3) {
+  background: linear-gradient(to left, transparent, #F76304);
+}
+.valores_content:hover span:nth-child(4), .beneficio_content:hover span:nth-child(4) {
+  background: linear-gradient(to top, transparent, #F76304);
+}
+
 @keyframes girar {
   100% {
     transform: rotateZ(360deg);
@@ -677,6 +707,10 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   text-align: center;
   color: #57A9DA;
   font-family: "Fugaz One", cursive;
+  transition: all 1s ease-in-out;
+}
+.section_servicios h2:hover {
+  color: #F76304;
 }
 .section_servicios .particles-js-canvas-el {
   position: absolute;
@@ -883,12 +917,16 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   align-items: center;
 }
 .section_servicios .carousel_title {
-  color: #F76304;
+  color: #57A9DA;
   font-family: "Fugaz One", cursive;
-  width: 60%;
-  text-align: left;
+  width: 90%;
+  text-align: center;
   margin-top: 2em;
   margin-bottom: 2em;
+  transition: all 1s ease-in-out;
+}
+.section_servicios .carousel_title:hover {
+  color: #F76304;
 }
 .section_servicios .asesorate_container {
   display: flex;
@@ -911,6 +949,112 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   color: #F76304;
   animation: pulsate 1s ease-in-out;
   border: 3px solid #F76304;
+}
+.section_servicios .caminoDigital_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section_servicios .caminoDigital_container .container_content_caminoDigital {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+  min-width: 25rem;
+  max-width: 25rem;
+  height: 100%;
+  min-height: 30rem;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  box-shadow: rgba(87, 169, 218, 0.884) 3px 4px 17px;
+  border-radius: 15pt;
+  transition: all 1s ease-in-out;
+}
+.section_servicios .caminoDigital_container .container_content_caminoDigital:hover {
+  box-shadow: rgba(236, 129, 29, 0.89) 3px 4px 17px;
+}
+.section_servicios .caminoDigital_container .container_content_caminoDigital:hover .caminoDigital_container_speach .caminoDigital_title {
+  color: #F76304;
+}
+.section_servicios .caminoDigital_container .container_content_caminoDigital .caminoDigital_container_img {
+  width: 8rem;
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  max-width: 10rem;
+  max-height: 10rem;
+  overflow: hidden;
+}
+.section_servicios .caminoDigital_container .container_content_caminoDigital .caminoDigital_container_img .caminoDigital_img {
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+}
+.section_servicios .caminoDigital_container .container_content_caminoDigital .caminoDigital_container_img .caminoDigital_img:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+}
+.section_servicios .caminoDigital_container .container_content_caminoDigital .caminoDigital_container_btns {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+.section_servicios .caminoDigital_container .container_content_caminoDigital .caminoDigital_container_speach {
+  width: 90%;
+  height: 100%;
+  min-height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section_servicios .caminoDigital_container .container_content_caminoDigital .caminoDigital_container_speach .caminoDigital_title {
+  text-align: center;
+  font-family: "Fugaz One", cursive;
+  color: #57A9DA;
+  width: 100%;
+  transition: all 1s ease-in-out;
+}
+.section_servicios .caminoDigital_container .container_content_caminoDigital .caminoDigital_container_speach .caminoDigital_paragraph {
+  width: 100%;
+  text-align: left;
+  color: #E0E0E0;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-weight: bold;
+  width: 85%;
+}
+.section_servicios .caminoDigital_container .container_content_caminoDigital .btn_caminoDigital {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.section_servicios .caminoDigital_container .container_content_caminoDigital .btn_caminoDigital a {
+  min-width: 200px;
+  min-height: 50px;
+  text-align: center;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 .section_nosotros {
@@ -952,6 +1096,10 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   text-align: center;
   color: #57A9DA;
   font-family: "Fugaz One", cursive;
+  transition: all 1s ease-in-out;
+}
+.section_nosotros article .contenedor_nosotros_quienesSomos h2:hover, .section_nosotros article .contenedor_nosotros_Speach h2:hover {
+  color: #F76304;
 }
 .section_nosotros article .contenedor_nosotros_quienesSomos p, .section_nosotros article .contenedor_nosotros_Speach p {
   width: 100%;
@@ -960,10 +1108,15 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 1em;
   margin-bottom: 1em;
+  text-align: justify;
 }
 .section_nosotros article .contenedor_nosotros_quienesSomos span, .section_nosotros article .contenedor_nosotros_Speach span {
   color: #57A9DA;
   font-family: "Fugaz One", cursive;
+  transition: all 1s ease-in-out;
+}
+.section_nosotros article .contenedor_nosotros_quienesSomos span:hover, .section_nosotros article .contenedor_nosotros_Speach span:hover {
+  color: #F76304;
 }
 .section_nosotros article .contenedor_nosotros_Speach {
   margin-top: 0;
@@ -979,8 +1132,12 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
 }
 .section_nosotros .nosotros_valores_title_container h3 {
   text-align: center;
-  color: #F76304;
+  color: #57A9DA;
   font-family: "Fugaz One", cursive;
+  transition: all 1s ease-in-out;
+}
+.section_nosotros .nosotros_valores_title_container h3:hover {
+  color: #F76304;
 }
 .section_nosotros .nosotros_valores_title_container .nosotros_valores_paragraph {
   width: 100%;
@@ -990,6 +1147,14 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   margin-top: 1em;
   margin-bottom: 1em;
   width: 60%;
+}
+.section_nosotros .nosotros_valores_title_container span {
+  color: #57A9DA;
+  font-family: "Fugaz One", cursive;
+  transition: all 1s ease-in-out;
+}
+.section_nosotros .nosotros_valores_title_container span:hover {
+  color: #F76304;
 }
 .section_nosotros .nosotros_valores_container {
   display: flex;
@@ -1004,6 +1169,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
+  transition: all 1s ease-in-out;
 }
 .section_nosotros .nosotros_valores_container .valores_container .valores_content {
   display: flex;
@@ -1012,6 +1178,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   padding: 1em;
   overflow: hidden;
   position: relative;
+  transition: all 1s ease-in-out;
 }
 .section_nosotros .nosotros_valores_container .valores_container .valores_content p {
   text-align: center;
@@ -1034,8 +1201,12 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   margin-bottom: 1em;
   width: 100%;
   text-align: center;
-  color: #F76304;
+  color: #57A9DA;
   font-family: "Fugaz One", cursive;
+  transition: all 1s ease-in-out;
+}
+.section_nosotros .nosotros_mision_container .nosotros_mision_title:hover {
+  color: #F76304;
 }
 .section_nosotros .nosotros_mision_container .nosotros_mision_paragraph {
   width: 100%;
@@ -1044,7 +1215,16 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 1em;
   margin-bottom: 1em;
-  width: 60%;
+  width: 67%;
+  text-align: justify;
+}
+.section_nosotros .nosotros_mision_container .nosotros_mision_paragraph span {
+  color: #57A9DA;
+  font-family: "Fugaz One", cursive;
+  transition: all 1s ease-in-out;
+}
+.section_nosotros .nosotros_mision_container .nosotros_mision_paragraph span:hover {
+  color: #F76304;
 }
 .section_nosotros .nosotros_mision_container .nosotros_mision_hashtag_container {
   width: 100%;
@@ -1062,9 +1242,17 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   color: #E0E0E0;
   text-align: left;
   margin: 1em;
+  transition: all 1s ease-in-out;
+}
+.section_nosotros .nosotros_mision_container .nosotros_mision_hashtag_container .nosotros_mision_hashtag:hover {
+  color: #F76304;
 }
 .section_nosotros .nosotros_mision_container .nosotros_mision_hashtag_container .nosotros_mision_hashtag span {
   font-family: Arial, Helvetica, sans-serif;
+  transition: all 1s ease-in-out;
+}
+.section_nosotros .nosotros_mision_container .nosotros_mision_hashtag_container .nosotros_mision_hashtag span:hover {
+  color: #F76304;
 }
 .section_nosotros .beneficios_container {
   width: 100%;
@@ -1114,6 +1302,10 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   text-align: center;
   color: #57A9DA;
   font-family: "Fugaz One", cursive;
+  transition: all 1s ease-in-out;
+}
+.section_contacto h2:hover {
+  color: #F76304;
 }
 .section_contacto .contacto_redes_container {
   margin-top: 1em;
@@ -1144,6 +1336,8 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   text-align: center;
   text-decoration: none;
   color: #E0E0E0;
+  box-shadow: #202124 2px 2px 5px;
+  border-radius: 50%;
 }
 .section_contacto .contacto_redes_container .contacto_redes .contacto_redes_anchord:hover {
   color: #F76304;
@@ -1175,6 +1369,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   -o-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
   margin-top: 1em;
   margin-bottom: 1em;
+  transition: all 1s ease-in-out;
 }
 .section_contacto .formulario_contenedor_datos {
   display: flex;
@@ -1183,17 +1378,19 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   width: 50%;
 }
 .section_contacto .formulario_contenedor_datos h3 {
-  color: #F76304;
+  color: #E0E0E0;
   font-family: "Fugaz One", cursive;
+  transition: all 1s ease-in-out;
 }
 .section_contacto .formulario_contenedor_datos .contenedor_inputs {
   display: flex;
   flex-direction: column;
   width: 100%;
   max-width: 350px;
-  color: #F76304;
+  color: #E0E0E0;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
+  transition: all 1s ease-in-out;
 }
 .section_contacto .formulario_contenedor_datos .section__formulario__contenedor__form-input {
   padding: 5px;
@@ -1215,11 +1412,12 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   width: 50%;
 }
 .section_contacto .formulario_contenedor_textarea h3 {
-  color: #F76304;
+  color: #57A9DA;
   font-family: "Fugaz One", cursive;
   width: 100%;
   margin-top: 1em;
   margin-bottom: 1em;
+  transition: all 1s ease-in-out;
 }
 .section_contacto .formulario_contenedor_textarea .contenedor_inputs {
   display: flex;
@@ -1229,6 +1427,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   color: #E0E0E0;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
+  transition: all 1s ease-in-out;
 }
 .section_contacto .formulario_contenedor_textarea .contenedor_btn_formulario {
   display: flex;
@@ -1253,6 +1452,22 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
 .section_contacto .formulario_contenedor_textarea .contenedor_btn_formulario .btn_formulario:hover {
   color: #F76304;
   animation: pulsate 1s ease-in-out;
+  border: 3px solid #F76304;
+}
+.section_contacto .contacto_formulario {
+  transition: all 1s ease-in-out;
+}
+.section_contacto .contacto_formulario:hover {
+  box-shadow: 3px 4px 17px rgba(236, 129, 29, 0.89);
+}
+.section_contacto .contacto_formulario:hover .formulario_contenedor_datos h3 {
+  color: #F76304;
+}
+.section_contacto .contacto_formulario:hover .contenedor_inputs {
+  color: #F76304;
+}
+.section_contacto .contacto_formulario:hover .formulario_contenedor_textarea h3 {
+  color: #F76304;
 }
 .section_contacto .contacto_redesUbicacion {
   margin-top: 1em;
@@ -1277,6 +1492,10 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   margin-bottom: 1em;
   color: #57A9DA;
   font-family: "Fugaz One", cursive;
+  transition: all 1s ease-in-out;
+}
+.section_contacto .contacto_redesUbicacion .containerRedes h3:hover {
+  color: #F76304;
 }
 .section_contacto .contacto_redesUbicacion .containerRedes .contacto_redes {
   display: flex;
@@ -1341,12 +1560,16 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   flex-direction: column;
 }
 .section_contacto .contacto_calendly .contacto_calendly_title {
-  color: #F76304;
+  color: #57A9DA;
   width: 60%;
-  text-align: left;
+  text-align: center;
   font-family: "Fugaz One", cursive;
   margin-top: 2em;
   margin-bottom: 1em;
+  transition: all 1s ease-in-out;
+}
+.section_contacto .contacto_calendly .contacto_calendly_title:hover {
+  color: #F76304;
 }
 .section_contacto .contacto_calendly .calendly {
   width: 60%;
@@ -1684,6 +1907,21 @@ header .center div {
   }
   .section_contacto .contacto_calendly .contacto_calendly_title {
     width: 90%;
+  }
+}
+@media screen and (max-width: 520px) {
+  .section_servicios h2 {
+    width: 90%;
+  }
+  .section_servicios .container_content_impulso .container_impulso_speach {
+    min-height: 10rem;
+  }
+  .section_servicios .caminoDigital_container .container_content_caminoDigital {
+    width: 80%;
+    min-width: 12rem;
+  }
+  .section_servicios .caminoDigital_container .container_content_caminoDigital .caminoDigital_container_speach {
+    min-height: 8rem;
   }
 }
 @media screen and (max-width: 468px) {

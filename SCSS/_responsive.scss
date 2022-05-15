@@ -245,6 +245,27 @@
         }
     }
 }
+@media screen and (max-width: 520px) {
+    .section_servicios{
+        h2{
+            width: 90%;
+        }
+        .container_content_impulso{
+            .container_impulso_speach{
+                min-height: 10rem;
+            }
+        } 
+        .caminoDigital_container{
+            .container_content_caminoDigital{
+                width: 80%;
+                min-width: 12rem;
+                .caminoDigital_container_speach{
+                    min-height: 8rem;
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width: 468px) {
     .section_nosotros{
         .beneficios_container{
