@@ -43,7 +43,7 @@
             width: 80%;
         }
     }
-    .section_contacto{
+    .section_contacto, .masServicios_formulario{
         form{
             flex-direction: column;
             justify-content: center;
@@ -243,6 +243,12 @@
                 width: 90%;
             }
         }
+    }
+    .masServicios_intro_content{
+        width: 90%;
+    }
+    .masServiciosa_speach{
+        width: 90%;
     }
 }
 @media screen and (max-width: 520px) {

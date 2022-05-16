@@ -84,6 +84,13 @@ $logo-width:calc(5em + 5vw);
     color: $color_celeste_oscuro;
     font-family: $letra__principal;
 }
+@mixin title{
+    @include margin__Espaciado(2em,1em);
+    width: 100%;
+    text-align: center;
+    color: $color_celeste_oscuro;
+    font-family: $letra__principal;
+}
 @mixin p{
     width: 100%;
     text-align: left;
@@ -103,12 +110,14 @@ $logo-width:calc(5em + 5vw);
 }
 @mixin camuflaje{
     transition: all 1s ease-in-out;
+    @include compatibilidad_transition(all 1s ease-in-out);
     &:hover{
         color: $color_naranja_cohete;
     }
 }
 @mixin camuflaje_background{
     transition: all 1s ease-in-out;
+    @include compatibilidad_transition(all 1s ease-in-out);
     &:hover{
         background-color: $color_naranja_cohete;
     }

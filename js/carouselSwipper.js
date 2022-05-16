@@ -18,15 +18,7 @@ var swiper = new Swiper(".carousel_container", {
       prevEl: ".swiper-button-prev",
     },
   },
-/*   ".swiper_title",{
-    direction: "vertical",
-    spaceBetween: 30,
-    centeredSlides: true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },   
-  }*/);
+  );
 
 
 /*var swiperTitle = new Swiper(".swiper_title", {

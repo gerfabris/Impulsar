@@ -229,6 +229,75 @@
         height: 20rem;
     }    
 } */
+.card_masServicios {
+  width: 15rem;
+  height: 18rem;
+  display: flex;
+  background: none;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  border: none;
+  outline: 1px solid #E0E0E0;
+  outline-offset: -8px;
+  box-shadow: rgba(87, 169, 218, 0.884) 3px 4px 17px;
+  transition: all 1s ease-in-out;
+}
+.card_masServicios:hover {
+  transition: all 1s ease-in-out;
+  box-shadow: rgba(236, 129, 29, 0.89) 3px 4px 17px;
+  outline: 1px solid #F76304;
+  outline-offset: -8px;
+}
+.card_masServicios:hover .card_title {
+  color: #F76304;
+}
+.card_masServicios .contenedor_btn_card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.card_masServicios .contenedor_btn_card .btn_card {
+  color: #E0E0E0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 15px;
+  border: 3px solid #E0E0E0;
+  border-radius: 10px;
+}
+.card_masServicios .contenedor_btn_card .btn_card:hover {
+  color: #F76304;
+  animation: pulsate 1s ease-in-out;
+  border: 3px solid #F76304;
+}
+
+.dp_masServicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  padding: 1em;
+}
+.dp_masServicios .card_title {
+  font-family: "Fugaz One", cursive;
+  color: #E0E0E0;
+  width: 100%;
+  text-align: center;
+  transition: all 0.1s ease-in-out;
+}
+
 .carousel_article {
   display: flex;
   align-items: center;
@@ -505,6 +574,269 @@
     transform: rotateZ(360deg);
   }
 }
+.masServicios_section_intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.masServicios_intro_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+}
+.masServicios_intro_content h1 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  width: 100%;
+  text-align: center;
+  color: #57A9DA;
+  font-family: "Fugaz One", cursive;
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+.masServicios_intro_content h1:hover {
+  color: #F76304;
+}
+.masServicios_intro_content p {
+  width: 100%;
+  text-align: left;
+  color: #E0E0E0;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: justify;
+  width: 80%;
+}
+
+.masServiciosa_speach {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+}
+.masServiciosa_speach h2 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  width: 100%;
+  text-align: center;
+  color: #57A9DA;
+  font-family: "Fugaz One", cursive;
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+.masServiciosa_speach h2:hover {
+  color: #F76304;
+}
+.masServiciosa_speach p {
+  width: 100%;
+  text-align: left;
+  color: #E0E0E0;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 80%;
+  text-align: justify;
+}
+
+.masServicios_title {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  width: 100%;
+  text-align: center;
+  color: #57A9DA;
+  font-family: "Fugaz One", cursive;
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+.masServicios_title:hover {
+  color: #F76304;
+}
+
+.carousel_masServicios {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.carouselMasServicios_container {
+  padding: 1em;
+  width: 100%;
+}
+
+.masServicios_calendly {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.masServicios_calendly h3 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  width: 100%;
+  text-align: center;
+  color: #57A9DA;
+  font-family: "Fugaz One", cursive;
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+.masServicios_calendly h3:hover {
+  color: #F76304;
+}
+.masServicios_calendly .container_calendly {
+  width: 60%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.masServicios_formulario {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 3em;
+}
+.masServicios_formulario h3 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  width: 100%;
+  text-align: center;
+  color: #57A9DA;
+  font-family: "Fugaz One", cursive;
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+.masServicios_formulario h3:hover {
+  color: #F76304;
+}
+.masServicios_formulario form {
+  width: 80%;
+  max-width: 920px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  border-radius: 20px;
+  box-shadow: rgb(87, 169, 218) 3px 4px 17px;
+  transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -moz-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -webkit-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -o-transition: 2.5s cubic-bezier(0.4, 0.2, 0.2, 1);
+  margin-top: 1em;
+  margin-bottom: 1em;
+  transition: all 1s ease-in-out;
+}
+.masServicios_formulario .formulario_contenedor_datos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+}
+.masServicios_formulario .formulario_contenedor_datos h3 {
+  color: #E0E0E0;
+  font-family: "Fugaz One", cursive;
+  transition: all 1s ease-in-out;
+}
+.masServicios_formulario .formulario_contenedor_datos .contenedor_inputs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 350px;
+  color: #E0E0E0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  transition: all 1s ease-in-out;
+}
+.masServicios_formulario .formulario_contenedor_datos .section__formulario__contenedor__form-input {
+  padding: 5px;
+}
+.masServicios_formulario .formulario_contenedor_textarea {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+}
+.masServicios_formulario .formulario_contenedor_textarea h3 {
+  color: #57A9DA;
+  font-family: "Fugaz One", cursive;
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  transition: all 1s ease-in-out;
+}
+.masServicios_formulario .formulario_contenedor_textarea .contenedor_inputs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 350px;
+  color: #E0E0E0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  transition: all 1s ease-in-out;
+}
+.masServicios_formulario .formulario_contenedor_textarea .contenedor_btn_formulario {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.masServicios_formulario .formulario_contenedor_textarea .contenedor_btn_formulario .btn_formulario {
+  width: 40%;
+  min-width: 150px;
+  max-width: 200px;
+  color: #E0E0E0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 10px;
+  border: 3px solid #E0E0E0;
+  border-radius: 10px;
+}
+.masServicios_formulario .formulario_contenedor_textarea .contenedor_btn_formulario .btn_formulario:hover {
+  color: #F76304;
+  animation: pulsate 1s ease-in-out;
+  border: 3px solid #F76304;
+}
+.masServicios_formulario .contacto_formulario {
+  transition: all 1s ease-in-out;
+}
+.masServicios_formulario .contacto_formulario:hover {
+  box-shadow: 3px 4px 17px rgba(236, 129, 29, 0.89);
+}
+.masServicios_formulario .contacto_formulario:hover .formulario_contenedor_datos h3 {
+  color: #F76304;
+}
+.masServicios_formulario .contacto_formulario:hover .contenedor_inputs {
+  color: #F76304;
+}
+.masServicios_formulario .contacto_formulario:hover .formulario_contenedor_textarea h3 {
+  color: #F76304;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -708,6 +1040,9 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   color: #57A9DA;
   font-family: "Fugaz One", cursive;
   transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
 }
 .section_servicios h2:hover {
   color: #F76304;
@@ -924,6 +1259,9 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   margin-top: 2em;
   margin-bottom: 2em;
   transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
 }
 .section_servicios .carousel_title:hover {
   color: #F76304;
@@ -1097,6 +1435,9 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   color: #57A9DA;
   font-family: "Fugaz One", cursive;
   transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
 }
 .section_nosotros article .contenedor_nosotros_quienesSomos h2:hover, .section_nosotros article .contenedor_nosotros_Speach h2:hover {
   color: #F76304;
@@ -1114,6 +1455,9 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   color: #57A9DA;
   font-family: "Fugaz One", cursive;
   transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
 }
 .section_nosotros article .contenedor_nosotros_quienesSomos span:hover, .section_nosotros article .contenedor_nosotros_Speach span:hover {
   color: #F76304;
@@ -1135,6 +1479,9 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   color: #57A9DA;
   font-family: "Fugaz One", cursive;
   transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
 }
 .section_nosotros .nosotros_valores_title_container h3:hover {
   color: #F76304;
@@ -1147,11 +1494,15 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   margin-top: 1em;
   margin-bottom: 1em;
   width: 60%;
+  text-align: justify;
 }
 .section_nosotros .nosotros_valores_title_container span {
   color: #57A9DA;
   font-family: "Fugaz One", cursive;
   transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
 }
 .section_nosotros .nosotros_valores_title_container span:hover {
   color: #F76304;
@@ -1204,6 +1555,9 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   color: #57A9DA;
   font-family: "Fugaz One", cursive;
   transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
 }
 .section_nosotros .nosotros_mision_container .nosotros_mision_title:hover {
   color: #F76304;
@@ -1222,6 +1576,9 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   color: #57A9DA;
   font-family: "Fugaz One", cursive;
   transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
 }
 .section_nosotros .nosotros_mision_container .nosotros_mision_paragraph span:hover {
   color: #F76304;
@@ -1243,6 +1600,9 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   text-align: left;
   margin: 1em;
   transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
 }
 .section_nosotros .nosotros_mision_container .nosotros_mision_hashtag_container .nosotros_mision_hashtag:hover {
   color: #F76304;
@@ -1250,6 +1610,9 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
 .section_nosotros .nosotros_mision_container .nosotros_mision_hashtag_container .nosotros_mision_hashtag span {
   font-family: Arial, Helvetica, sans-serif;
   transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
 }
 .section_nosotros .nosotros_mision_container .nosotros_mision_hashtag_container .nosotros_mision_hashtag span:hover {
   color: #F76304;
@@ -1303,6 +1666,9 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   color: #57A9DA;
   font-family: "Fugaz One", cursive;
   transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
 }
 .section_contacto h2:hover {
   color: #F76304;
@@ -1493,6 +1859,9 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   color: #57A9DA;
   font-family: "Fugaz One", cursive;
   transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
 }
 .section_contacto .contacto_redesUbicacion .containerRedes h3:hover {
   color: #F76304;
@@ -1567,6 +1936,9 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   margin-top: 2em;
   margin-bottom: 1em;
   transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
 }
 .section_contacto .contacto_calendly .contacto_calendly_title:hover {
   color: #F76304;
@@ -1717,32 +2089,32 @@ footer .footer__copyright {
     width: 80%;
   }
 
-  .section_contacto form {
+  .section_contacto form, .masServicios_formulario form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .section_contacto form h3 {
+  .section_contacto form h3, .masServicios_formulario form h3 {
     width: 100%;
     text-align: center;
     margin-top: 1em;
     margin-bottom: 1em;
   }
-  .section_contacto .formulario_contenedor_datos {
+  .section_contacto .formulario_contenedor_datos, .masServicios_formulario .formulario_contenedor_datos {
     width: 100%;
     align-items: center;
     justify-content: center;
     margin-top: 1em;
     margin-bottom: 1em;
   }
-  .section_contacto .formulario_contenedor_textarea {
+  .section_contacto .formulario_contenedor_textarea, .masServicios_formulario .formulario_contenedor_textarea {
     width: 100%;
     align-items: center;
     justify-content: center;
     margin-top: 1em;
     margin-bottom: 1em;
   }
-  .section_contacto .formulario_contenedor_textarea .contenedor_btn_formulario .btn_formulario {
+  .section_contacto .formulario_contenedor_textarea .contenedor_btn_formulario .btn_formulario, .masServicios_formulario .formulario_contenedor_textarea .contenedor_btn_formulario .btn_formulario {
     width: 25%;
   }
 }
@@ -1906,6 +2278,14 @@ header .center div {
     width: 100%;
   }
   .section_contacto .contacto_calendly .contacto_calendly_title {
+    width: 90%;
+  }
+
+  .masServicios_intro_content {
+    width: 90%;
+  }
+
+  .masServiciosa_speach {
     width: 90%;
   }
 }

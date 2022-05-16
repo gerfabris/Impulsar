@@ -1,5 +1,5 @@
 //Imports
-@import "variables" ,"chevron", "cards", "carouselSwipper", "adn", "borderEfect", "rotate";
+@import "variables" ,"chevron", "cards", "carouselSwipper", "adn", "borderEfect", "rotate", "masServicios";
 *{
     margin: 0;
     padding: 0;
@@ -500,6 +500,7 @@ header{
         .nosotros_valores_paragraph{
             @include p;
             width: 60%;
+            text-align: justify;
         }
         span{
             color: $color_celeste_oscuro;
