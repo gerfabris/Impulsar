@@ -56,46 +56,68 @@
     </script>
   </head>
   <body>
-    <header id="index_header" class="header">
-      <nav id="navbar" class="">
-        <div id="contenedor_logo_header" class="contenedor_logo_header">
-          <a class="anchord_logo" href="index.html">
-            <img class="logo_header" src="./assets/composiciones del logo/COMPOSICION1_LOGO/PNG/LOGO_EN GRIS CLARO-01-recortado.png" alt="Logo Impulsar Dev Solutions">
-          </a>
+  <div class="background">
+  </div>
+  <header id="index_header" class="header">
+    <div id="particles-js" class="particles"></div>
+    <nav id="navbar" class="">
+      <div id="contenedor_logo_header" class="contenedor_logo_header">
+        <a class="anchord_logo" href="index.html">
+          <img class="logo_header" src="./assets/composiciones del logo/COMPOSICION1_LOGO/PNG/LOGO_EN GRIS CLARO-01-recortado.png" alt="Logo Impulsar Dev Solutions">
+        </a>
+      </div>
+      <input type="checkbox" id="toggler">
+      <label for="toggler" class="contenedor_burgerMenu">
+        <div id="burgerMenu" class="center">
+          <div id="burgerMenuDiv"></div>
         </div>
-        <input type="checkbox" id="toggler">
-        <label for="toggler" class="contenedor_burgerMenu">
-          <div id="burgerMenu" class="center">
-            <div id="burgerMenuDiv"></div>
-          </div>
-        </label>
-        <div id="contenedorHeaderSecciones" class="contenedor_header_secciones">
-          <ul id="navList" class="list">
-            <li><a id="anchordNav" class="anchord_secciones" href="#indexMain">Inicio</a></li>
-            <li><a id="anchordNav" class="anchord_secciones" href="#sectionServicios">¿Qué ofrecemos?</a></li>
-            <li><a id="anchordNav" class="anchord_secciones" href="#sectionNosotros">¿Quiénes somos?</a></li>
-            <li><a id="anchordNav" class="anchord_secciones" href="#sectionContacto">Contacto</a></li>
-            <div class="socialMedia">
-              <!-- Facebook -->
-              <a href="" type="button" class="socialMedia_anchord" target="_blank">
-                <i class="fa fa-facebook"></i>
-              </a>
-              <!-- Instagram -->
-              <a href="https://instagram.com/impulsardev?igshid=YmMyMTA2M2Y=" type="button" class="socialMedia_anchord" target="_blank">
-                <i class="fa fa-brands fa-instagram"></i>
-              </a>
-              </a>
-              <!-- Whatsapp -->
-              <a href="https://api.whatsapp.com/send?phone=5492616307131" type="button" class="socialMedia_anchord" target="_blank">
-                <i class="fa fa-brands fa-whatsapp"></i>  
-              </a>
-          </div>
-          </ul>
+      </label>
+      <div id="contenedorHeaderSecciones" class="contenedor_header_secciones">
+        <ul id="navList" class="list">
+          <li><a id="anchordNav" class="anchord_secciones" href="#sectionPresentacion">Inicio</a></li>
+          <li><a id="anchordNav" class="anchord_secciones" href="#sectionServicios">¿Qué ofrecemos?</a></li>
+          <li><a id="anchordNav" class="anchord_secciones" href="#sectionNosotros">¿Quiénes somos?</a></li>
+          <li><a id="anchordNav" class="anchord_secciones" href="#sectionContacto">Contacto</a></li>
+          <div class="socialMedia">
+            <!-- Facebook -->
+            <a href="" type="button" class="socialMedia_anchord" target="_blank">
+              <i class="fa fa-facebook"></i>
+            </a>
+            <!-- Instagram -->
+            <a href="https://instagram.com/impulsardev?igshid=YmMyMTA2M2Y=" type="button" class="socialMedia_anchord" target="_blank">
+              <i class="fa fa-brands fa-instagram"></i>
+            </a>
+            </a>
+            <!-- Whatsapp -->
+            <a href="https://api.whatsapp.com/send?phone=5492616307131" type="button" class="socialMedia_anchord" target="_blank">
+              <i class="fa fa-brands fa-whatsapp"></i>  
+            </a>
         </div>
-      </nav>
-    </header>
+        </ul>
+      </div>
+    </nav>              
+  </header>
+  <section id="sectionPresentacion" class="section_presentacion">
+    <hr id="presentacionHr">
+    <article id="contenedorPresentacion" class="contenedor_presentacion">
+      <div class="contenedor_presentacion_h1">
+        <h1 class="presentacion_h1">IMPULSAMOS TU CAMINO DIGITAL</h1>
+      </div>
+      <div style="height: 290px;">
+      <div class="contenedor_btn_pulse">
+        <a href="#sectionServicios" class="btn_pulse">Descubrilos</a>          
+      </div>
+      <div id="contenedorAnimationChevron" class="contenedor_animationChevron">
+        <div class="container_chevron">
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+        </div>
+      </div>
+    </article>
+  </section>   
     <main id="indexMain" class="main">
-      <section id="sectionPresentacion" class="section_presentacion">
+<!--       <section id="sectionPresentacion" class="section_presentacion">
         <hr id="presentacionHr">
         <article id="contenedorPresentacion" class="contenedor_presentacion">
           <div class="contenedor_presentacion_h1">
@@ -113,7 +135,7 @@
             </div>
           </div>
         </article>
-      </section>     
+      </section>   --> 
       <section id="sectionServicios" class="section_servicios">
         <hr id="serviciosHr">
         <h2 id="sectionServiciosTitle" class="h2 section_servicios_title wow animate__animated animate__fadeInLeft">

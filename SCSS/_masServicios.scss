@@ -9,9 +9,11 @@
         @include camuflaje;
     }
     p{
-        @include p;
-        text-align: justify;
-        width: 80%;
+        color: $color_gris_claro;
+        font-family: $letra__principal;
+        @include camuflaje;
+        text-align: center;
+        width: 90%;
     }
 }
 .masServiciosa_speach{
@@ -57,7 +59,6 @@
 .masServicios_formulario{
     width: 100%; 
     @include flex__ColumnCenterAll;
-    @include margin__Espaciado(0,3em);
     h3{
         @include title;
         @include camuflaje;
@@ -77,7 +78,6 @@
         @include compatibilidad_transition(2.5s cubic-bezier(0.4, 0.2, 0.2, 1));
         @include margin__Espaciado(1em,1em);
         transition: all 1s ease-in-out;
-
     }
     .formulario_contenedor_datos{
         display: flex;
@@ -169,4 +169,7 @@
             }
         }
     }
+}
+.espaciado{
+    @include margin__Espaciado(1em,3em);
 }

@@ -605,14 +605,17 @@
   color: #F76304;
 }
 .masServicios_intro_content p {
-  width: 100%;
-  text-align: left;
   color: #E0E0E0;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  text-align: justify;
-  width: 80%;
+  font-family: "Fugaz One", cursive;
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  text-align: center;
+  width: 90%;
+}
+.masServicios_intro_content p:hover {
+  color: #F76304;
 }
 
 .masServiciosa_speach {
@@ -711,8 +714,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 0;
-  margin-bottom: 3em;
 }
 .masServicios_formulario h3 {
   margin-top: 2em;
@@ -837,6 +838,11 @@
   color: #F76304;
 }
 
+.espaciado {
+  margin-top: 1em;
+  margin-bottom: 3em;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -851,19 +857,35 @@ body {
   scroll-behavior: smooth;
 }
 
+.background {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("../assets/img/pack camino digital 3 1200.webp");
+  background-size: 100% 100%;
+  position: absolute;
+  z-index: -45;
+}
+
 header {
   width: 100%;
   clear: both;
   content: "";
   position: sticky;
   top: 0;
-  z-index: 45;
+  z-index: 95;
 }
 header .navbar {
   flex-wrap: nowrap;
 }
+header .particles-js-canvas-el {
+  position: absolute;
+  z-index: -15;
+  background-color: #000000;
+}
 header nav {
-  background-color: #202124;
+  position: relative;
+  background-color: transparent;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -968,16 +990,18 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   display: flex;
   margin-top: 0;
   margin-bottom: 2em;
+  background: none;
 }
 .section_presentacion .contenedor_presentacion {
   width: 100%;
-  background-color: inherit;
+  /* background-color: inherit; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 2em;
-  margin-top: 3em;
-  margin-bottom: 3em;
+  /*  background-position: bottom; */
+  /*         @include margin__Espaciado(3em,3em);
+   */
 }
 .section_presentacion .contenedor_presentacion .contenedor_presentacion_h1 {
   display: flex;
@@ -986,8 +1010,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   justify-content: flex-start;
   align-items: center;
   font-size: 20px;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  /*             @include margin__Espaciado(2em,2em); */
 }
 .section_presentacion .contenedor_presentacion .contenedor_presentacion_h1 .presentacion_h1 {
   color: #57A9DA;
@@ -1059,7 +1082,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   margin-top: 2em;
   margin-bottom: 2em;
   position: relative;
-  background-color: #202124;
+  background-color: #000000;
 }
 .section_servicios .servicio_principal_container .containerStar {
   display: flex;
