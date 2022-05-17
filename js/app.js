@@ -37,7 +37,7 @@ particlesJS(
         }
         },
         "size": {
-        "value": 3,
+        "value": 2,
         "random": true,
         "anim": {
             "enable": false,
@@ -76,7 +76,7 @@ particlesJS(
             "mode": "repulse"
         },
         "onclick": {
-            "enable": true,
+            "enable": false,
             "mode": "push"
         },
         "resize": true
