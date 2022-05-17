@@ -39,6 +39,8 @@ header{
     .particles-js-canvas-el{
         position: absolute;
         z-index: -15;
+        width: 100%;
+        height: 100%;
         background-color: #000000;
     }
     nav{
@@ -124,7 +126,7 @@ header{
         @include flex__ColumnCenterAll;
     }
     .logo_header{
-        width: $logo-width
+        width: $logo-width;
     }
     //secciones header
     .contenedor_header_secciones{

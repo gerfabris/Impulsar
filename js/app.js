@@ -9,13 +9,13 @@ particlesJS(
         }
         },
         "color": {
-        "value": "#E0E0E0"
+            "value": "#E0E0E0"
         },
         "shape": {
-        "type": "circle",
-        "stroke": {
-            "width": 0,
-            "color": "#000000"
+            "type": "circle",
+            "stroke": {
+                "width": 0,
+                "color": "#000000"
         },
         "polygon": {
             "nb_sides": 5
@@ -27,17 +27,17 @@ particlesJS(
         }
         },
         "opacity": {
-        "value": 1,
-        "random": true,
-        "anim": {
-            "enable": true,
-            "speed": 1,
-            "opacity_min": 0,
-            "sync": false
+            "value": 1,
+            "random": true,
+            "anim": {
+                "enable": true,
+                "speed": 1,
+                "opacity_min": 0,
+                "sync": false
         }
         },
         "size": {
-        "value": 1,
+        "value": 3,
         "random": true,
         "anim": {
             "enable": false,
@@ -110,3 +110,17 @@ particlesJS(
     "retina_detect": true
     }
 );
+
+/* const mediaqueryList = window.matchMedia("(max-width: 900px)");
+const contenedorParticles = document.getElementsByClassName("particles");
+const navbar = document.getElementById("navbar");
+if(mediaqueryList.matches) {
+    contenedorParticles.id= "sinParticles";
+    navbar.style.backgroundColor = "#000000";
+    console.log("sin");
+}else{
+    contenedorParticles.id= "particles-js";
+    navbar.style.background = "none";
+} */
+
+

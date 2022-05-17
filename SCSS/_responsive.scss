@@ -141,12 +141,12 @@
         }
         #toggler:checked ~ .contenedor_header_secciones{
             max-height: 100%;
+            background-color: #000000;
         }
         .socialMedia{
             @include margin__Espaciado(1em,1em);
         }
     }
-
 }
 @media screen and (max-width: 920px){
     .section_contacto{
