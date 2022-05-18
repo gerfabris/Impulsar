@@ -1,4 +1,4 @@
-var swiper = new Swiper(".carousel_container", {
+const swiperCards = new Swiper(".carousel_container", {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
@@ -17,9 +17,18 @@ var swiper = new Swiper(".carousel_container", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-  },
-  );
+  });
 
+const swiperPresentacion = new Swiper(".carouselPresentacion", {
+  direction: "vertical",
+  cssMode: true,
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  }, 
+});
 
 /*var swiperTitle = new Swiper(".swiper_title", {
     direction: "vertical",

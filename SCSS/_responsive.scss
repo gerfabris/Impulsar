@@ -73,6 +73,17 @@
         }
     }
 }
+@media screen and (max-width: 920px){
+    .section_contacto{
+        .formulario_contenedor_textarea{
+            .contenedor_btn_formulario{
+                .btn_formulario{
+                    min-width: 170px;
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width: 900px) {
     header nav{
         justify-content: space-between;
@@ -145,17 +156,6 @@
         }
         .socialMedia{
             @include margin__Espaciado(1em,1em);
-        }
-    }
-}
-@media screen and (max-width: 920px){
-    .section_contacto{
-        .formulario_contenedor_textarea{
-            .contenedor_btn_formulario{
-                .btn_formulario{
-                    min-width: 170px;
-                }
-            }
         }
     }
 }
@@ -252,6 +252,26 @@
     }
 }
 @media screen and (max-width: 520px) {
+    .section_presentacion{
+        .contenedor_presentacion{
+            .containerCarouselButton{
+                .carouselPresentacion{
+                    margin-top: 1em;
+                }
+                .container_btn_presentacion{
+                    margin-top: 4em;
+                    .btn_presentacion{
+                        color: $color_celeste_oscuro;
+                        border: 2px solid $color_celeste_oscuro;
+                    }
+                    .btn_presentacion::before{
+                        background: $color_celeste_oscuro;
+                    }
+                }
+            }
+
+        }
+    }
     .section_servicios{
         h2{
             width: 90%;

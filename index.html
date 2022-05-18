@@ -75,7 +75,7 @@
       <div id="contenedorHeaderSecciones" class="contenedor_header_secciones">
         <ul id="navList" class="list">
           <li><a id="anchordNav" class="anchord_secciones" href="#sectionPresentacion">Inicio</a></li>
-          <li><a id="anchordNav" class="anchord_secciones" href="#sectionServicios">¿Qué ofrecemos?</a></li>
+          <li><a id="anchordNav" class="anchord_secciones" href="#contenedorAnimationChevron">¿Cómo lo hacemos?</a></li>
           <li><a id="anchordNav" class="anchord_secciones" href="#sectionNosotros">¿Quiénes somos?</a></li>
           <li><a id="anchordNav" class="anchord_secciones" href="#sectionContacto">Contacto</a></li>
           <div class="socialMedia">
@@ -98,14 +98,28 @@
     </nav>              
   </header>
   <section id="sectionPresentacion" class="section_presentacion">
-    <hr id="presentacionHr">
+<!--     <hr id="presentacionHr"> -->
     <article id="contenedorPresentacion" class="contenedor_presentacion">
-      <div class="contenedor_presentacion_h1">
-        <h1 class="presentacion_h1">IMPULSAMOS TU CAMINO DIGITAL</h1>
-      </div>
-      <div style="height: 290px;">
-      <div class="contenedor_btn_pulse">
-        <a href="#sectionServicios" class="btn_pulse">Descubrilos</a>          
+<!--       <div class="contenedor_presentacion_h1">
+          <h1 class="presentacion_h1">IMPULSAMOS TU CAMINO DIGITAL</h1>
+      </div> -->
+      <div class="containerCarouselButton">
+        <div class="swiper mySwiper carouselPresentacion">
+          <div class="swiper-wrapper carouselPresentacion_content">
+            <div class="swiper-slide h1">IMPULSAMOS TU CAMINO DIGITAL</div>
+            <div class="swiper-slide h1">DISEÑO DE IDENTIDAD DE MARCA</div>
+            <div class="swiper-slide h1">DISEÑO GRÁFICO</div>
+            <div class="swiper-slide h1">DESARROLLO DE PÁGINAS WEB</div>
+            <div class="swiper-slide h1">MARKETING DIGITAL</div>
+            <div class="swiper-slide h1">REGISTRO DE MARCAS</div>
+            <div class="swiper-slide h1">DISEÑO DE MODELO DE NEGOCIOS</div>
+            <div class="swiper-slide h1">REDES SOCIALES</div>
+            <div class="swiper-slide h1">ASESORAMIENTO EMPRESARIAL</div>
+          </div>
+        </div>
+        <div class="container_btn_presentacion">
+          <a href="#sectionServicios" class="btn_presentacion">DESCUBRIR</a>          
+        </div>
       </div>
       <div id="contenedorAnimationChevron" class="contenedor_animationChevron">
         <div class="container_chevron">
@@ -139,14 +153,17 @@
       <section id="sectionServicios" class="section_servicios">
         <hr id="serviciosHr">
         <h2 id="sectionServiciosTitle" class="h2 section_servicios_title wow animate__animated animate__fadeInLeft">
-          ¿QUÉ OFRECEMOS?
+          ¿CÓMO LO HACEMOS?
         </h2>
+        <p class="section_servicios_paragraph">
+          Contamos con diferentes servicios que se conectan para que brindarte los elementos que se necesitan para construir una marca sólida que te permita ATRAER, CONECTAR y VENDER.
+        </p>
         <article id="particles-js" class="servicio_principal_container wow animate__animated animate__fadeInLeft">
-          <div class="containerStar">
+<!--           <div class="containerStar"> -->
             <!-- <i class="fa fa-solid fa-star stars_icon"></i> -->
-            <h3 class="h3 servicioPrincipal_title">
+<!--             <h3 class="h3 servicioPrincipal_title">
               NUESTROS PRODUCTOS ESTRELLA
-            </h3>
+            </h3> -->
             <!-- <i class="fa fa-solid fa-star stars_icon"></i> -->
             <!-- <img src="./assets/icons3D/star-dynamic-premium.png" class="servicioPrincipal_star" alt=""> -->
           </div>
@@ -212,7 +229,7 @@
         </article>
         <article class="caminoDigital_container" id="caminoDigitalContainer">
           <h2 id="sectionServiciosTitle" class="h2 section_servicios_title wow animate__animated animate__fadeInLeft">
-            ¿TE GUSTARON LOS TRES? ¡ADQUIRÍ EL PACK!
+            ¡CONTECTÁ LOS TRES IMPULSOS EN UN ÚNICO CAMINO DIGITAL!
           </h2>
           <div id="containerCaminoDigital" class="container_content_caminoDigital wow animate__animated animate__fadeInLeft delay-1">
             <div id="contenedorImagenCaminoDigital" class="caminoDigital_container_img">

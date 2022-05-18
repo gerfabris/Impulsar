@@ -5,7 +5,12 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    @include margin__Espaciado(2em,4em);
+    height: 100%;
+    min-height: 100px;
+    @include margin__Espaciado(0em,0em);
+    position: absolute;
+    top: 80%;
+    max-height: 50px;
 }
 .container_chevron{
     display: flex;
@@ -35,7 +40,8 @@
     top: 0;
     height: 100%;
     width: 50%;
-    background: $color_celeste_oscuro;
+    background: $color_gris_claro;
+    box-shadow: rgba(249, 251, 252, 0.884) 3px 4px 40px
 }
 .chevron:before {
     left: 0;

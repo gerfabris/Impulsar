@@ -122,6 +122,13 @@ $logo-width:calc(5em + 5vw);
         background-color: $color_naranja_cohete;
     }
 }
+@mixin camuflaje_active{
+    transition: all 1s ease-in-out;
+    @include compatibilidad_transition(all 1s ease-in-out);
+    &:active{
+        color: $color_naranja_cohete;
+    }
+}
 //animaciones
 @keyframes scroll{
     0%, 20% {
@@ -157,5 +164,10 @@ $base: 0.6rem;
     100%{
         opacity: 0;
         transform: translateY($base * 8) scale(0.5);
+    }
+}
+@keyframes camuflaje{
+    0%{
+        color: $color_naranja_cohete;
     }
 }

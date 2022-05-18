@@ -70,7 +70,7 @@ header{
                         color: inherit;
                     }
                 }
-                li:hover{
+                a:hover{
                     color: $color_celeste_oscuro;
                 }
                 .socialMedia{
@@ -145,25 +145,35 @@ header{
 }
 .section_presentacion{
     width: 100%;
+    height: 100vh;
     display: flex;
-    @include margin__Espaciado(0,2em);
+    @include margin__Espaciado(0,0em);
     background: none;
     .contenedor_presentacion{
         width: 100%;
+        height: 100%;
         /* background-color: inherit; */
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 2em;
-
+        align-items: center;
+        //padding: 2em;
        /*  background-position: bottom; */
-/*         @include margin__Espaciado(3em,3em);
- */        .contenedor_presentacion_h1{
+/*         @include margin__Espaciado(3em,3em); */
+        .containerCarouselButton{
             display: flex;
-            flex-wrap: wrap;
+            justify-content: stretch;
+            align-items: center;
+            flex-direction: column;
             width: 100%;
+            height: 100%;
+        }   
+        .contenedor_presentacion_h1{
+            display: flex;
+            flex-direction: column;
             justify-content: flex-start;
             align-items: center;
+            width: 100%;
             font-size: 20px;
 /*             @include margin__Espaciado(2em,2em); */
             .presentacion_h1{
@@ -171,15 +181,93 @@ header{
                 width: 80%;
             }
         }
+        .swiper {
+            max-height: 100px;
+            width: 100%;
+            height: 100%;
+        }       
+        .swiper-slide {
+            text-align: center;
+            animation: camuflaje;
+            //font-size: 18px;
+            background: none;
+            color: $color_celeste_oscuro;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        .swiper-slide-active{
+            transition: all 2s ease-in-out;
+            color: $color_naranja_cohete;
+        }
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .container_btn_presentacion{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            margin-top: 1em;
+            .btn_presentacion{
+                font-family: $letra__principal;
+                text-decoration: none;
+                width: 130px;
+                height: 50px;
+                border: 2px solid $color_gris_claro;
+                border-radius: 10px;
+                background-color: transparent;
+                color: $color_gris_claro;
+                cursor: pointer;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .btn_presentacion:hover{
+                color: $color_celeste_oscuro;
+                border: 2px solid $color_celeste_oscuro;
+                transition: 1s ease;
+            }
+            .btn_presentacion::before{
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 50px;
+                background: transparent;
+                height: 50%;
+                width: 100%;
+                transform: perspective(1em) rotateX(40deg) scale(1, 0.45);
+                filter: blur(8px);
+                transition: 1s ease;
+            }
+            .btn_presentacion:hover::before{
+                background: $color_celeste_oscuro;
+                top: 50px;
+            }
+        }
     }
-
 }
 .contenedor_btn_pulse{
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
     .btn_pulse{
         color: $color_gris_claro;
         font-family: $letra__secundaria;
@@ -197,13 +285,19 @@ header{
 }
 .section_servicios{
     @include secciones;
-    @include margin__Espaciado(4em,2em);
+    @include margin__Espaciado(0em,2em);
     hr{
         @include hr;
+        margin-top: -2em;
     }
     h2{
         @include h2;
+        margin-top: 0;
         @include camuflaje;
+    }
+    .section_servicios_paragraph{
+        @include p;
+        width: 60%;
     }
     .particles-js-canvas-el{
         position: absolute
