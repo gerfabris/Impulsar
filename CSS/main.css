@@ -1178,6 +1178,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   margin-top: 1em;
   margin-bottom: 1em;
   width: 60%;
+  text-align: justify;
 }
 .section_servicios .section_servicios_paragraph span {
   color: #57A9DA;
