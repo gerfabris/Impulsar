@@ -24,6 +24,7 @@ const swiperPresentacion = new Swiper(".carouselPresentacion", {
   cssMode: true,
   spaceBetween: 30,
   centeredSlides: true,
+  mousewheel: false,
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,

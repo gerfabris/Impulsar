@@ -56,7 +56,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 50px;
   height: 100%;
 }
 
@@ -159,6 +159,10 @@
   width: 100%;
   text-align: center;
   transition: all 0.5s ease-in-out;
+}
+.dp i {
+  font-size: 30px;
+  color: white;
 }
 
 .card_content {
@@ -872,7 +876,7 @@ body {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background-image: url("../assets/img/pack camino digital 3 1200.webp");
+  background-image: url("../assets/img/background.jpg");
   background-size: 100% 100%;
   position: absolute;
   z-index: -45;
@@ -1301,10 +1305,9 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   align-items: center;
   justify-content: center;
   width: 25%;
-  min-width: 22rem;
-  max-width: 20rem;
+  max-width: 22rem;
   height: 100%;
-  min-height: 38rem;
+  min-height: 32.5rem;
   margin-top: 1em;
   margin-bottom: 1em;
   box-shadow: rgba(87, 169, 218, 0.884) 3px 4px 17px;
@@ -1348,13 +1351,13 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 1em;
-  margin-bottom: 2em;
+  margin-top: 0em;
+  margin-bottom: 1em;
 }
 .section_servicios .container_content_impulso .container_impulso_speach {
   width: 90%;
   height: 100%;
-  min-height: 15rem;
+  min-height: 12rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1374,8 +1377,8 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 1em;
   margin-bottom: 1em;
-  font-weight: bold;
-  width: 85%;
+  text-align: justify;
+  width: 70%;
 }
 .section_servicios .container_content_impulso .btn_impulsos {
   margin-top: 1em;
@@ -1437,6 +1440,9 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.section_servicios .caminoDigital_container h2 {
+  margin-top: 1em;
 }
 .section_servicios .caminoDigital_container .container_content_caminoDigital {
   display: flex;
@@ -1824,7 +1830,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   flex-direction: row;
   flex-wrap: wrap;
   width: 80%;
-  max-width: 1000px;
+  max-width: 500px;
   justify-content: center;
   align-items: flex-start;
 }
@@ -2095,6 +2101,15 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   margin-top: 2em;
   margin-bottom: 2em;
 }
+.section_contacto .contacto_calendly .container_calendar {
+  width: 90%;
+  max-width: 600px;
+  height: 100%;
+  max-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .whatsapp {
   position: fixed;
@@ -2351,6 +2366,13 @@ header .center div {
     margin-top: 1em;
     margin-bottom: 1em;
   }
+
+  .section_servicios .container_content_impulso {
+    min-width: 20rem;
+  }
+  .section_servicios .container_content_impulso .container_impulso_speach .impulso_paragraph {
+    width: 85%;
+  }
 }
 @media screen and (max-width: 768px) {
   .socialMedia_anchord i, .socialMedia_anchord img {
@@ -2488,8 +2510,19 @@ header .center div {
     min-width: 80%;
   }
 
+  .section_contacto .contacto_redes_container {
+    margin-top: 0em;
+    margin-bottom: 0em;
+    width: 90%;
+  }
   .section_contacto .contacto_redes_container .contacto_redes {
     width: 80%;
+  }
+  .section_contacto .formulario_contenedor_datos {
+    margin-bottom: 0;
+  }
+  .section_contacto .formulario_contenedor_textarea {
+    margin-top: 0;
   }
 }
 @media screen and (max-width: 320px) {

@@ -158,6 +158,16 @@
             @include margin__Espaciado(1em,1em);
         }
     }
+    .section_servicios{
+        .container_content_impulso{
+            min-width: 20rem;
+            .container_impulso_speach{
+                .impulso_paragraph{
+                    width: 85%;
+                }
+            } 
+        }
+    }
 }
 @media screen and (max-width: 768px){
     .socialMedia_anchord i, .socialMedia_anchord img{
@@ -326,9 +336,17 @@
     }
     .section_contacto{
         .contacto_redes_container{
+            @include margin__Espaciado(0em,0em);
+            width: 90%;
             .contacto_redes{
                 width: 80%;
             }
+        }
+        .formulario_contenedor_datos{
+            margin-bottom: 0;
+        }
+        .formulario_contenedor_textarea{
+            margin-top: 0;
         }
     }
 }
