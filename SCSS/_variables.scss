@@ -129,6 +129,11 @@ $logo-width:calc(5em + 5vw);
         color: $color_naranja_cohete;
     }
 }
+@mixin span{
+    color: $color_celeste_oscuro;
+    font-family: $letra__principal;
+    @include camuflaje;
+}
 //animaciones
 @keyframes scroll{
     0%, 20% {

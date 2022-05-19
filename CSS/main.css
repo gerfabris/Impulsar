@@ -1154,7 +1154,6 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   transition: all 0.35 ease-in-out;
   margin-top: 3em;
   margin-bottom: 3em;
-  margin-top: -2em;
 }
 .section_servicios h2 {
   margin-top: 2em;
@@ -1163,7 +1162,6 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   text-align: center;
   color: #57A9DA;
   font-family: "Fugaz One", cursive;
-  margin-top: 0;
   transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
   -webkit-transition: all 1s ease-in-out;
@@ -1180,6 +1178,17 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   margin-top: 1em;
   margin-bottom: 1em;
   width: 60%;
+}
+.section_servicios .section_servicios_paragraph span {
+  color: #57A9DA;
+  font-family: "Fugaz One", cursive;
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+.section_servicios .section_servicios_paragraph span:hover {
+  color: #F76304;
 }
 .section_servicios .particles-js-canvas-el {
   position: absolute;
@@ -1283,7 +1292,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   width: 100%;
   height: 100%;
   margin-top: 2em;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
 .section_servicios .container_content_impulso {
   display: flex;
@@ -2440,6 +2449,9 @@ header .center div {
   }
 
   .section_servicios h2 {
+    width: 90%;
+  }
+  .section_servicios .section_servicios .section_servicios_paragraph {
     width: 90%;
   }
   .section_servicios .container_content_impulso .container_impulso_speach {
