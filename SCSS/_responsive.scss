@@ -168,6 +168,17 @@
             } 
         }
     }
+    .masServiciosa_speach{
+        .masServicios_brindamos{
+            .beneficios{
+                flex-direction: column;
+                .beneficios_item{
+                    width: 90%;
+                }
+            }
+        }
+
+    }
 }
 @media screen and (max-width: 768px){
     .socialMedia_anchord i, .socialMedia_anchord img{
@@ -259,6 +270,9 @@
     }
     .masServiciosa_speach{
         width: 90%;
+        p{
+            width: 90%;
+        }
     }
 }
 @media screen and (max-width: 520px) {

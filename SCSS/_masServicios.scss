@@ -14,18 +14,59 @@
         @include camuflaje;
         text-align: center;
         width: 90%;
+        @include margin__Espaciado(1em,2em);
     }
 }
 .masServiciosa_speach{
     @include flex__ColumnCenterAll;
-    width: 60%;
-    h2{
-        @include title;
-        @include camuflaje;
+    width: 90%;
+    .masServicios_brindamos{
+        @include flex__ColumnCenterAll;
+        width: 100%;     
+        h2{
+            @include title;
+            @include camuflaje;
+            width: 90%;
+        }
+        .beneficios{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 90%;
+            .beneficios_item{
+                width: 30%;
+                max-width: 280px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                @include margin__Espaciado(1em,1em);
+                i{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 30px;
+                    width: 30px;
+                    height: 30px;
+                    color: $color_gris_claro;
+                    text-align: center;
+                    line-height: 32px;
+                }
+                p{
+                    font-family: $letra__principal;
+                    color: $color_gris_claro;
+                    @include camuflaje;
+                    text-align: center;
+                }
+            }
+        }
     }
     p{
         @include p;
-        width: 80%;
+        width: 60%;
         text-align: justify;
     }
 }

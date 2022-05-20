@@ -589,6 +589,76 @@
     transform: rotateZ(360deg);
   }
 }
+.container_dots {
+  top: 30%;
+  width: 40px;
+  height: 40px;
+  transform: translate(-50%, -50%);
+}
+
+.container_dots span {
+  position: absolute;
+  display: block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: none;
+  animation: dots 2s linear infinite;
+}
+
+span:nth-child(1) {
+  background: #57A9DA;
+  box-shadow: 0 0 25px #57A9DA;
+}
+
+span:nth-child(2) {
+  background: #57A9DA;
+  box-shadow: 0 0 25px #57A9DA;
+  animation-delay: -1s;
+}
+
+span:nth-child(3) {
+  background: #F76304;
+  box-shadow: 0 0 25px #F76304;
+  animation-delay: -0.5s;
+}
+
+span:nth-child(4) {
+  background: #F76304;
+  box-shadow: 0 0 25px #F76304;
+  animation-delay: -1.5s;
+}
+
+@keyframes dots {
+  0%, 100% {
+    top: 0;
+    left: 0;
+  }
+  12.5% {
+    top: 30%;
+    left: 50%;
+  }
+  37.5% {
+    top: 50%;
+    left: 80%;
+  }
+  50% {
+    top: 100%;
+    left: 100%;
+  }
+  62.5% {
+    top: 80%;
+    left: 50%;
+  }
+  75% {
+    top: 100%;
+    left: 0%;
+  }
+  87.5% {
+    top: 50%;
+    left: 3%;
+  }
+}
 .masServicios_section_intro {
   display: flex;
   justify-content: center;
@@ -628,6 +698,8 @@
   -o-transition: all 1s ease-in-out;
   text-align: center;
   width: 90%;
+  margin-top: 1em;
+  margin-bottom: 2em;
 }
 .masServicios_intro_content p:hover {
   color: #F76304;
@@ -638,9 +710,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 60%;
+  width: 90%;
 }
-.masServiciosa_speach h2 {
+.masServiciosa_speach .masServicios_brindamos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.masServiciosa_speach .masServicios_brindamos h2 {
   margin-top: 2em;
   margin-bottom: 1em;
   width: 100%;
@@ -651,8 +730,51 @@
   -moz-transition: all 1s ease-in-out;
   -webkit-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
+  width: 90%;
 }
-.masServiciosa_speach h2:hover {
+.masServiciosa_speach .masServicios_brindamos h2:hover {
+  color: #F76304;
+}
+.masServiciosa_speach .masServicios_brindamos .beneficios {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+}
+.masServiciosa_speach .masServicios_brindamos .beneficios .beneficios_item {
+  width: 30%;
+  max-width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.masServiciosa_speach .masServicios_brindamos .beneficios .beneficios_item i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  color: #E0E0E0;
+  text-align: center;
+  line-height: 32px;
+}
+.masServiciosa_speach .masServicios_brindamos .beneficios .beneficios_item p {
+  font-family: "Fugaz One", cursive;
+  color: #E0E0E0;
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  text-align: center;
+}
+.masServiciosa_speach .masServicios_brindamos .beneficios .beneficios_item p:hover {
   color: #F76304;
 }
 .masServiciosa_speach p {
@@ -662,7 +784,7 @@
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 1em;
   margin-bottom: 1em;
-  width: 80%;
+  width: 60%;
   text-align: justify;
 }
 
@@ -2101,7 +2223,8 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   margin-top: 2em;
   margin-bottom: 2em;
 }
-.section_contacto .contacto_calendly .container_calendar {
+
+.container_calendar {
   width: 90%;
   max-width: 600px;
   height: 100%;
@@ -2373,6 +2496,13 @@ header .center div {
   .section_servicios .container_content_impulso .container_impulso_speach .impulso_paragraph {
     width: 85%;
   }
+
+  .masServiciosa_speach .masServicios_brindamos .beneficios {
+    flex-direction: column;
+  }
+  .masServiciosa_speach .masServicios_brindamos .beneficios .beneficios_item {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 768px) {
   .socialMedia_anchord i, .socialMedia_anchord img {
@@ -2453,6 +2583,9 @@ header .center div {
   }
 
   .masServiciosa_speach {
+    width: 90%;
+  }
+  .masServiciosa_speach p {
     width: 90%;
   }
 }
