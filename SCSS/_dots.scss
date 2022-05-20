@@ -4,7 +4,7 @@
     height: 40px;
     transform: translate(-50%, -50%);
 }
-.container_dots span{
+.container_dots_span{
     position: absolute;
     display: block;
     height: 10px;
@@ -13,22 +13,22 @@
     background: none;
     animation: dots 2s linear infinite;
 }
-span:nth-child(1){
+.container_dots_span_1{
     background: $color_celeste_oscuro;
     box-shadow: 0 0 25px $color_celeste_oscuro;
 }
-span:nth-child(2){
+.container_dots_span_2{
     background: $color_celeste_oscuro;
     box-shadow: 0 0 25px $color_celeste_oscuro;
     animation-delay: -1s;
 }
-span:nth-child(3){
+.container_dots_span_3{
     background: $color_naranja_cohete;
     box-shadow: 0 0 25px $color_naranja_cohete;
     animation-delay: -0.5s;
 
 }
-span:nth-child(4){
+.container_dots_span_4{
     background: $color_naranja_cohete;
     box-shadow: 0 0 25px $color_naranja_cohete;
     animation-delay: -1.5s;
