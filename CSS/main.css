@@ -614,24 +614,20 @@
 
 .container_dots_span_1 {
   background: #57A9DA;
-  box-shadow: 0 0 25px #57A9DA;
 }
 
 .container_dots_span_2 {
   background: #57A9DA;
-  box-shadow: 0 0 25px #57A9DA;
   animation-delay: -1s;
 }
 
 .container_dots_span_3 {
   background: #F76304;
-  box-shadow: 0 0 25px #F76304;
   animation-delay: -0.5s;
 }
 
 .container_dots_span_4 {
   background: #F76304;
-  box-shadow: 0 0 25px #F76304;
   animation-delay: -1.5s;
 }
 
@@ -711,21 +707,21 @@
   color: #F76304;
 }
 
-.masServiciosa_speach {
+.masServicios_speach {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 90%;
 }
-.masServiciosa_speach .masServicios_brindamos {
+.masServicios_speach .masServicios_brindamos {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
 }
-.masServiciosa_speach .masServicios_brindamos h2 {
+.masServicios_speach .masServicios_brindamos h2 {
   margin-top: 2em;
   margin-bottom: 1em;
   width: 100%;
@@ -738,10 +734,10 @@
   -o-transition: all 1s ease-in-out;
   width: 90%;
 }
-.masServiciosa_speach .masServicios_brindamos h2:hover {
+.masServicios_speach .masServicios_brindamos h2:hover {
   color: #F76304;
 }
-.masServiciosa_speach .masServicios_brindamos .beneficios {
+.masServicios_speach .masServicios_brindamos .beneficios {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -749,7 +745,7 @@
   align-items: center;
   width: 90%;
 }
-.masServiciosa_speach .masServicios_brindamos .beneficios .beneficios_item {
+.masServicios_speach .masServicios_brindamos .beneficios .beneficios_item {
   width: 30%;
   max-width: 280px;
   display: flex;
@@ -760,7 +756,7 @@
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.masServiciosa_speach .masServicios_brindamos .beneficios .beneficios_item i {
+.masServicios_speach .masServicios_brindamos .beneficios .beneficios_item i {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -771,7 +767,7 @@
   text-align: center;
   line-height: 32px;
 }
-.masServiciosa_speach .masServicios_brindamos .beneficios .beneficios_item p {
+.masServicios_speach .masServicios_brindamos .beneficios .beneficios_item p {
   font-family: "Fugaz One", cursive;
   color: #E0E0E0;
   transition: all 1s ease-in-out;
@@ -780,18 +776,85 @@
   -o-transition: all 1s ease-in-out;
   text-align: center;
 }
-.masServiciosa_speach .masServicios_brindamos .beneficios .beneficios_item p:hover {
+.masServicios_speach .masServicios_brindamos .beneficios .beneficios_item p:hover {
   color: #F76304;
 }
-.masServiciosa_speach p {
+.masServicios_speach .masServicios__speach__container__paragraphBeneficios {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: flex-start;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.masServicios_speach .masServicios_speach_container_paragraph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  border-radius: 20px;
+  box-shadow: #202124 3px 4px 17px;
+  transition: all 1s ease-in-out;
+  width: 68%;
+}
+.masServicios_speach .masServicios_speach_container_paragraph p {
   width: 100%;
   text-align: left;
   color: #E0E0E0;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 1em;
   margin-bottom: 1em;
-  width: 60%;
+  width: 90%;
   text-align: justify;
+}
+.masServicios_speach .masServicios__speach__benefician {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2em;
+  height: 100%;
+  width: 25%;
+}
+.masServicios_speach .masServicios__speach__benefician i {
+  font-size: 50px;
+  color: #E0E0E0;
+  text-align: center;
+  text-shadow: rgb(87, 169, 218) 3px 4px 17px;
+  transition: all 1s ease-in-out;
+}
+.masServicios_speach .masServicios__speach__benefician i:hover {
+  text-shadow: #F76304 3px 4px 17px;
+}
+.masServicios_speach .masServicios__speach__benefician .benefician_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  min-height: 400px;
+  width: 95%;
+  color: #E0E0E0;
+  text-shadow: rgb(87, 169, 218) 3px 4px 17px;
+  transition: all 1s ease-in-out;
+}
+.masServicios_speach .masServicios__speach__benefician .benefician_container:hover {
+  text-shadow: #F76304 3px 4px 17px;
+}
+.masServicios_speach .masServicios__speach__benefician .benefician_container .benefician {
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.masServicios_speach .masServicios__speach__benefician .benefician_container .benefician i {
+  font-size: 20px;
+  color: #E0E0E0;
+  margin-right: 0.2em;
 }
 
 .masServicios_title {
@@ -872,6 +935,46 @@
 }
 .masServicios_formulario h3:hover {
   color: #F76304;
+}
+.masServicios_formulario .contacto_redes_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  max-width: 500px;
+  justify-content: center;
+  align-items: flex-start;
+}
+.masServicios_formulario .contacto_redes_container .contacto_redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+}
+.masServicios_formulario .contacto_redes_container .contacto_redes .contacto_redes_anchord {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 1em;
+  text-align: center;
+  text-decoration: none;
+  color: #E0E0E0;
+  box-shadow: #202124 2px 2px 5px;
+  border-radius: 50%;
+}
+.masServicios_formulario .contacto_redes_container .contacto_redes .contacto_redes_anchord:hover {
+  color: #F76304;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(236, 129, 29, 0.89);
+  transition: all 0.4s ease-in-out;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -moz-transform: scale(1.2);
 }
 .masServicios_formulario form {
   width: 80%;
@@ -2533,10 +2636,10 @@ header .center div {
     width: 85%;
   }
 
-  .masServiciosa_speach .masServicios_brindamos .beneficios {
+  .masServicios_speach .masServicios_brindamos .beneficios {
     flex-direction: column;
   }
-  .masServiciosa_speach .masServicios_brindamos .beneficios .beneficios_item {
+  .masServicios_speach .masServicios_brindamos .beneficios .beneficios_item {
     width: 90%;
   }
 }
@@ -2621,10 +2724,10 @@ header .center div {
     width: 90%;
   }
 
-  .masServiciosa_speach {
+  .masServicios_speach {
     width: 90%;
   }
-  .masServiciosa_speach p {
+  .masServicios_speach p {
     width: 90%;
   }
 }

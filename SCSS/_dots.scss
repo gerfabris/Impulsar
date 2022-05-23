@@ -15,22 +15,22 @@
 }
 .container_dots_span_1{
     background: $color_celeste_oscuro;
-    box-shadow: 0 0 25px $color_celeste_oscuro;
+    //box-shadow: 0 0 25px $color_celeste_oscuro;
 }
 .container_dots_span_2{
     background: $color_celeste_oscuro;
-    box-shadow: 0 0 25px $color_celeste_oscuro;
+    //box-shadow: 0 0 25px $color_celeste_oscuro;
     animation-delay: -1s;
 }
 .container_dots_span_3{
     background: $color_naranja_cohete;
-    box-shadow: 0 0 25px $color_naranja_cohete;
+    //box-shadow: 0 0 25px $color_naranja_cohete;
     animation-delay: -0.5s;
 
 }
 .container_dots_span_4{
     background: $color_naranja_cohete;
-    box-shadow: 0 0 25px $color_naranja_cohete;
+    //box-shadow: 0 0 25px $color_naranja_cohete;
     animation-delay: -1.5s;
 }
 @keyframes dots {

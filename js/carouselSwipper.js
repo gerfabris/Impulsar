@@ -27,7 +27,7 @@ const swiperPresentacion = new Swiper(".carouselPresentacion", {
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,
-  }, 
+  },
 });
 
 /*var swiperTitle = new Swiper(".swiper_title", {
