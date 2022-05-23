@@ -185,6 +185,9 @@
         margin-bottom: 1em;
     }
     .section_servicios{
+        .section_servicios_paragraph{
+            width: 80%;
+        }
         .container_content_impulso{
             flex-direction: column;
             width: 100%;
@@ -238,7 +241,7 @@
         }
         .nosotros_mision_container{
             .nosotros_mision_paragraph{
-                width: 90%;
+                width: 100%;
             }
         }
     }

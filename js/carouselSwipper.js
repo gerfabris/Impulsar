@@ -21,7 +21,6 @@ const swiperCards = new Swiper(".carousel_container", {
 
 const swiperPresentacion = new Swiper(".carouselPresentacion", {
   direction: "vertical",
-  cssMode: true,
   spaceBetween: 30,
   centeredSlides: true,
   mousewheel: false,

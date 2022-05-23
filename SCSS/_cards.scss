@@ -24,6 +24,9 @@
     &:hover .dp{
         transform: translateY(15rem);
         @include compatibilidad_transform(translateY(15rem));
+        i{
+            color: $color_naranja_cohete;
+        }
     };
     &:hover{
         box-shadow: rgba(236, 129, 29, 0.89) 3px 4px 17px;
@@ -35,6 +38,7 @@
 .dp{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     width: 100%;
     height: 100%;
@@ -52,6 +56,8 @@
     i{
         font-size: 30px;
         color: white;
+        position: absolute;
+        bottom: 10%;
     }
 }
 .card_content{
