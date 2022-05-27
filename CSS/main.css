@@ -12,7 +12,7 @@
 }
 @keyframes pulsate {
   0% {
-    box-shadow: 0 0 25px #F76304, 0 0 50px #FFC93A;
+    box-shadow: 0 0 25px #f49c13, 0 0 50px #FFC93A;
   }
 }
 @keyframes move-chevron {
@@ -34,7 +34,7 @@
 }
 @keyframes camuflaje {
   0% {
-    color: #F76304;
+    color: #f49c13;
   }
 }
 .contenedor_animationChevron {
@@ -134,13 +134,13 @@
   -moz-transform: translateY(15rem);
 }
 .card:hover .dp i {
-  color: #F76304;
+  color: #f49c13;
 }
 .card:hover {
   box-shadow: rgba(236, 129, 29, 0.89) 3px 4px 17px;
 }
 .card:hover .card_title {
-  color: #F76304;
+  color: #f49c13;
 }
 
 .dp {
@@ -215,9 +215,9 @@
   border-radius: 10px;
 }
 .card_content .contenedor_btn_card .btn_card:hover {
-  color: #F76304;
+  color: #f49c13;
   animation: pulsate 1s ease-in-out;
-  border: 3px solid #F76304;
+  border: 3px solid #f49c13;
 }
 
 /* @media screen and (min-width: 320px) {
@@ -268,11 +268,11 @@
 .card_masServicios:hover {
   transition: all 1s ease-in-out;
   box-shadow: rgba(236, 129, 29, 0.89) 3px 4px 17px;
-  outline: 1px solid #F76304;
+  outline: 1px solid #f49c13;
   outline-offset: -8px;
 }
 .card_masServicios:hover .card_title {
-  color: #F76304;
+  color: #f49c13;
 }
 .card_masServicios .contenedor_btn_card {
   width: 100%;
@@ -292,9 +292,9 @@
   border-radius: 10px;
 }
 .card_masServicios .contenedor_btn_card .btn_card:hover {
-  color: #F76304;
+  color: #f49c13;
   animation: pulsate 1s ease-in-out;
-  border: 3px solid #F76304;
+  border: 3px solid #f49c13;
 }
 
 .dp_masServicios {
@@ -474,10 +474,10 @@
 }
 
 .adn_container:hover .adn_botton {
-  background-color: #F76304;
+  background-color: #f49c13;
 }
 .adn_container:hover .adn_line {
-  border: 1px solid #F76304;
+  border: 1px solid #f49c13;
 }
 
 @keyframes rotar {
@@ -578,16 +578,16 @@
   }
 }
 .valores_content:hover span:nth-child(1), .beneficio_content:hover span:nth-child(1) {
-  background: linear-gradient(to right, transparent, #F76304);
+  background: linear-gradient(to right, transparent, #f49c13);
 }
 .valores_content:hover span:nth-child(2), .beneficio_content:hover span:nth-child(2) {
-  background: linear-gradient(to bottom, transparent, #F76304);
+  background: linear-gradient(to bottom, transparent, #f49c13);
 }
 .valores_content:hover span:nth-child(3), .beneficio_content:hover span:nth-child(3) {
-  background: linear-gradient(to left, transparent, #F76304);
+  background: linear-gradient(to left, transparent, #f49c13);
 }
 .valores_content:hover span:nth-child(4), .beneficio_content:hover span:nth-child(4) {
-  background: linear-gradient(to top, transparent, #F76304);
+  background: linear-gradient(to top, transparent, #f49c13);
 }
 
 @keyframes girar {
@@ -622,12 +622,12 @@
 }
 
 .container_dots_span_3 {
-  background: #F76304;
+  background: #f49c13;
   animation-delay: -0.5s;
 }
 
 .container_dots_span_4 {
-  background: #F76304;
+  background: #f49c13;
   animation-delay: -1.5s;
 }
 
@@ -689,7 +689,7 @@
   -o-transition: all 1s ease-in-out;
 }
 .masServicios_intro_content h1:hover {
-  color: #F76304;
+  color: #f49c13;
 }
 .masServicios_intro_content p {
   color: #E0E0E0;
@@ -704,7 +704,7 @@
   margin-bottom: 2em;
 }
 .masServicios_intro_content p:hover {
-  color: #F76304;
+  color: #f49c13;
 }
 
 .masServicios_speach {
@@ -735,7 +735,7 @@
   width: 90%;
 }
 .masServicios_speach .masServicios_brindamos h2:hover {
-  color: #F76304;
+  color: #f49c13;
 }
 .masServicios_speach .masServicios_brindamos .beneficios {
   display: flex;
@@ -777,7 +777,7 @@
   text-align: center;
 }
 .masServicios_speach .masServicios_brindamos .beneficios .beneficios_item p:hover {
-  color: #F76304;
+  color: #f49c13;
 }
 .masServicios_speach .masServicios__speach__container__paragraphBeneficios {
   display: flex;
@@ -829,7 +829,7 @@
   transition: all 1s ease-in-out;
 }
 .masServicios_speach .masServicios__speach__benefician i:hover {
-  text-shadow: #F76304 3px 4px 17px;
+  text-shadow: #f49c13 3px 4px 17px;
 }
 .masServicios_speach .masServicios__speach__benefician .benefician_container {
   display: flex;
@@ -845,7 +845,7 @@
   transition: all 1s ease-in-out;
 }
 .masServicios_speach .masServicios__speach__benefician .benefician_container:hover {
-  text-shadow: #F76304 3px 4px 17px;
+  text-shadow: #f49c13 3px 4px 17px;
 }
 .masServicios_speach .masServicios__speach__benefician .benefician_container .benefician {
   text-align: left;
@@ -870,7 +870,7 @@
   -o-transition: all 1s ease-in-out;
 }
 .masServicios_title:hover {
-  color: #F76304;
+  color: #f49c13;
 }
 
 .carousel_masServicios {
@@ -906,7 +906,7 @@
   -o-transition: all 1s ease-in-out;
 }
 .masServicios_calendly h3:hover {
-  color: #F76304;
+  color: #f49c13;
 }
 .masServicios_calendly .container_calendly {
   width: 60%;
@@ -934,7 +934,7 @@
   -o-transition: all 1s ease-in-out;
 }
 .masServicios_formulario h3:hover {
-  color: #F76304;
+  color: #f49c13;
 }
 .masServicios_formulario .contacto_redes_container {
   display: flex;
@@ -967,7 +967,7 @@
   border-radius: 50%;
 }
 .masServicios_formulario .contacto_redes_container .contacto_redes .contacto_redes_anchord:hover {
-  color: #F76304;
+  color: #f49c13;
   border-radius: 50%;
   box-shadow: 2px 2px 5px rgba(236, 129, 29, 0.89);
   transition: all 0.4s ease-in-out;
@@ -1064,9 +1064,9 @@
   border-radius: 10px;
 }
 .masServicios_formulario .formulario_contenedor_textarea .contenedor_btn_formulario .btn_formulario:hover {
-  color: #F76304;
+  color: #f49c13;
   animation: pulsate 1s ease-in-out;
-  border: 3px solid #F76304;
+  border: 3px solid #f49c13;
 }
 .masServicios_formulario .contacto_formulario {
   transition: all 1s ease-in-out;
@@ -1075,13 +1075,13 @@
   box-shadow: 3px 4px 17px rgba(236, 129, 29, 0.89);
 }
 .masServicios_formulario .contacto_formulario:hover .formulario_contenedor_datos h3 {
-  color: #F76304;
+  color: #f49c13;
 }
 .masServicios_formulario .contacto_formulario:hover .contenedor_inputs {
-  color: #F76304;
+  color: #f49c13;
 }
 .masServicios_formulario .contacto_formulario:hover .formulario_contenedor_textarea h3 {
-  color: #F76304;
+  color: #f49c13;
 }
 
 .espaciado {
@@ -1096,7 +1096,7 @@
 }
 
 body {
-  font-family: "Fugaz One", cursive;
+  font-family: Arial, Helvetica, sans-serif;
   font-display: swap;
   box-sizing: border-box;
   background-color: #131e2c;
@@ -1306,7 +1306,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
 }
 .section_presentacion .contenedor_presentacion .swiper-slide-active {
   transition: all 2s ease-in-out;
-  color: #F76304;
+  color: #f49c13;
 }
 .section_presentacion .contenedor_presentacion .swiper-slide img {
   display: block;
@@ -1376,9 +1376,9 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   border-radius: 10px;
 }
 .contenedor_btn_pulse .btn_pulse:hover {
-  color: #F76304;
+  color: #f49c13;
   animation: pulsate 1s ease-in-out;
-  border: 3px solid #F76304;
+  border: 3px solid #f49c13;
 }
 
 .section_servicios {
@@ -1410,7 +1410,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   -o-transition: all 1s ease-in-out;
 }
 .section_servicios h2:hover {
-  color: #F76304;
+  color: #f49c13;
 }
 .section_servicios .section_servicios_paragraph {
   width: 100%;
@@ -1431,7 +1431,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   -o-transition: all 1s ease-in-out;
 }
 .section_servicios .section_servicios_paragraph span:hover {
-  color: #F76304;
+  color: #f49c13;
 }
 .section_servicios .particles-js-canvas-el {
   position: absolute;
@@ -1520,7 +1520,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
 }
 .section_servicios .servicio_principal_container .caminoDigital_pie {
   width: 60%;
-  color: #F76304;
+  color: #f49c13;
   text-align: left;
   font-family: "Fugaz One", cursive;
   margin-top: 1em;
@@ -1556,7 +1556,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   box-shadow: rgba(236, 129, 29, 0.89) 3px 4px 17px;
 }
 .section_servicios .container_content_impulso:hover .container_impulso_speach .impulso_title {
-  color: #F76304;
+  color: #f49c13;
 }
 .section_servicios .container_content_impulso .contenedor_impulso_img {
   width: 8rem;
@@ -1649,7 +1649,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   -o-transition: all 1s ease-in-out;
 }
 .section_servicios .carousel_title:hover {
-  color: #F76304;
+  color: #f49c13;
 }
 .section_servicios .asesorate_container {
   display: flex;
@@ -1669,9 +1669,9 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   border-radius: 10px;
 }
 .section_servicios .asesorate_container .asesorate_btn:hover {
-  color: #F76304;
+  color: #f49c13;
   animation: pulsate 1s ease-in-out;
-  border: 3px solid #F76304;
+  border: 3px solid #f49c13;
 }
 .section_servicios .caminoDigital_container {
   display: flex;
@@ -1702,7 +1702,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   box-shadow: rgba(236, 129, 29, 0.89) 3px 4px 17px;
 }
 .section_servicios .caminoDigital_container .container_content_caminoDigital:hover .caminoDigital_container_speach .caminoDigital_title {
-  color: #F76304;
+  color: #f49c13;
 }
 .section_servicios .caminoDigital_container .container_content_caminoDigital .caminoDigital_container_img {
   width: 8rem;
@@ -1828,7 +1828,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   -o-transition: all 1s ease-in-out;
 }
 .section_nosotros article .contenedor_nosotros_quienesSomos h2:hover, .section_nosotros article .contenedor_nosotros_Speach h2:hover {
-  color: #F76304;
+  color: #f49c13;
 }
 .section_nosotros article .contenedor_nosotros_quienesSomos p, .section_nosotros article .contenedor_nosotros_Speach p {
   width: 100%;
@@ -1848,7 +1848,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   -o-transition: all 1s ease-in-out;
 }
 .section_nosotros article .contenedor_nosotros_quienesSomos span:hover, .section_nosotros article .contenedor_nosotros_Speach span:hover {
-  color: #F76304;
+  color: #f49c13;
 }
 .section_nosotros article .contenedor_nosotros h2 {
   margin-top: 1em;
@@ -1875,7 +1875,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   -o-transition: all 1s ease-in-out;
 }
 .section_nosotros .nosotros_valores_title_container h3:hover {
-  color: #F76304;
+  color: #f49c13;
 }
 .section_nosotros .nosotros_valores_title_container .nosotros_valores_paragraph {
   width: 100%;
@@ -1896,7 +1896,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   -o-transition: all 1s ease-in-out;
 }
 .section_nosotros .nosotros_valores_title_container span:hover {
-  color: #F76304;
+  color: #f49c13;
 }
 .section_nosotros .nosotros_valores_container {
   display: flex;
@@ -1951,7 +1951,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   -o-transition: all 1s ease-in-out;
 }
 .section_nosotros .nosotros_mision_container .nosotros_mision_title:hover {
-  color: #F76304;
+  color: #f49c13;
 }
 .section_nosotros .nosotros_mision_container .nosotros_mision_paragraph {
   width: 100%;
@@ -1972,7 +1972,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   -o-transition: all 1s ease-in-out;
 }
 .section_nosotros .nosotros_mision_container .nosotros_mision_paragraph span:hover {
-  color: #F76304;
+  color: #f49c13;
 }
 .section_nosotros .nosotros_mision_container .nosotros_mision_hashtag_container {
   width: 100%;
@@ -1996,7 +1996,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   -o-transition: all 1s ease-in-out;
 }
 .section_nosotros .nosotros_mision_container .nosotros_mision_hashtag_container .nosotros_mision_hashtag:hover {
-  color: #F76304;
+  color: #f49c13;
 }
 .section_nosotros .nosotros_mision_container .nosotros_mision_hashtag_container .nosotros_mision_hashtag span {
   font-family: Arial, Helvetica, sans-serif;
@@ -2006,7 +2006,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   -o-transition: all 1s ease-in-out;
 }
 .section_nosotros .nosotros_mision_container .nosotros_mision_hashtag_container .nosotros_mision_hashtag span:hover {
-  color: #F76304;
+  color: #f49c13;
 }
 .section_nosotros .beneficios_container {
   width: 100%;
@@ -2064,7 +2064,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   margin-bottom: 0.5em;
 }
 .section_contacto h2:hover {
-  color: #F76304;
+  color: #f49c13;
 }
 .section_contacto .contacto_redes_container {
   display: flex;
@@ -2097,7 +2097,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   border-radius: 50%;
 }
 .section_contacto .contacto_redes_container .contacto_redes .contacto_redes_anchord:hover {
-  color: #F76304;
+  color: #f49c13;
   border-radius: 50%;
   box-shadow: 2px 2px 5px rgba(236, 129, 29, 0.89);
   transition: all 0.4s ease-in-out;
@@ -2207,9 +2207,9 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   border-radius: 10px;
 }
 .section_contacto .formulario_contenedor_textarea .contenedor_btn_formulario .btn_formulario:hover {
-  color: #F76304;
+  color: #f49c13;
   animation: pulsate 1s ease-in-out;
-  border: 3px solid #F76304;
+  border: 3px solid #f49c13;
 }
 .section_contacto .contacto_formulario {
   transition: all 1s ease-in-out;
@@ -2218,13 +2218,13 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   box-shadow: 3px 4px 17px rgba(236, 129, 29, 0.89);
 }
 .section_contacto .contacto_formulario:hover .formulario_contenedor_datos h3 {
-  color: #F76304;
+  color: #f49c13;
 }
 .section_contacto .contacto_formulario:hover .contenedor_inputs {
-  color: #F76304;
+  color: #f49c13;
 }
 .section_contacto .contacto_formulario:hover .formulario_contenedor_textarea h3 {
-  color: #F76304;
+  color: #f49c13;
 }
 .section_contacto .contacto_redesUbicacion {
   margin-top: 1em;
@@ -2255,7 +2255,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   -o-transition: all 1s ease-in-out;
 }
 .section_contacto .contacto_redesUbicacion .containerRedes h3:hover {
-  color: #F76304;
+  color: #f49c13;
 }
 .section_contacto .contacto_redesUbicacion .containerRedes .contacto_redes {
   display: flex;
@@ -2277,7 +2277,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   color: #E0E0E0;
 }
 .section_contacto .contacto_redesUbicacion .containerRedes .contacto_redes .contacto_redes_anchord:hover {
-  color: #F76304;
+  color: #f49c13;
   border-radius: 50%;
   box-shadow: 2px 2px 5px rgba(236, 129, 29, 0.89);
   transition: all 0.4s ease-in-out;
@@ -2332,7 +2332,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   -o-transition: all 1s ease-in-out;
 }
 .section_contacto .contacto_calendly .contacto_calendly_title:hover {
-  color: #F76304;
+  color: #f49c13;
 }
 .section_contacto .contacto_calendly .calendly {
   width: 60%;
@@ -2376,7 +2376,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   font-weight: bold;
 }
 .container_calendar a h4:hover {
-  color: #F76304;
+  color: #f49c13;
 }
 .container_calendar a i {
   font-size: 30px;
