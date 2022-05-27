@@ -9,7 +9,7 @@ body{
     font-family: 'Fugaz One', cursive;
     font-display: swap;
     box-sizing: border-box;
-    background-color: $color_gris;
+    background-color: $color_azulOscuro;
     scroll-behavior: smooth;
 }
 .background{
@@ -42,6 +42,12 @@ header{
         width: 100%;
         height: 100%;
         background-color: #000000;
+    }
+    .particles_transition{
+        transition: all .3s ease-in-out;
+    }
+    .particles__blue{
+        background-color:$color_azulOscuro;
     }
     nav{
         //background-color: #000000;

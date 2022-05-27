@@ -123,4 +123,4 @@ if(mediaqueryList.matches) {
     navbar.style.background = "none";
 } */
 
-
+console.log(particlesJS);
