@@ -57,10 +57,10 @@
 .adn_container{
     &:hover{
         .adn_botton{
-            background-color: $color_naranja_cohete;
+            background-color: $color_general2;
         }; 
         .adn_line{
-            border: 1px solid $color_naranja_cohete;
+            border: 1px solid $color_general2;
         };
     }
 }

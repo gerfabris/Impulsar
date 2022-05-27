@@ -216,8 +216,8 @@ header{
             align-items: center;
         }
         .swiper-slide-active{
-            transition: all 2s ease-in-out;
-            color: $color_naranja_cohete;
+            transition: all 1.5s ease-in-out;
+            color: $color_general2;
         }
         .swiper-slide img {
             display: block;
@@ -286,9 +286,9 @@ header{
         border: 3px solid $color_gris_claro;
         border-radius: 10px;
         &:hover{
-            color: $color_naranja_cohete;
+            color: $color_general2;
             animation: pulsate 1s ease-in-out;
-            border: 3px solid $color_naranja_cohete
+            border: 3px solid $color_general2
         };
     }    
 }
@@ -390,7 +390,7 @@ header{
         }
         .caminoDigital_pie{
             width: 60%;
-            color: $color_naranja_cohete;
+            color: $color_general2;
             text-align: left;
             font-family: $letra__principal;
             @include margin__Espaciado(1em,1em)
@@ -417,10 +417,10 @@ header{
         border-radius: 15pt;
         transition: all 1s ease-in-out;
         &:hover{
-            box-shadow: rgba(236, 129, 29, 0.89) 3px 4px 17px;
+            box-shadow: $color_general2 3px 4px 17px;
             .container_impulso_speach{
                 .impulso_title{
-                    color: $color_naranja_cohete;
+                    color: $color_general2;
                 }
             };  
         }
@@ -501,9 +501,9 @@ header{
             border: 3px solid $color_gris_claro;
             border-radius: 10px;
             &:hover{
-                color: $color_naranja_cohete;
+                color: $color_general2;
                 animation: pulsate 1s ease-in-out;
-                border: 3px solid $color_naranja_cohete
+                border: 3px solid $color_general2
             };
         }
     }
@@ -524,10 +524,10 @@ header{
             border-radius: 15pt;
             transition: all 1s ease-in-out;
             &:hover{
-                box-shadow: rgba(236, 129, 29, 0.89) 3px 4px 17px;
+                box-shadow: $color_general2 3px 4px 17px;
                 .caminoDigital_container_speach{
                     .caminoDigital_title{
-                        color: $color_naranja_cohete;
+                        color: $color_general2;
                     }
                 };  
             }
@@ -784,9 +784,9 @@ header{
                 box-shadow: $color_gris_oscuro 2px 2px 5px;
                 border-radius: 50%;
                 &:hover{
-                    color: $color_naranja_cohete;
+                    color: $color_general2;
                     border-radius: 50%;
-                    box-shadow: 2px 2px 5px rgba(236, 129, 29, 0.89);
+                    box-shadow: 2px 2px 5px $color_general2;
                     transition: all .4s ease-in-out;
                     transform: scale(1.2);
                     @include compatibilidad_transform(scale(1.2));
@@ -890,9 +890,9 @@ header{
                 border: 3px solid $color_gris_claro;
                 border-radius: 10px;
                 &:hover{
-                    color: $color_naranja_cohete;
+                    color: $color_general2;
                     animation: pulsate 1s ease-in-out;
-                    border: 3px solid $color_naranja_cohete;
+                    border: 3px solid $color_general2;
                 };
             }
         }
@@ -900,18 +900,18 @@ header{
     .contacto_formulario{
         transition: all 1s ease-in-out;
         &:hover{
-            box-shadow: 3px 4px 17px rgba(236, 129, 29, 0.89);
+            box-shadow: 3px 4px 17px $color_general2;
             .formulario_contenedor_datos{
                 h3{
-                    color: $color_naranja_cohete;
+                    color: $color_general2;
                 }
             };
             .contenedor_inputs{
-                color: $color_naranja_cohete;
+                color: $color_general2;
             }
             .formulario_contenedor_textarea{
                 h3{
-                    color: $color_naranja_cohete
+                    color: $color_general2
                 }
             }
         }
@@ -955,9 +955,9 @@ header{
                     text-decoration: none;
                     color: $color_gris_claro;
                     &:hover{
-                        color: $color_naranja_cohete;
+                        color: $color_general2;
                         border-radius: 50%;
-                        box-shadow: 2px 2px 5px rgba(236, 129, 29, 0.89);
+                        box-shadow: 2px 2px 5px $color_general2;
                         transition: all .4s ease-in-out;
                         @include compatibilidad_transition(all .4s ease-in-out);
                         transform: scale(1.2);

@@ -76,7 +76,7 @@
         @include flex__ColumnCenterAll;
         padding: 2em;
         border-radius: 20px;
-        box-shadow: $color_gris_oscuro 3px 4px 17px;
+        box-shadow: $color_general2 3px 4px 17px;
         transition: all 1s ease-in-out;   
         width: 68%;
         p{
@@ -97,7 +97,7 @@
             text-shadow: rgba(87, 169, 218) 3px 4px 17px;
             transition: all 1s ease-in-out;
             &:hover{
-                text-shadow: $color_naranja_cohete 3px 4px 17px;
+                text-shadow: $color_general2 3px 4px 17px;
             }
         }
         .benefician_container{
@@ -107,10 +107,10 @@
             min-height: 400px;
             width: 95%;
             color: $color_gris_claro;
-            text-shadow: rgba(87, 169, 218) 3px 4px 17px;
+            //text-shadow: rgba(87, 169, 218) 3px 4px 17px;
             transition: all 1s ease-in-out;
             &:hover{
-                text-shadow: $color_naranja_cohete 3px 4px 17px;
+                //text-shadow: $color_general2 3px 4px 17px;
             }
             .benefician{
                 text-align: left;
@@ -188,9 +188,9 @@
                 box-shadow: $color_gris_oscuro 2px 2px 5px;
                 border-radius: 50%;
                 &:hover{
-                    color: $color_naranja_cohete;
+                    color: $color_general2;
                     border-radius: 50%;
-                    box-shadow: 2px 2px 5px rgba(236, 129, 29, 0.89);
+                    box-shadow: 2px 2px 5px $color_general2;
                     transition: all .4s ease-in-out;
                     transform: scale(1.2);
                     @include compatibilidad_transform(scale(1.2));
@@ -279,9 +279,9 @@
                 border: 3px solid $color_gris_claro;
                 border-radius: 10px;
                 &:hover{
-                    color: $color_naranja_cohete;
+                    color: $color_general2;
                     animation: pulsate 1s ease-in-out;
-                    border: 3px solid $color_naranja_cohete;
+                    border: 3px solid $color_general2;
                 };
             }
         }
@@ -289,22 +289,41 @@
     .contacto_formulario{
         transition: all 1s ease-in-out;
         &:hover{
-            box-shadow: 3px 4px 17px rgba(236, 129, 29, 0.89);
+            box-shadow: 3px 4px 17px $color_general2;
             .formulario_contenedor_datos{
                 h3{
-                    color: $color_naranja_cohete;
+                    color: $color_general2;
                 }
             };
             .contenedor_inputs{
-                color: $color_naranja_cohete;
+                color: $color_general2;
             }
             .formulario_contenedor_textarea{
                 h3{
-                    color: $color_naranja_cohete
+                    color: $color_general2
                 }
             }
         }
     }
+/*     #formularioMarca{
+        transition: all 1s ease-in-out;
+        &:hover{
+            box-shadow: 3px 4px 17px $color_amarillo2;
+            .formulario_contenedor_datos{
+                h3{
+                    color: $color_amarillo2;
+                }
+            };
+            .contenedor_inputs{
+                color: $color_amarillo2;
+            }
+            .formulario_contenedor_textarea{
+                h3{
+                    color: $color_amarillo2;
+                }
+            }
+        }
+    } */
 }
 .espaciado{
     @include margin__Espaciado(1em,3em);

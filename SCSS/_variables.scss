@@ -14,14 +14,18 @@ $color_naranja: #F6A23E;
 $color_celeste_claro:#7EC2EC ;
 $color_celeste_oscuro: #57A9DA;
 $color_amarillo: #FCE062;
+$color_general2: #FF41AA;
 //otros colores
 $color_fucsia: #FF41AA;
-$color_fucsia2: #FF40AC;
+$color_fucsia2: #01e759e7;
+$color_3: #e74a01;
 $color_verdelima: #B8E701;
 $color_azulOscuro: #131e2c;
 $color_naranjaApagado: #f49c13;
 $color_azulOscuro2: #101925;
 $color_cohetenaranja: #F76304;
+$color_amarillo2:#EEE52C;
+$color_amarillo_fuerte: #FFF40D;
 $color-gradiente: linear-gradient(90deg, rgba(87,169,218,1) 26%, rgba(255,65,170,1) 40%, rgba(184,231,1,1) 49%, rgba(244,156,19,1) 63%, rgba(87,169,218,1) 76%);
 //Tamaños
 $logo-width:calc(5em + 5vw);
@@ -120,21 +124,21 @@ $logo-width:calc(5em + 5vw);
     transition: all 1s ease-in-out;
     @include compatibilidad_transition(all 1s ease-in-out);
     &:hover{
-        color: $color_naranja_cohete;
+        color: $color_general2;
     }
 }
 @mixin camuflaje_background{
     transition: all 1s ease-in-out;
     @include compatibilidad_transition(all 1s ease-in-out);
     &:hover{
-        background-color: $color_naranja_cohete;
+        background-color: $color_general2;
     }
 }
 @mixin camuflaje_active{
     transition: all 1s ease-in-out;
     @include compatibilidad_transition(all 1s ease-in-out);
     &:active{
-        color: $color_naranja_cohete;
+        color: $color_general2;
     }
 }
 @mixin span{
@@ -157,8 +161,8 @@ $logo-width:calc(5em + 5vw);
 }
 @keyframes pulsate{
     0%{
-        box-shadow: 0 0 25px $color_naranja_cohete,
-        0 0 50px $color_amarillo_cohete;
+        box-shadow: 0 0 25px $color_general2,
+        0 0 50px $color_general2;
     }
 }
 $base: 0.6rem;
@@ -181,6 +185,6 @@ $base: 0.6rem;
 }
 @keyframes camuflaje{
     0%{
-        color: $color_naranja_cohete;
+        color: $color_general2;
     }
 }
