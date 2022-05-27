@@ -324,6 +324,7 @@
   align-items: center;
   width: 90%;
   justify-content: center;
+  font-family: "Fugaz One", cursive;
 }
 
 .carousel_container {
@@ -1247,6 +1248,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   margin-top: 0;
   margin-bottom: 0em;
   background: none;
+  font-family: "Fugaz One", cursive;
 }
 .section_presentacion .contenedor_presentacion {
   width: 100%;

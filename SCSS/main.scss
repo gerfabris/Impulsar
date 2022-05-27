@@ -157,6 +157,7 @@ header{
     display: flex;
     @include margin__Espaciado(0,0em);
     background: none;
+    font-family: $letra__principal;
     .contenedor_presentacion{
         width: 100%;
         height: 100%;
