@@ -195,3 +195,79 @@
         transition: all .1s ease-in-out;
     }
 }
+//caracteristicas especificas segun cada pages
+#masServiciosCarouselMarca{
+    .card_masServicios{
+        &:hover{
+            box-shadow: $color_amarillo2 3px 4px 17px;
+            outline: 1px solid $color_amarillo2;
+            .card_title{
+                color: $color_amarillo2;
+            }
+        };
+        .contenedor_btn_card{
+            .btn_card{
+                &:hover{
+                    color: $color_amarillo2;
+                    animation: pulsate-amarillo 1s ease-in-out;
+                    border: 3px solid $color_amarillo2;
+                };
+            }
+        }
+    }
+    .dp_masServicios{
+        .card_title{
+            @include camuflaje-amarillo
+        }
+    }
+}
+#masServiciosCarouselVisual{
+    .card_masServicios{
+        &:hover{
+            box-shadow: $color_verdelima 3px 4px 17px;
+            outline: 1px solid $color_verdelima;
+            .card_title{
+                color: $color_verdelima;
+            }
+        };
+        .contenedor_btn_card{
+            .btn_card{
+                &:hover{
+                    color: $color_verdelima;
+                    animation: pulsate-verde 1s ease-in-out;
+                    border: 3px solid $color_verdelima;
+                };
+            }
+        }
+    }
+    .dp_masServicios{
+        .card_title{
+            @include camuflaje-verde;
+        }
+    }
+}
+#masServiciosCarouselWeb{
+    .card_masServicios{
+        &:hover{
+            box-shadow: $color_naranjaApagado 3px 4px 17px;
+            outline: 1px solid $color_naranjaApagado;
+            .card_title{
+                color: $color_naranjaApagado;
+            }
+        };
+        .contenedor_btn_card{
+            .btn_card{
+                &:hover{
+                    color: $color_naranjaApagado;
+                    animation: pulsate-naranja 1s ease-in-out;
+                    border: 3px solid $color_naranjaApagado;
+                };
+            }
+        }
+    }
+    .dp_masServicios{
+        .card_title{
+            @include camuflaje-naranja;
+        }
+    }
+}

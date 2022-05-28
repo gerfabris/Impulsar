@@ -15,6 +15,21 @@
     box-shadow: 0 0 25px #FF41AA, 0 0 50px #FF41AA;
   }
 }
+@keyframes pulsate-amarillo {
+  0% {
+    box-shadow: 0 0 25px #EEE52C, 0 0 50px #EEE52C;
+  }
+}
+@keyframes pulsate-verdelima {
+  0% {
+    box-shadow: 0 0 25px #B8E701, 0 0 50px #B8E701;
+  }
+}
+@keyframes pulsate-naranja {
+  0% {
+    box-shadow: 0 0 25px #f49c13, 0 0 50px #f49c13;
+  }
+}
 @keyframes move-chevron {
   25% {
     opacity: 1;
@@ -319,6 +334,72 @@
   transition: all 0.1s ease-in-out;
 }
 
+#masServiciosCarouselMarca .card_masServicios:hover {
+  box-shadow: #EEE52C 3px 4px 17px;
+  outline: 1px solid #EEE52C;
+}
+#masServiciosCarouselMarca .card_masServicios:hover .card_title {
+  color: #EEE52C;
+}
+#masServiciosCarouselMarca .card_masServicios .contenedor_btn_card .btn_card:hover {
+  color: #EEE52C;
+  animation: pulsate-amarillo 1s ease-in-out;
+  border: 3px solid #EEE52C;
+}
+#masServiciosCarouselMarca .dp_masServicios .card_title {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosCarouselMarca .dp_masServicios .card_title:hover {
+  color: #EEE52C;
+}
+
+#masServiciosCarouselVisual .card_masServicios:hover {
+  box-shadow: #B8E701 3px 4px 17px;
+  outline: 1px solid #B8E701;
+}
+#masServiciosCarouselVisual .card_masServicios:hover .card_title {
+  color: #B8E701;
+}
+#masServiciosCarouselVisual .card_masServicios .contenedor_btn_card .btn_card:hover {
+  color: #B8E701;
+  animation: pulsate-verde 1s ease-in-out;
+  border: 3px solid #B8E701;
+}
+#masServiciosCarouselVisual .dp_masServicios .card_title {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosCarouselVisual .dp_masServicios .card_title:hover {
+  color: #B8E701;
+}
+
+#masServiciosCarouselWeb .card_masServicios:hover {
+  box-shadow: #f49c13 3px 4px 17px;
+  outline: 1px solid #f49c13;
+}
+#masServiciosCarouselWeb .card_masServicios:hover .card_title {
+  color: #f49c13;
+}
+#masServiciosCarouselWeb .card_masServicios .contenedor_btn_card .btn_card:hover {
+  color: #f49c13;
+  animation: pulsate-naranja 1s ease-in-out;
+  border: 3px solid #f49c13;
+}
+#masServiciosCarouselWeb .dp_masServicios .card_title {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosCarouselWeb .dp_masServicios .card_title:hover {
+  color: #f49c13;
+}
+
 .carousel_article {
   display: flex;
   align-items: center;
@@ -598,16 +679,16 @@
 }
 .container_dots {
   top: 30%;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   transform: translate(-50%, -50%);
 }
 
 .container_dots_span {
   position: absolute;
   display: block;
-  height: 10px;
-  width: 10px;
+  height: 8px;
+  width: 8px;
   border-radius: 50%;
   background: none;
   animation: dots 2s linear infinite;
@@ -660,6 +741,44 @@
   87.5% {
     top: 50%;
     left: 3%;
+  }
+}
+#masServiciosSpeachMarca .container_dots_span_3 {
+  background: #EEE52C;
+  animation-delay: -0.5s;
+}
+#masServiciosSpeachMarca .container_dots_span_4 {
+  background: #EEE52C;
+  animation-delay: -1.5s;
+}
+
+#masServiciosSpeachVisual .container_dots_span_3 {
+  background: #B8E701;
+  animation-delay: -0.5s;
+}
+#masServiciosSpeachVisual .container_dots_span_4 {
+  background: #B8E701;
+  animation-delay: -1.5s;
+}
+
+#masServiciosSpeachWeb .container_dots_span_3 {
+  background: #f49c13;
+  animation-delay: -0.5s;
+}
+#masServiciosSpeachWeb .container_dots_span_4 {
+  background: #f49c13;
+  animation-delay: -1.5s;
+}
+
+@media screen and (max-width: 520px) {
+  .container_dots {
+    width: 20px;
+    height: 20px;
+  }
+
+  .container_dots_span {
+    height: 5px;
+    width: 5px;
   }
 }
 .masServicios_section_intro {
@@ -917,25 +1036,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /*     #formularioMarca{
-          transition: all 1s ease-in-out;
-          &:hover{
-              box-shadow: 3px 4px 17px $color_amarillo2;
-              .formulario_contenedor_datos{
-                  h3{
-                      color: $color_amarillo2;
-                  }
-              };
-              .contenedor_inputs{
-                  color: $color_amarillo2;
-              }
-              .formulario_contenedor_textarea{
-                  h3{
-                      color: $color_amarillo2;
-                  }
-              }
-          }
-      } */
 }
 .masServicios_formulario h3 {
   margin-top: 2em;
@@ -1103,6 +1203,330 @@
 .espaciado {
   margin-top: 1em;
   margin-bottom: 3em;
+}
+
+#masServiciosIntroContentMarca h1 {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosIntroContentMarca h1:hover {
+  color: #EEE52C;
+}
+#masServiciosIntroContentMarca p {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosIntroContentMarca p:hover {
+  color: #EEE52C;
+}
+
+#masServiciosIntroContentVisual h1 {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosIntroContentVisual h1:hover {
+  color: #B8E701;
+}
+#masServiciosIntroContentVisual p {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosIntroContentVisual p:hover {
+  color: #B8E701;
+}
+
+#masServiciosIntroContentWeb h1 {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosIntroContentWeb h1:hover {
+  color: #f49c13;
+}
+#masServiciosIntroContentWeb p {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosIntroContentWeb p:hover {
+  color: #f49c13;
+}
+
+#masServiciosSpeachMarca .masServicios_brindamos h2 {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosSpeachMarca .masServicios_brindamos h2:hover {
+  color: #EEE52C;
+}
+#masServiciosSpeachMarca .masServicios_brindamos .beneficios p {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosSpeachMarca .masServicios_brindamos .beneficios p:hover {
+  color: #EEE52C;
+}
+#masServiciosSpeachMarca .masServicios_speach_container_paragraph {
+  box-shadow: #EEE52C 3px 4px 17px;
+}
+#masServiciosSpeachMarca .masServicios__speach__benefician i:hover {
+  text-shadow: #EEE52C 3px 4px 17px;
+}
+
+#masServiciosSpeachVisual .masServicios_brindamos h2 {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosSpeachVisual .masServicios_brindamos h2:hover {
+  color: #B8E701;
+}
+#masServiciosSpeachVisual .masServicios_brindamos .beneficios p {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosSpeachVisual .masServicios_brindamos .beneficios p:hover {
+  color: #B8E701;
+}
+#masServiciosSpeachVisual .masServicios_speach_container_paragraph {
+  box-shadow: #B8E701 3px 4px 17px;
+}
+#masServiciosSpeachVisual .masServicios__speach__benefician i:hover {
+  text-shadow: #B8E701 3px 4px 17px;
+}
+
+#masServiciosSpeachWeb .masServicios_brindamos h2 {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosSpeachWeb .masServicios_brindamos h2:hover {
+  color: #f49c13;
+}
+#masServiciosSpeachWeb .masServicios_brindamos .beneficios p {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosSpeachWeb .masServicios_brindamos .beneficios p:hover {
+  color: #f49c13;
+}
+#masServiciosSpeachWeb .masServicios_speach_container_paragraph {
+  box-shadow: #f49c13 3px 4px 17px;
+}
+#masServiciosSpeachWeb .masServicios__speach__benefician i:hover {
+  text-shadow: #f49c13 3px 4px 17px;
+}
+
+#masServiciosTitleMarca {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosTitleMarca:hover {
+  color: #EEE52C;
+}
+
+#masServiciosTitleVisual {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosTitleVisual:hover {
+  color: #B8E701;
+}
+
+#masServiciosTitleWeb {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosTitleWeb:hover {
+  color: #f49c13;
+}
+
+#masServiciosCalendlyMarca h3 {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosCalendlyMarca h3:hover {
+  color: #EEE52C;
+}
+#masServiciosCalendlyMarca h4 {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosCalendlyMarca h4:hover {
+  color: #EEE52C;
+}
+
+#masServiciosCalendlyVisual h3 {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosCalendlyVisual h3:hover {
+  color: #B8E701;
+}
+#masServiciosCalendlyVisual h4 {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosCalendlyVisual h4:hover {
+  color: #B8E701;
+}
+
+#masServiciosCalendlyWeb h3 {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosCalendlyWeb h3:hover {
+  color: #f49c13;
+}
+#masServiciosCalendlyWeb h4 {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosCalendlyWeb h4:hover {
+  color: #f49c13;
+}
+
+#masServiciosFormMarca h3 {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosFormMarca h3:hover {
+  color: #EEE52C;
+}
+#masServiciosFormMarca .contacto_redes_container .contacto_redes .contacto_redes_anchord:hover {
+  color: #EEE52C;
+  box-shadow: 2px 2px 5px #EEE52C;
+}
+
+#masServiciosFormVisual h3 {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosFormVisual h3:hover {
+  color: #B8E701;
+}
+#masServiciosFormVisual .contacto_redes_container .contacto_redes .contacto_redes_anchord:hover {
+  color: #B8E701;
+  box-shadow: 2px 2px 5px #B8E701;
+}
+
+#masServiciosFormWeb h3 {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosFormWeb h3:hover {
+  color: #f49c13;
+}
+#masServiciosFormWeb .contacto_redes_container .contacto_redes .contacto_redes_anchord:hover {
+  color: #f49c13;
+  box-shadow: 2px 2px 5px #f49c13;
+}
+
+#formularioMarca {
+  transition: all 1s ease-in-out;
+}
+#formularioMarca:hover {
+  box-shadow: 3px 4px 17px #EEE52C;
+}
+#formularioMarca:hover .formulario_contenedor_datos h3 {
+  color: #EEE52C;
+}
+#formularioMarca:hover .contenedor_inputs {
+  color: #EEE52C;
+}
+#formularioMarca:hover .formulario_contenedor_textarea h3 {
+  color: #EEE52C;
+}
+#formularioMarca:hover .contenedor_btn_formulario .btn_formulario:hover {
+  animation: pulsate-amarillo 1s ease-in-out;
+  color: #EEE52C;
+  border: 3px solid #EEE52C;
+}
+
+#formularioVisual {
+  transition: all 1s ease-in-out;
+}
+#formularioVisual:hover {
+  box-shadow: 3px 4px 17px #B8E701;
+}
+#formularioVisual:hover .formulario_contenedor_datos h3 {
+  color: #B8E701;
+}
+#formularioVisual:hover .contenedor_inputs {
+  color: #B8E701;
+}
+#formularioVisual:hover .formulario_contenedor_textarea h3 {
+  color: #B8E701;
+}
+#formularioVisual:hover .contenedor_btn_formulario .btn_formulario:hover {
+  animation: pulsate-verdelima 1s ease-in-out;
+  color: #B8E701;
+  border: 3px solid #B8E701;
+}
+
+#formularioWeb {
+  transition: all 1s ease-in-out;
+}
+#formularioWeb:hover {
+  box-shadow: 3px 4px 17px #f49c13;
+}
+#formularioWeb:hover .formulario_contenedor_datos h3 {
+  color: #f49c13;
+}
+#formularioWeb:hover .contenedor_inputs {
+  color: #f49c13;
+}
+#formularioWeb:hover .formulario_contenedor_textarea h3 {
+  color: #f49c13;
+}
+#formularioWeb:hover .contenedor_btn_formulario .btn_formulario:hover {
+  animation: pulsate-naranja 1s ease-in-out;
+  color: #f49c13;
+  border: 3px solid #f49c13;
 }
 
 * {
@@ -1652,6 +2076,39 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   justify-content: center;
   align-content: center;
   align-items: center;
+}
+.section_servicios #impulsoMarca:hover {
+  box-shadow: #EEE52C 3px 4px 17px;
+}
+.section_servicios #impulsoMarca:hover .container_impulso_speach .impulso_title {
+  color: #EEE52C;
+}
+.section_servicios #impulsoMarca .contenedor_btn_pulse .btn_pulse:hover {
+  color: #EEE52C;
+  animation: pulsate-amarillo 1s ease-in-out;
+  border: 3px solid #EEE52C;
+}
+.section_servicios #impulsoVisual:hover {
+  box-shadow: #B8E701 3px 4px 17px;
+}
+.section_servicios #impulsoVisual:hover .container_impulso_speach .impulso_title {
+  color: #B8E701;
+}
+.section_servicios #impulsoVisual .contenedor_btn_pulse .btn_pulse:hover {
+  color: #B8E701;
+  animation: pulsate-verde 1s ease-in-out;
+  border: 3px solid #B8E701;
+}
+.section_servicios #impulsoWeb:hover {
+  box-shadow: #f49c13 3px 4px 17px;
+}
+.section_servicios #impulsoWeb:hover .container_impulso_speach .impulso_title {
+  color: #f49c13;
+}
+.section_servicios #impulsoWeb .contenedor_btn_pulse .btn_pulse:hover {
+  color: #f49c13;
+  animation: pulsate-naranja 1s ease-in-out;
+  border: 3px solid #f49c13;
 }
 .section_servicios .carousel_title {
   color: #57A9DA;
@@ -2433,6 +2890,14 @@ footer hr {
 }
 footer h5 {
   color: #E0E0E0;
+  font-family: "Fugaz One", cursive;
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+footer h5:hover {
+  color: #FF41AA;
 }
 footer a {
   text-decoration: none;

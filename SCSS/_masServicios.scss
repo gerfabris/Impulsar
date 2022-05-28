@@ -107,11 +107,7 @@
             min-height: 400px;
             width: 95%;
             color: $color_gris_claro;
-            //text-shadow: rgba(87, 169, 218) 3px 4px 17px;
             transition: all 1s ease-in-out;
-            &:hover{
-                //text-shadow: $color_general2 3px 4px 17px;
-            }
             .benefician{
                 text-align: left;
                 font-family: $letra__secundaria;
@@ -160,7 +156,6 @@
         @include camuflaje;
     }
     .contacto_redes_container{
-        //@include margin__Espaciado(0em,0em);
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -305,26 +300,265 @@
             }
         }
     }
-/*     #formularioMarca{
-        transition: all 1s ease-in-out;
-        &:hover{
-            box-shadow: 3px 4px 17px $color_amarillo2;
-            .formulario_contenedor_datos{
-                h3{
-                    color: $color_amarillo2;
-                }
-            };
-            .contenedor_inputs{
-                color: $color_amarillo2;
-            }
-            .formulario_contenedor_textarea{
-                h3{
-                    color: $color_amarillo2;
-                }
-            }
-        }
-    } */
 }
 .espaciado{
     @include margin__Espaciado(1em,3em);
+}
+//caracteristicas para cada pages
+//intro
+#masServiciosIntroContentMarca{
+    h1{
+        @include camuflaje-amarillo;
+    }
+    p{
+        @include camuflaje-amarillo;
+    }
+}
+#masServiciosIntroContentVisual{
+    h1{
+        @include camuflaje-verde;
+    }
+    p{
+        @include camuflaje-verde;
+    }
+}
+#masServiciosIntroContentWeb{
+    h1{
+        @include camuflaje-naranja;
+    }
+    p{
+        @include camuflaje-naranja;
+    }
+}
+//Speach
+#masServiciosSpeachMarca{
+    .masServicios_brindamos{    
+        h2{
+            @include camuflaje-amarillo;
+        }
+        .beneficios{
+                p{
+                    @include camuflaje-amarillo;
+                }
+            }
+        }
+    .masServicios_speach_container_paragraph{
+        box-shadow: $color_amarillo2 3px 4px 17px;
+    }
+    .masServicios__speach__benefician{
+        i{
+            &:hover{
+                text-shadow: $color_amarillo2 3px 4px 17px;
+            }
+        }
+    }
+}
+#masServiciosSpeachVisual{
+    .masServicios_brindamos{    
+        h2{
+            @include camuflaje-verde;
+        }
+        .beneficios{
+                p{
+                    @include camuflaje-verde;
+                }
+            }
+        }
+    .masServicios_speach_container_paragraph{
+        box-shadow: $color_verdelima 3px 4px 17px;
+    }
+    .masServicios__speach__benefician{
+        i{
+            &:hover{
+                text-shadow: $color_verdelima 3px 4px 17px;
+            }
+        }
+    }
+}
+#masServiciosSpeachWeb{
+    .masServicios_brindamos{    
+        h2{
+            @include camuflaje-naranja;
+        }
+        .beneficios{
+                p{
+                    @include camuflaje-naranja;
+                }
+            }
+        }
+    .masServicios_speach_container_paragraph{
+        box-shadow: $color_naranjaApagado 3px 4px 17px;
+    }
+    .masServicios__speach__benefician{
+        i{
+            &:hover{
+                text-shadow: $color_naranjaApagado 3px 4px 17px;
+            }
+        }
+    }
+}
+//Carousel otros servicios
+#masServiciosTitleMarca{
+    @include camuflaje-amarillo;
+}
+#masServiciosTitleVisual{
+    @include camuflaje-verde;
+}
+#masServiciosTitleWeb{
+    @include camuflaje-naranja;
+}
+//calendly
+#masServiciosCalendlyMarca{
+    h3{
+        @include camuflaje-amarillo;       
+    }
+    h4{
+        @include camuflaje-amarillo; 
+    }
+}
+#masServiciosCalendlyVisual{
+    h3{
+        @include camuflaje-verde;       
+    }
+    h4{
+        @include camuflaje-verde; 
+    }
+}
+#masServiciosCalendlyWeb{
+    h3{
+        @include camuflaje-naranja;       
+    }
+    h4{
+        @include camuflaje-naranja; 
+    }
+}
+//formularios - contacto
+#masServiciosFormMarca{
+    h3{
+        @include camuflaje-amarillo;
+    }
+    .contacto_redes_container{
+        .contacto_redes{
+            .contacto_redes_anchord{
+                &:hover{
+                    color: $color_amarillo2;
+                    box-shadow: 2px 2px 5px $color_amarillo2;
+                };
+            }
+        }
+    }
+}
+#masServiciosFormVisual{
+    h3{
+        @include camuflaje-verde;
+    }
+    .contacto_redes_container{
+        .contacto_redes{
+            .contacto_redes_anchord{
+                &:hover{
+                    color: $color_verdelima;
+                    box-shadow: 2px 2px 5px $color_verdelima;
+                };
+            }
+        }
+    }
+}
+#masServiciosFormWeb{
+    h3{
+        @include camuflaje-naranja;
+    }
+    .contacto_redes_container{
+        .contacto_redes{
+            .contacto_redes_anchord{
+                &:hover{
+                    color: $color_naranjaApagado;
+                    box-shadow: 2px 2px 5px $color_naranjaApagado;
+                };
+            }
+        }
+    }
+}
+#formularioMarca{
+    transition: all 1s ease-in-out;
+    &:hover{
+        box-shadow: 3px 4px 17px $color_amarillo2;
+        .formulario_contenedor_datos{
+            h3{
+                color: $color_amarillo2;
+            }
+        };
+        .contenedor_inputs{
+            color: $color_amarillo2;
+        }
+        .formulario_contenedor_textarea{
+            h3{
+                color: $color_amarillo2;
+            }
+        }
+        .contenedor_btn_formulario{
+            .btn_formulario{
+                &:hover{
+                    animation: pulsate-amarillo 1s ease-in-out;
+                    color: $color_amarillo2;
+                    border: 3px solid $color_amarillo2;
+                };
+            }
+        }
+    }
+}
+#formularioVisual{
+    transition: all 1s ease-in-out;
+    &:hover{
+        box-shadow: 3px 4px 17px $color_verdelima;
+        .formulario_contenedor_datos{
+            h3{
+                color: $color_verdelima;
+            }
+        };
+        .contenedor_inputs{
+            color: $color_verdelima;
+        }
+        .formulario_contenedor_textarea{
+            h3{
+                color: $color_verdelima;
+            }
+        }
+        .contenedor_btn_formulario{
+            .btn_formulario{
+                &:hover{
+                    animation: pulsate-verdelima 1s ease-in-out;
+                    color: $color_verdelima;
+                    border: 3px solid $color_verdelima;
+                };
+            }
+        }
+    }
+}
+#formularioWeb{
+    transition: all 1s ease-in-out;
+    &:hover{
+        box-shadow: 3px 4px 17px $color_naranjaApagado;
+        .formulario_contenedor_datos{
+            h3{
+                color: $color_naranjaApagado;
+            }
+        };
+        .contenedor_inputs{
+            color: $color_naranjaApagado;
+        }
+        .formulario_contenedor_textarea{
+            h3{
+                color: $color_naranjaApagado;
+            }
+        }
+        .contenedor_btn_formulario{
+            .btn_formulario{
+                &:hover{
+                    animation: pulsate-naranja 1s ease-in-out;
+                    color: $color_naranjaApagado;
+                    border: 3px solid $color_naranjaApagado;
+                };
+            }
+        }
+    }
 }

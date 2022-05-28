@@ -127,6 +127,27 @@ $logo-width:calc(5em + 5vw);
         color: $color_general2;
     }
 }
+@mixin camuflaje-amarillo{
+    transition: all 1s ease-in-out;
+    @include compatibilidad_transition(all 1s ease-in-out);
+    &:hover{
+        color: $color_amarillo2;
+    }
+}
+@mixin camuflaje-verde{
+    transition: all 1s ease-in-out;
+    @include compatibilidad_transition(all 1s ease-in-out);
+    &:hover{
+        color: $color_verdelima;
+    }
+}
+@mixin camuflaje-naranja{
+    transition: all 1s ease-in-out;
+    @include compatibilidad_transition(all 1s ease-in-out);
+    &:hover{
+        color: $color_naranjaApagado;
+    }
+}
 @mixin camuflaje_background{
     transition: all 1s ease-in-out;
     @include compatibilidad_transition(all 1s ease-in-out);
@@ -163,6 +184,24 @@ $logo-width:calc(5em + 5vw);
     0%{
         box-shadow: 0 0 25px $color_general2,
         0 0 50px $color_general2;
+    }
+}
+@keyframes pulsate-amarillo{
+    0%{
+        box-shadow: 0 0 25px $color_amarillo2,
+        0 0 50px $color_amarillo2;
+    }
+}
+@keyframes pulsate-verdelima{
+    0%{
+        box-shadow: 0 0 25px $color_verdelima,
+        0 0 50px $color_verdelima;
+    }
+}
+@keyframes pulsate-naranja{
+    0%{
+        box-shadow: 0 0 25px $color_naranjaApagado,
+        0 0 50px $color_naranjaApagado;
     }
 }
 $base: 0.6rem;
