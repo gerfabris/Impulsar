@@ -1197,6 +1197,11 @@ footer{
     .footer__copyright{
         width: 70%;
     }
+    #footerDatos{
+        li{
+            margin-bottom: 1em;
+        }
+    }
 }
 
 @import "responsive"

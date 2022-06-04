@@ -2963,6 +2963,9 @@ footer .socialMedia_anchord i:hover, footer .socialMedia_anchord img:hover {
 footer .footer__copyright {
   width: 70%;
 }
+footer #footerDatos li {
+  margin-bottom: 1em;
+}
 
 @media screen and (max-width: 1185px) {
   .masServicios_speach .masServicios__speach__container__paragraphBeneficios {
