@@ -425,12 +425,13 @@ header{
             };  
         }
         .contenedor_impulso_img{
-            width: 8rem;
+            width: 10rem;
             height: 8rem;
             @include flex__Center;
             max-width: 10rem;
             max-height: 10rem;
             overflow: hidden;
+            margin-top: 1em;
             .img_impulso{
                 width: 100%;
                 height: 100%;
@@ -448,7 +449,7 @@ header{
             @include margin__Espaciado(0em,1em);
         }   
         .container_impulso_speach{
-            width: 90%;
+            width: 95%;
             height: 100%;
             min-height: 12rem;
             @include flex__ColumnCenterAll;
@@ -463,7 +464,7 @@ header{
                 @include p;
                 //font-weight: bold;
                 text-align: justify;
-                width: 70%;
+                width: 90%;
             }
         }
         .btn_impulsos{
@@ -591,8 +592,9 @@ header{
                 };  
             }
             .caminoDigital_container_img{
-                width: 8rem;
+                width: 10rem;
                 height: 8rem;
+                margin-top: 1em;
                 @include flex__Center;
                 max-width: 10rem;
                 max-height: 10rem;

@@ -2000,7 +2000,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   color: #FF41AA;
 }
 .section_servicios .container_content_impulso .contenedor_impulso_img {
-  width: 8rem;
+  width: 10rem;
   height: 8rem;
   display: flex;
   justify-content: center;
@@ -2009,6 +2009,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   max-width: 10rem;
   max-height: 10rem;
   overflow: hidden;
+  margin-top: 1em;
 }
 .section_servicios .container_content_impulso .contenedor_impulso_img .img_impulso {
   width: 100%;
@@ -2034,7 +2035,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   margin-bottom: 1em;
 }
 .section_servicios .container_content_impulso .container_impulso_speach {
-  width: 90%;
+  width: 95%;
   height: 100%;
   min-height: 12rem;
   display: flex;
@@ -2057,7 +2058,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   margin-top: 1em;
   margin-bottom: 1em;
   text-align: justify;
-  width: 70%;
+  width: 90%;
 }
 .section_servicios .container_content_impulso .btn_impulsos {
   margin-top: 1em;
@@ -2179,8 +2180,9 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   color: #FF41AA;
 }
 .section_servicios .caminoDigital_container .container_content_caminoDigital .caminoDigital_container_img {
-  width: 8rem;
+  width: 10rem;
   height: 8rem;
+  margin-top: 1em;
   display: flex;
   justify-content: center;
   align-content: center;
