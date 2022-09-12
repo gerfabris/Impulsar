@@ -425,11 +425,11 @@ header{
             };  
         }
         .contenedor_impulso_img{
-            width: 10rem;
-            height: 8rem;
+            width: 8.5em;
+            height: 7em;
             @include flex__Center;
-            max-width: 10rem;
-            max-height: 10rem;
+            max-width: 8.5em;
+            max-height: 7em;
             overflow: hidden;
             margin-top: 1em;
             .img_impulso{
@@ -602,6 +602,10 @@ header{
                 .caminoDigital_img{
                     width: 100%;
                     height: 100%;
+                    max-width: 8.5em;
+                    width: 8.5em;
+                    max-height: 7em;
+                    height: 7em;
                     transition: all 500ms ease;
                     @include compatibilidad_transition(all 500ms ease);
                     &:hover{
@@ -765,8 +769,8 @@ header{
             justify-content: center;
             align-items: center;
             .hashtagRocket{
-                width: 80px;
-                height: 80px;
+                width: 6.5em;
+                height: 5em;
             }
             .nosotros_mision_hashtag{
                 font-family: $letra__principal;

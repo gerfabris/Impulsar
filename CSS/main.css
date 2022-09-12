@@ -2000,14 +2000,14 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   color: #FF41AA;
 }
 .section_servicios .container_content_impulso .contenedor_impulso_img {
-  width: 10rem;
-  height: 8rem;
+  width: 8.5em;
+  height: 7em;
   display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
-  max-width: 10rem;
-  max-height: 10rem;
+  max-width: 8.5em;
+  max-height: 7em;
   overflow: hidden;
   margin-top: 1em;
 }
@@ -2194,6 +2194,10 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
 .section_servicios .caminoDigital_container .container_content_caminoDigital .caminoDigital_container_img .caminoDigital_img {
   width: 100%;
   height: 100%;
+  max-width: 8.5em;
+  width: 8.5em;
+  max-height: 7em;
+  height: 7em;
   transition: all 500ms ease;
   -moz-transition: all 500ms ease;
   -webkit-transition: all 500ms ease;
@@ -2458,8 +2462,8 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   align-items: center;
 }
 .section_nosotros .nosotros_mision_container .nosotros_mision_hashtag_container .hashtagRocket {
-  width: 80px;
-  height: 80px;
+  width: 6.5em;
+  height: 5em;
 }
 .section_nosotros .nosotros_mision_container .nosotros_mision_hashtag_container .nosotros_mision_hashtag {
   font-family: "Fugaz One", cursive;
