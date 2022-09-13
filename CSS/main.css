@@ -2009,7 +2009,8 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   max-width: 8.5em;
   max-height: 7em;
   overflow: hidden;
-  margin-top: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
 }
 .section_servicios .container_content_impulso .contenedor_impulso_img .img_impulso {
   width: 100%;
