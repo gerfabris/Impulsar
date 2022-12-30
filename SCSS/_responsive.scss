@@ -1,4 +1,28 @@
 //Responsive
+@media screen and (max-width: 1185px) {
+    .masServicios_speach{
+        .masServicios__speach__container__paragraphBeneficios{
+            margin-bottom: 1em;
+        }
+        .masServicios_speach_container_paragraph{
+            width: 90%;
+            padding: 1em;
+        }
+        .masServicios__speach__benefician{
+            margin-top: 2em;
+            margin-left: 0;
+            width: 100%;
+            .benefician_container{
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 100%;
+                .benefician{
+                    width: 30%;
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width: 1100px) {
     header{
         .contenedor_logo_header{
@@ -23,6 +47,7 @@
             margin-right: 2em;
             margin-left: 2em;
             width: 30%;
+            min-height: 35rem;
         }
     }
 }
@@ -168,7 +193,7 @@
             } 
         }
     }
-    .masServiciosa_speach{
+    .masServicios_speach{
         .masServicios_brindamos{
             .beneficios{
                 flex-direction: column;
@@ -185,6 +210,9 @@
         margin-bottom: 1em;
     }
     .section_servicios{
+        .section_servicios_paragraph{
+            width: 80%;
+        }
         .container_content_impulso{
             flex-direction: column;
             width: 100%;
@@ -238,7 +266,7 @@
         }
         .nosotros_mision_container{
             .nosotros_mision_paragraph{
-                width: 90%;
+                width: 100%;
             }
         }
     }
@@ -268,7 +296,7 @@
     .masServicios_intro_content{
         width: 90%;
     }
-    .masServiciosa_speach{
+    .masServicios_speach{
         width: 90%;
         p{
             width: 90%;
@@ -276,6 +304,44 @@
     }
 }
 @media screen and (max-width: 520px) {
+    .masServicios_speach_container_paragraph{
+        width: 98%;
+    }
+    .masServicios_speach{
+        .masServicios__speach__container__paragraphBeneficios{
+            margin-bottom: 1em;
+        }
+        .masServicios_speach_container_paragraph{
+            width: 100%;
+        }
+        .masServicios__speach__benefician{          
+            .benefician_container{
+                align-items: center;
+                .benefician{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .masServicios_formulario{
+        .contacto_redes_container{
+            .contacto_redes{
+                width: 100%;
+            }
+        }
+    }  
+    .masServicios_formulario{
+        form{
+            width: 90%;
+        }
+        .formulario_contenedor_textarea{
+            margin-top: 0;
+            h3{
+                margin-top: 0;
+            }
+        }
+    }
+//cierre media 520px masServicios
     .section_presentacion{
         .contenedor_presentacion{
             .containerCarouselButton{
@@ -305,7 +371,6 @@
                 width: 90%;
             }
         }
-
         .container_content_impulso{
             .container_impulso_speach{
                 min-height: 10rem;

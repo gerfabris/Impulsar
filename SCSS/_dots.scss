@@ -1,36 +1,36 @@
 .container_dots{
     top: 30%;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     transform: translate(-50%, -50%);
 }
 .container_dots_span{
     position: absolute;
     display: block;
-    height: 10px;
-    width: 10px;
+    height: 8px;
+    width: 8px;
     border-radius: 50%;
     background: none;
     animation: dots 2s linear infinite;
 }
 .container_dots_span_1{
     background: $color_celeste_oscuro;
-    box-shadow: 0 0 25px $color_celeste_oscuro;
+    //box-shadow: 0 0 25px $color_celeste_oscuro;
 }
 .container_dots_span_2{
     background: $color_celeste_oscuro;
-    box-shadow: 0 0 25px $color_celeste_oscuro;
+    //box-shadow: 0 0 25px $color_celeste_oscuro;
     animation-delay: -1s;
 }
 .container_dots_span_3{
     background: $color_naranja_cohete;
-    box-shadow: 0 0 25px $color_naranja_cohete;
+    //box-shadow: 0 0 25px $color_naranja_cohete;
     animation-delay: -0.5s;
 
 }
 .container_dots_span_4{
     background: $color_naranja_cohete;
-    box-shadow: 0 0 25px $color_naranja_cohete;
+    //box-shadow: 0 0 25px $color_naranja_cohete;
     animation-delay: -1.5s;
 }
 @keyframes dots {
@@ -61,5 +61,48 @@
     87.5%{
         top: 50%;
         left: 3%; 
+    }
+}
+#masServiciosSpeachMarca{
+    .container_dots_span_3{
+        background: $color_amarillo2;
+        animation-delay: -0.5s;
+
+    }
+    .container_dots_span_4{
+        background: $color_amarillo2;
+        animation-delay: -1.5s;
+    }
+}
+#masServiciosSpeachVisual{
+    .container_dots_span_3{
+        background: $color_verdelima;
+        animation-delay: -0.5s;
+
+    }
+    .container_dots_span_4{
+        background: $color_verdelima;
+        animation-delay: -1.5s;
+    }
+}
+#masServiciosSpeachWeb{
+    .container_dots_span_3{
+        background: $color_naranjaApagado;
+        animation-delay: -0.5s;
+    }
+    .container_dots_span_4{
+        background: $color_naranjaApagado;
+        animation-delay: -1.5s;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .container_dots{
+        width: 20px;
+        height: 20px;
+    }
+    .container_dots_span{
+        height: 5px;
+        width: 5px;
     }
 }

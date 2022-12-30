@@ -12,7 +12,22 @@
 }
 @keyframes pulsate {
   0% {
-    box-shadow: 0 0 25px #F76304, 0 0 50px #FFC93A;
+    box-shadow: 0 0 25px #FF41AA, 0 0 50px #FF41AA;
+  }
+}
+@keyframes pulsate-amarillo {
+  0% {
+    box-shadow: 0 0 25px #EEE52C, 0 0 50px #EEE52C;
+  }
+}
+@keyframes pulsate-verdelima {
+  0% {
+    box-shadow: 0 0 25px #B8E701, 0 0 50px #B8E701;
+  }
+}
+@keyframes pulsate-naranja {
+  0% {
+    box-shadow: 0 0 25px #f49c13, 0 0 50px #f49c13;
   }
 }
 @keyframes move-chevron {
@@ -34,7 +49,7 @@
 }
 @keyframes camuflaje {
   0% {
-    color: #F76304;
+    color: #FF41AA;
   }
 }
 .contenedor_animationChevron {
@@ -133,16 +148,20 @@
   -o-transform: translateY(15rem);
   -moz-transform: translateY(15rem);
 }
+.card:hover .dp i {
+  color: #FF41AA;
+}
 .card:hover {
-  box-shadow: rgba(236, 129, 29, 0.89) 3px 4px 17px;
+  box-shadow: #FF41AA 3px 4px 17px;
 }
 .card:hover .card_title {
-  color: #F76304;
+  color: #FF41AA;
 }
 
 .dp {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   width: 100%;
   height: 100%;
@@ -163,6 +182,8 @@
 .dp i {
   font-size: 30px;
   color: white;
+  position: absolute;
+  bottom: 10%;
 }
 
 .card_content {
@@ -209,9 +230,9 @@
   border-radius: 10px;
 }
 .card_content .contenedor_btn_card .btn_card:hover {
-  color: #F76304;
+  color: #FF41AA;
   animation: pulsate 1s ease-in-out;
-  border: 3px solid #F76304;
+  border: 3px solid #FF41AA;
 }
 
 /* @media screen and (min-width: 320px) {
@@ -261,12 +282,12 @@
 }
 .card_masServicios:hover {
   transition: all 1s ease-in-out;
-  box-shadow: rgba(236, 129, 29, 0.89) 3px 4px 17px;
-  outline: 1px solid #F76304;
+  box-shadow: #FF41AA 3px 4px 17px;
+  outline: 1px solid #FF41AA;
   outline-offset: -8px;
 }
 .card_masServicios:hover .card_title {
-  color: #F76304;
+  color: #FF41AA;
 }
 .card_masServicios .contenedor_btn_card {
   width: 100%;
@@ -286,9 +307,9 @@
   border-radius: 10px;
 }
 .card_masServicios .contenedor_btn_card .btn_card:hover {
-  color: #F76304;
+  color: #FF41AA;
   animation: pulsate 1s ease-in-out;
-  border: 3px solid #F76304;
+  border: 3px solid #FF41AA;
 }
 
 .dp_masServicios {
@@ -313,11 +334,78 @@
   transition: all 0.1s ease-in-out;
 }
 
+#masServiciosCarouselMarca .card_masServicios:hover {
+  box-shadow: #EEE52C 3px 4px 17px;
+  outline: 1px solid #EEE52C;
+}
+#masServiciosCarouselMarca .card_masServicios:hover .card_title {
+  color: #EEE52C;
+}
+#masServiciosCarouselMarca .card_masServicios .contenedor_btn_card .btn_card:hover {
+  color: #EEE52C;
+  animation: pulsate-amarillo 1s ease-in-out;
+  border: 3px solid #EEE52C;
+}
+#masServiciosCarouselMarca .dp_masServicios .card_title {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosCarouselMarca .dp_masServicios .card_title:hover {
+  color: #EEE52C;
+}
+
+#masServiciosCarouselVisual .card_masServicios:hover {
+  box-shadow: #B8E701 3px 4px 17px;
+  outline: 1px solid #B8E701;
+}
+#masServiciosCarouselVisual .card_masServicios:hover .card_title {
+  color: #B8E701;
+}
+#masServiciosCarouselVisual .card_masServicios .contenedor_btn_card .btn_card:hover {
+  color: #B8E701;
+  animation: pulsate-verde 1s ease-in-out;
+  border: 3px solid #B8E701;
+}
+#masServiciosCarouselVisual .dp_masServicios .card_title {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosCarouselVisual .dp_masServicios .card_title:hover {
+  color: #B8E701;
+}
+
+#masServiciosCarouselWeb .card_masServicios:hover {
+  box-shadow: #f49c13 3px 4px 17px;
+  outline: 1px solid #f49c13;
+}
+#masServiciosCarouselWeb .card_masServicios:hover .card_title {
+  color: #f49c13;
+}
+#masServiciosCarouselWeb .card_masServicios .contenedor_btn_card .btn_card:hover {
+  color: #f49c13;
+  animation: pulsate-naranja 1s ease-in-out;
+  border: 3px solid #f49c13;
+}
+#masServiciosCarouselWeb .dp_masServicios .card_title {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosCarouselWeb .dp_masServicios .card_title:hover {
+  color: #f49c13;
+}
+
 .carousel_article {
   display: flex;
   align-items: center;
   width: 90%;
   justify-content: center;
+  font-family: "Fugaz One", cursive;
 }
 
 .carousel_container {
@@ -468,10 +556,10 @@
 }
 
 .adn_container:hover .adn_botton {
-  background-color: #F76304;
+  background-color: #FF41AA;
 }
 .adn_container:hover .adn_line {
-  border: 1px solid #F76304;
+  border: 1px solid #FF41AA;
 }
 
 @keyframes rotar {
@@ -572,16 +660,16 @@
   }
 }
 .valores_content:hover span:nth-child(1), .beneficio_content:hover span:nth-child(1) {
-  background: linear-gradient(to right, transparent, #F76304);
+  background: linear-gradient(to right, transparent, #FF41AA);
 }
 .valores_content:hover span:nth-child(2), .beneficio_content:hover span:nth-child(2) {
-  background: linear-gradient(to bottom, transparent, #F76304);
+  background: linear-gradient(to bottom, transparent, #FF41AA);
 }
 .valores_content:hover span:nth-child(3), .beneficio_content:hover span:nth-child(3) {
-  background: linear-gradient(to left, transparent, #F76304);
+  background: linear-gradient(to left, transparent, #FF41AA);
 }
 .valores_content:hover span:nth-child(4), .beneficio_content:hover span:nth-child(4) {
-  background: linear-gradient(to top, transparent, #F76304);
+  background: linear-gradient(to top, transparent, #FF41AA);
 }
 
 @keyframes girar {
@@ -591,16 +679,16 @@
 }
 .container_dots {
   top: 30%;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   transform: translate(-50%, -50%);
 }
 
 .container_dots_span {
   position: absolute;
   display: block;
-  height: 10px;
-  width: 10px;
+  height: 8px;
+  width: 8px;
   border-radius: 50%;
   background: none;
   animation: dots 2s linear infinite;
@@ -608,24 +696,20 @@
 
 .container_dots_span_1 {
   background: #57A9DA;
-  box-shadow: 0 0 25px #57A9DA;
 }
 
 .container_dots_span_2 {
   background: #57A9DA;
-  box-shadow: 0 0 25px #57A9DA;
   animation-delay: -1s;
 }
 
 .container_dots_span_3 {
-  background: #F76304;
-  box-shadow: 0 0 25px #F76304;
+  background: #f49c13;
   animation-delay: -0.5s;
 }
 
 .container_dots_span_4 {
-  background: #F76304;
-  box-shadow: 0 0 25px #F76304;
+  background: #f49c13;
   animation-delay: -1.5s;
 }
 
@@ -659,6 +743,44 @@
     left: 3%;
   }
 }
+#masServiciosSpeachMarca .container_dots_span_3 {
+  background: #EEE52C;
+  animation-delay: -0.5s;
+}
+#masServiciosSpeachMarca .container_dots_span_4 {
+  background: #EEE52C;
+  animation-delay: -1.5s;
+}
+
+#masServiciosSpeachVisual .container_dots_span_3 {
+  background: #B8E701;
+  animation-delay: -0.5s;
+}
+#masServiciosSpeachVisual .container_dots_span_4 {
+  background: #B8E701;
+  animation-delay: -1.5s;
+}
+
+#masServiciosSpeachWeb .container_dots_span_3 {
+  background: #f49c13;
+  animation-delay: -0.5s;
+}
+#masServiciosSpeachWeb .container_dots_span_4 {
+  background: #f49c13;
+  animation-delay: -1.5s;
+}
+
+@media screen and (max-width: 520px) {
+  .container_dots {
+    width: 20px;
+    height: 20px;
+  }
+
+  .container_dots_span {
+    height: 5px;
+    width: 5px;
+  }
+}
 .masServicios_section_intro {
   display: flex;
   justify-content: center;
@@ -687,7 +809,7 @@
   -o-transition: all 1s ease-in-out;
 }
 .masServicios_intro_content h1:hover {
-  color: #F76304;
+  color: #FF41AA;
 }
 .masServicios_intro_content p {
   color: #E0E0E0;
@@ -702,24 +824,24 @@
   margin-bottom: 2em;
 }
 .masServicios_intro_content p:hover {
-  color: #F76304;
+  color: #FF41AA;
 }
 
-.masServiciosa_speach {
+.masServicios_speach {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 90%;
 }
-.masServiciosa_speach .masServicios_brindamos {
+.masServicios_speach .masServicios_brindamos {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
 }
-.masServiciosa_speach .masServicios_brindamos h2 {
+.masServicios_speach .masServicios_brindamos h2 {
   margin-top: 2em;
   margin-bottom: 1em;
   width: 100%;
@@ -732,10 +854,10 @@
   -o-transition: all 1s ease-in-out;
   width: 90%;
 }
-.masServiciosa_speach .masServicios_brindamos h2:hover {
-  color: #F76304;
+.masServicios_speach .masServicios_brindamos h2:hover {
+  color: #FF41AA;
 }
-.masServiciosa_speach .masServicios_brindamos .beneficios {
+.masServicios_speach .masServicios_brindamos .beneficios {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -743,7 +865,7 @@
   align-items: center;
   width: 90%;
 }
-.masServiciosa_speach .masServicios_brindamos .beneficios .beneficios_item {
+.masServicios_speach .masServicios_brindamos .beneficios .beneficios_item {
   width: 30%;
   max-width: 280px;
   display: flex;
@@ -754,7 +876,7 @@
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.masServiciosa_speach .masServicios_brindamos .beneficios .beneficios_item i {
+.masServicios_speach .masServicios_brindamos .beneficios .beneficios_item i {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -765,7 +887,7 @@
   text-align: center;
   line-height: 32px;
 }
-.masServiciosa_speach .masServicios_brindamos .beneficios .beneficios_item p {
+.masServicios_speach .masServicios_brindamos .beneficios .beneficios_item p {
   font-family: "Fugaz One", cursive;
   color: #E0E0E0;
   transition: all 1s ease-in-out;
@@ -774,18 +896,81 @@
   -o-transition: all 1s ease-in-out;
   text-align: center;
 }
-.masServiciosa_speach .masServicios_brindamos .beneficios .beneficios_item p:hover {
-  color: #F76304;
+.masServicios_speach .masServicios_brindamos .beneficios .beneficios_item p:hover {
+  color: #FF41AA;
 }
-.masServiciosa_speach p {
+.masServicios_speach .masServicios__speach__container__paragraphBeneficios {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: flex-start;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.masServicios_speach .masServicios_speach_container_paragraph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  border-radius: 20px;
+  box-shadow: #FF41AA 3px 4px 17px;
+  transition: all 1s ease-in-out;
+  width: 68%;
+}
+.masServicios_speach .masServicios_speach_container_paragraph p {
   width: 100%;
   text-align: left;
   color: #E0E0E0;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 1em;
   margin-bottom: 1em;
-  width: 60%;
+  width: 90%;
   text-align: justify;
+}
+.masServicios_speach .masServicios__speach__benefician {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2em;
+  height: 100%;
+  width: 29%;
+}
+.masServicios_speach .masServicios__speach__benefician i {
+  font-size: 50px;
+  color: #E0E0E0;
+  text-align: center;
+  text-shadow: rgb(87, 169, 218) 3px 4px 17px;
+  transition: all 1s ease-in-out;
+}
+.masServicios_speach .masServicios__speach__benefician i:hover {
+  text-shadow: #FF41AA 3px 4px 17px;
+}
+.masServicios_speach .masServicios__speach__benefician .benefician_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  min-height: 400px;
+  width: 95%;
+  color: #E0E0E0;
+  transition: all 1s ease-in-out;
+}
+.masServicios_speach .masServicios__speach__benefician .benefician_container .benefician {
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.masServicios_speach .masServicios__speach__benefician .benefician_container .benefician i {
+  font-size: 20px;
+  color: #E0E0E0;
+  margin-right: 0.2em;
 }
 
 .masServicios_title {
@@ -801,7 +986,7 @@
   -o-transition: all 1s ease-in-out;
 }
 .masServicios_title:hover {
-  color: #F76304;
+  color: #FF41AA;
 }
 
 .carousel_masServicios {
@@ -837,7 +1022,7 @@
   -o-transition: all 1s ease-in-out;
 }
 .masServicios_calendly h3:hover {
-  color: #F76304;
+  color: #FF41AA;
 }
 .masServicios_calendly .container_calendly {
   width: 60%;
@@ -865,7 +1050,47 @@
   -o-transition: all 1s ease-in-out;
 }
 .masServicios_formulario h3:hover {
-  color: #F76304;
+  color: #FF41AA;
+}
+.masServicios_formulario .contacto_redes_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  max-width: 500px;
+  justify-content: center;
+  align-items: flex-start;
+}
+.masServicios_formulario .contacto_redes_container .contacto_redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+}
+.masServicios_formulario .contacto_redes_container .contacto_redes .contacto_redes_anchord {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 1em;
+  text-align: center;
+  text-decoration: none;
+  color: #E0E0E0;
+  box-shadow: #202124 2px 2px 5px;
+  border-radius: 50%;
+}
+.masServicios_formulario .contacto_redes_container .contacto_redes .contacto_redes_anchord:hover {
+  color: #FF41AA;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px #FF41AA;
+  transition: all 0.4s ease-in-out;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -moz-transform: scale(1.2);
 }
 .masServicios_formulario form {
   width: 80%;
@@ -955,29 +1180,353 @@
   border-radius: 10px;
 }
 .masServicios_formulario .formulario_contenedor_textarea .contenedor_btn_formulario .btn_formulario:hover {
-  color: #F76304;
+  color: #FF41AA;
   animation: pulsate 1s ease-in-out;
-  border: 3px solid #F76304;
+  border: 3px solid #FF41AA;
 }
 .masServicios_formulario .contacto_formulario {
   transition: all 1s ease-in-out;
 }
 .masServicios_formulario .contacto_formulario:hover {
-  box-shadow: 3px 4px 17px rgba(236, 129, 29, 0.89);
+  box-shadow: 3px 4px 17px #FF41AA;
 }
 .masServicios_formulario .contacto_formulario:hover .formulario_contenedor_datos h3 {
-  color: #F76304;
+  color: #FF41AA;
 }
 .masServicios_formulario .contacto_formulario:hover .contenedor_inputs {
-  color: #F76304;
+  color: #FF41AA;
 }
 .masServicios_formulario .contacto_formulario:hover .formulario_contenedor_textarea h3 {
-  color: #F76304;
+  color: #FF41AA;
 }
 
 .espaciado {
   margin-top: 1em;
   margin-bottom: 3em;
+}
+
+#masServiciosIntroContentMarca h1 {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosIntroContentMarca h1:hover {
+  color: #EEE52C;
+}
+#masServiciosIntroContentMarca p {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosIntroContentMarca p:hover {
+  color: #EEE52C;
+}
+
+#masServiciosIntroContentVisual h1 {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosIntroContentVisual h1:hover {
+  color: #B8E701;
+}
+#masServiciosIntroContentVisual p {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosIntroContentVisual p:hover {
+  color: #B8E701;
+}
+
+#masServiciosIntroContentWeb h1 {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosIntroContentWeb h1:hover {
+  color: #f49c13;
+}
+#masServiciosIntroContentWeb p {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosIntroContentWeb p:hover {
+  color: #f49c13;
+}
+
+#masServiciosSpeachMarca .masServicios_brindamos h2 {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosSpeachMarca .masServicios_brindamos h2:hover {
+  color: #EEE52C;
+}
+#masServiciosSpeachMarca .masServicios_brindamos .beneficios p {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosSpeachMarca .masServicios_brindamos .beneficios p:hover {
+  color: #EEE52C;
+}
+#masServiciosSpeachMarca .masServicios_speach_container_paragraph {
+  box-shadow: #EEE52C 3px 4px 17px;
+}
+#masServiciosSpeachMarca .masServicios__speach__benefician i:hover {
+  text-shadow: #EEE52C 3px 4px 17px;
+}
+
+#masServiciosSpeachVisual .masServicios_brindamos h2 {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosSpeachVisual .masServicios_brindamos h2:hover {
+  color: #B8E701;
+}
+#masServiciosSpeachVisual .masServicios_brindamos .beneficios p {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosSpeachVisual .masServicios_brindamos .beneficios p:hover {
+  color: #B8E701;
+}
+#masServiciosSpeachVisual .masServicios_speach_container_paragraph {
+  box-shadow: #B8E701 3px 4px 17px;
+}
+#masServiciosSpeachVisual .masServicios__speach__benefician i:hover {
+  text-shadow: #B8E701 3px 4px 17px;
+}
+
+#masServiciosSpeachWeb .masServicios_brindamos h2 {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosSpeachWeb .masServicios_brindamos h2:hover {
+  color: #f49c13;
+}
+#masServiciosSpeachWeb .masServicios_brindamos .beneficios p {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosSpeachWeb .masServicios_brindamos .beneficios p:hover {
+  color: #f49c13;
+}
+#masServiciosSpeachWeb .masServicios_speach_container_paragraph {
+  box-shadow: #f49c13 3px 4px 17px;
+}
+#masServiciosSpeachWeb .masServicios__speach__benefician i:hover {
+  text-shadow: #f49c13 3px 4px 17px;
+}
+
+#masServiciosTitleMarca {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosTitleMarca:hover {
+  color: #EEE52C;
+}
+
+#masServiciosTitleVisual {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosTitleVisual:hover {
+  color: #B8E701;
+}
+
+#masServiciosTitleWeb {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosTitleWeb:hover {
+  color: #f49c13;
+}
+
+#masServiciosCalendlyMarca h3 {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosCalendlyMarca h3:hover {
+  color: #EEE52C;
+}
+#masServiciosCalendlyMarca h4 {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosCalendlyMarca h4:hover {
+  color: #EEE52C;
+}
+
+#masServiciosCalendlyVisual h3 {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosCalendlyVisual h3:hover {
+  color: #B8E701;
+}
+#masServiciosCalendlyVisual h4 {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosCalendlyVisual h4:hover {
+  color: #B8E701;
+}
+
+#masServiciosCalendlyWeb h3 {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosCalendlyWeb h3:hover {
+  color: #f49c13;
+}
+#masServiciosCalendlyWeb h4 {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosCalendlyWeb h4:hover {
+  color: #f49c13;
+}
+
+#masServiciosFormMarca h3 {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosFormMarca h3:hover {
+  color: #EEE52C;
+}
+#masServiciosFormMarca .contacto_redes_container .contacto_redes .contacto_redes_anchord:hover {
+  color: #EEE52C;
+  box-shadow: 2px 2px 5px #EEE52C;
+}
+
+#masServiciosFormVisual h3 {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosFormVisual h3:hover {
+  color: #B8E701;
+}
+#masServiciosFormVisual .contacto_redes_container .contacto_redes .contacto_redes_anchord:hover {
+  color: #B8E701;
+  box-shadow: 2px 2px 5px #B8E701;
+}
+
+#masServiciosFormWeb h3 {
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+#masServiciosFormWeb h3:hover {
+  color: #f49c13;
+}
+#masServiciosFormWeb .contacto_redes_container .contacto_redes .contacto_redes_anchord:hover {
+  color: #f49c13;
+  box-shadow: 2px 2px 5px #f49c13;
+}
+
+#formularioMarca {
+  transition: all 1s ease-in-out;
+}
+#formularioMarca:hover {
+  box-shadow: 3px 4px 17px #EEE52C;
+}
+#formularioMarca:hover .formulario_contenedor_datos h3 {
+  color: #EEE52C;
+}
+#formularioMarca:hover .contenedor_inputs {
+  color: #EEE52C;
+}
+#formularioMarca:hover .formulario_contenedor_textarea h3 {
+  color: #EEE52C;
+}
+#formularioMarca:hover .contenedor_btn_formulario .btn_formulario:hover {
+  animation: pulsate-amarillo 1s ease-in-out;
+  color: #EEE52C;
+  border: 3px solid #EEE52C;
+}
+
+#formularioVisual {
+  transition: all 1s ease-in-out;
+}
+#formularioVisual:hover {
+  box-shadow: 3px 4px 17px #B8E701;
+}
+#formularioVisual:hover .formulario_contenedor_datos h3 {
+  color: #B8E701;
+}
+#formularioVisual:hover .contenedor_inputs {
+  color: #B8E701;
+}
+#formularioVisual:hover .formulario_contenedor_textarea h3 {
+  color: #B8E701;
+}
+#formularioVisual:hover .contenedor_btn_formulario .btn_formulario:hover {
+  animation: pulsate-verdelima 1s ease-in-out;
+  color: #B8E701;
+  border: 3px solid #B8E701;
+}
+
+#formularioWeb {
+  transition: all 1s ease-in-out;
+}
+#formularioWeb:hover {
+  box-shadow: 3px 4px 17px #f49c13;
+}
+#formularioWeb:hover .formulario_contenedor_datos h3 {
+  color: #f49c13;
+}
+#formularioWeb:hover .contenedor_inputs {
+  color: #f49c13;
+}
+#formularioWeb:hover .formulario_contenedor_textarea h3 {
+  color: #f49c13;
+}
+#formularioWeb:hover .contenedor_btn_formulario .btn_formulario:hover {
+  animation: pulsate-naranja 1s ease-in-out;
+  color: #f49c13;
+  border: 3px solid #f49c13;
 }
 
 * {
@@ -987,10 +1536,10 @@
 }
 
 body {
-  font-family: "Fugaz One", cursive;
+  font-family: Arial, Helvetica, sans-serif;
   font-display: swap;
   box-sizing: border-box;
-  background-color: #535558;
+  background-color: #131e2c;
   scroll-behavior: smooth;
 }
 
@@ -1022,6 +1571,12 @@ header .particles-js-canvas-el {
   height: 100%;
   background-color: #000000;
 }
+header .particles_transition {
+  transition: all 0.3s ease-in-out;
+}
+header .particles__blue {
+  background-color: #131e2c;
+}
 header nav {
   position: relative;
   background-color: transparent;
@@ -1033,6 +1588,7 @@ header nav {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   width: 100%;
+  height: 100%;
 }
 header nav div ul {
   width: 95%;
@@ -1131,6 +1687,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   margin-top: 0;
   margin-bottom: 0em;
   background: none;
+  font-family: "Fugaz One", cursive;
 }
 .section_presentacion .contenedor_presentacion {
   width: 100%;
@@ -1189,8 +1746,8 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   align-items: center;
 }
 .section_presentacion .contenedor_presentacion .swiper-slide-active {
-  transition: all 2s ease-in-out;
-  color: #F76304;
+  transition: all 1.5s ease-in-out;
+  color: #FF41AA;
 }
 .section_presentacion .contenedor_presentacion .swiper-slide img {
   display: block;
@@ -1260,9 +1817,9 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   border-radius: 10px;
 }
 .contenedor_btn_pulse .btn_pulse:hover {
-  color: #F76304;
+  color: #FF41AA;
   animation: pulsate 1s ease-in-out;
-  border: 3px solid #F76304;
+  border: 3px solid #FF41AA;
 }
 
 .section_servicios {
@@ -1294,7 +1851,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   -o-transition: all 1s ease-in-out;
 }
 .section_servicios h2:hover {
-  color: #F76304;
+  color: #FF41AA;
 }
 .section_servicios .section_servicios_paragraph {
   width: 100%;
@@ -1315,7 +1872,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   -o-transition: all 1s ease-in-out;
 }
 .section_servicios .section_servicios_paragraph span:hover {
-  color: #F76304;
+  color: #FF41AA;
 }
 .section_servicios .particles-js-canvas-el {
   position: absolute;
@@ -1404,7 +1961,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
 }
 .section_servicios .servicio_principal_container .caminoDigital_pie {
   width: 60%;
-  color: #F76304;
+  color: #FF41AA;
   text-align: left;
   font-family: "Fugaz One", cursive;
   margin-top: 1em;
@@ -1429,7 +1986,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   width: 25%;
   max-width: 22rem;
   height: 100%;
-  min-height: 32.5rem;
+  min-height: 34rem;
   margin-top: 1em;
   margin-bottom: 1em;
   box-shadow: rgba(87, 169, 218, 0.884) 3px 4px 17px;
@@ -1437,21 +1994,23 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   transition: all 1s ease-in-out;
 }
 .section_servicios .container_content_impulso:hover {
-  box-shadow: rgba(236, 129, 29, 0.89) 3px 4px 17px;
+  box-shadow: #FF41AA 3px 4px 17px;
 }
 .section_servicios .container_content_impulso:hover .container_impulso_speach .impulso_title {
-  color: #F76304;
+  color: #FF41AA;
 }
 .section_servicios .container_content_impulso .contenedor_impulso_img {
-  width: 8rem;
-  height: 8rem;
+  width: 8.5em;
+  height: 7em;
   display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
-  max-width: 10rem;
-  max-height: 10rem;
+  max-width: 8.5em;
+  max-height: 7em;
   overflow: hidden;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
 }
 .section_servicios .container_content_impulso .contenedor_impulso_img .img_impulso {
   width: 100%;
@@ -1477,7 +2036,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   margin-bottom: 1em;
 }
 .section_servicios .container_content_impulso .container_impulso_speach {
-  width: 90%;
+  width: 95%;
   height: 100%;
   min-height: 12rem;
   display: flex;
@@ -1500,7 +2059,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   margin-top: 1em;
   margin-bottom: 1em;
   text-align: justify;
-  width: 70%;
+  width: 90%;
 }
 .section_servicios .container_content_impulso .btn_impulsos {
   margin-top: 1em;
@@ -1520,6 +2079,39 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   align-content: center;
   align-items: center;
 }
+.section_servicios #impulsoMarca:hover {
+  box-shadow: #EEE52C 3px 4px 17px;
+}
+.section_servicios #impulsoMarca:hover .container_impulso_speach .impulso_title {
+  color: #EEE52C;
+}
+.section_servicios #impulsoMarca .contenedor_btn_pulse .btn_pulse:hover {
+  color: #EEE52C;
+  animation: pulsate-amarillo 1s ease-in-out;
+  border: 3px solid #EEE52C;
+}
+.section_servicios #impulsoVisual:hover {
+  box-shadow: #B8E701 3px 4px 17px;
+}
+.section_servicios #impulsoVisual:hover .container_impulso_speach .impulso_title {
+  color: #B8E701;
+}
+.section_servicios #impulsoVisual .contenedor_btn_pulse .btn_pulse:hover {
+  color: #B8E701;
+  animation: pulsate-verde 1s ease-in-out;
+  border: 3px solid #B8E701;
+}
+.section_servicios #impulsoWeb:hover {
+  box-shadow: #f49c13 3px 4px 17px;
+}
+.section_servicios #impulsoWeb:hover .container_impulso_speach .impulso_title {
+  color: #f49c13;
+}
+.section_servicios #impulsoWeb .contenedor_btn_pulse .btn_pulse:hover {
+  color: #f49c13;
+  animation: pulsate-naranja 1s ease-in-out;
+  border: 3px solid #f49c13;
+}
 .section_servicios .carousel_title {
   color: #57A9DA;
   font-family: "Fugaz One", cursive;
@@ -1533,7 +2125,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   -o-transition: all 1s ease-in-out;
 }
 .section_servicios .carousel_title:hover {
-  color: #F76304;
+  color: #FF41AA;
 }
 .section_servicios .asesorate_container {
   display: flex;
@@ -1553,9 +2145,9 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   border-radius: 10px;
 }
 .section_servicios .asesorate_container .asesorate_btn:hover {
-  color: #F76304;
+  color: #FF41AA;
   animation: pulsate 1s ease-in-out;
-  border: 3px solid #F76304;
+  border: 3px solid #FF41AA;
 }
 .section_servicios .caminoDigital_container {
   display: flex;
@@ -1583,14 +2175,15 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   transition: all 1s ease-in-out;
 }
 .section_servicios .caminoDigital_container .container_content_caminoDigital:hover {
-  box-shadow: rgba(236, 129, 29, 0.89) 3px 4px 17px;
+  box-shadow: #FF41AA 3px 4px 17px;
 }
 .section_servicios .caminoDigital_container .container_content_caminoDigital:hover .caminoDigital_container_speach .caminoDigital_title {
-  color: #F76304;
+  color: #FF41AA;
 }
 .section_servicios .caminoDigital_container .container_content_caminoDigital .caminoDigital_container_img {
-  width: 8rem;
+  width: 10rem;
   height: 8rem;
+  margin-top: 1em;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -1602,6 +2195,10 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
 .section_servicios .caminoDigital_container .container_content_caminoDigital .caminoDigital_container_img .caminoDigital_img {
   width: 100%;
   height: 100%;
+  max-width: 8.5em;
+  width: 8.5em;
+  max-height: 7em;
+  height: 7em;
   transition: all 500ms ease;
   -moz-transition: all 500ms ease;
   -webkit-transition: all 500ms ease;
@@ -1712,7 +2309,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   -o-transition: all 1s ease-in-out;
 }
 .section_nosotros article .contenedor_nosotros_quienesSomos h2:hover, .section_nosotros article .contenedor_nosotros_Speach h2:hover {
-  color: #F76304;
+  color: #FF41AA;
 }
 .section_nosotros article .contenedor_nosotros_quienesSomos p, .section_nosotros article .contenedor_nosotros_Speach p {
   width: 100%;
@@ -1732,7 +2329,10 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   -o-transition: all 1s ease-in-out;
 }
 .section_nosotros article .contenedor_nosotros_quienesSomos span:hover, .section_nosotros article .contenedor_nosotros_Speach span:hover {
-  color: #F76304;
+  color: #FF41AA;
+}
+.section_nosotros article .contenedor_nosotros h2 {
+  margin-top: 1em;
 }
 .section_nosotros article .contenedor_nosotros_Speach {
   margin-top: 0;
@@ -1756,7 +2356,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   -o-transition: all 1s ease-in-out;
 }
 .section_nosotros .nosotros_valores_title_container h3:hover {
-  color: #F76304;
+  color: #FF41AA;
 }
 .section_nosotros .nosotros_valores_title_container .nosotros_valores_paragraph {
   width: 100%;
@@ -1777,7 +2377,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   -o-transition: all 1s ease-in-out;
 }
 .section_nosotros .nosotros_valores_title_container span:hover {
-  color: #F76304;
+  color: #FF41AA;
 }
 .section_nosotros .nosotros_valores_container {
   display: flex;
@@ -1832,7 +2432,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   -o-transition: all 1s ease-in-out;
 }
 .section_nosotros .nosotros_mision_container .nosotros_mision_title:hover {
-  color: #F76304;
+  color: #FF41AA;
 }
 .section_nosotros .nosotros_mision_container .nosotros_mision_paragraph {
   width: 100%;
@@ -1853,7 +2453,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   -o-transition: all 1s ease-in-out;
 }
 .section_nosotros .nosotros_mision_container .nosotros_mision_paragraph span:hover {
-  color: #F76304;
+  color: #FF41AA;
 }
 .section_nosotros .nosotros_mision_container .nosotros_mision_hashtag_container {
   width: 100%;
@@ -1863,8 +2463,8 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   align-items: center;
 }
 .section_nosotros .nosotros_mision_container .nosotros_mision_hashtag_container .hashtagRocket {
-  width: 80px;
-  height: 80px;
+  width: 6.5em;
+  height: 5em;
 }
 .section_nosotros .nosotros_mision_container .nosotros_mision_hashtag_container .nosotros_mision_hashtag {
   font-family: "Fugaz One", cursive;
@@ -1877,7 +2477,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   -o-transition: all 1s ease-in-out;
 }
 .section_nosotros .nosotros_mision_container .nosotros_mision_hashtag_container .nosotros_mision_hashtag:hover {
-  color: #F76304;
+  color: #FF41AA;
 }
 .section_nosotros .nosotros_mision_container .nosotros_mision_hashtag_container .nosotros_mision_hashtag span {
   font-family: Arial, Helvetica, sans-serif;
@@ -1887,7 +2487,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   -o-transition: all 1s ease-in-out;
 }
 .section_nosotros .nosotros_mision_container .nosotros_mision_hashtag_container .nosotros_mision_hashtag span:hover {
-  color: #F76304;
+  color: #FF41AA;
 }
 .section_nosotros .beneficios_container {
   width: 100%;
@@ -1941,13 +2541,13 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   -moz-transition: all 1s ease-in-out;
   -webkit-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
 }
 .section_contacto h2:hover {
-  color: #F76304;
+  color: #FF41AA;
 }
 .section_contacto .contacto_redes_container {
-  margin-top: 1em;
-  margin-bottom: 1em;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1978,9 +2578,9 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   border-radius: 50%;
 }
 .section_contacto .contacto_redes_container .contacto_redes .contacto_redes_anchord:hover {
-  color: #F76304;
+  color: #FF41AA;
   border-radius: 50%;
-  box-shadow: 2px 2px 5px rgba(236, 129, 29, 0.89);
+  box-shadow: 2px 2px 5px #FF41AA;
   transition: all 0.4s ease-in-out;
   transform: scale(1.2);
   -webkit-transform: scale(1.2);
@@ -2088,24 +2688,24 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   border-radius: 10px;
 }
 .section_contacto .formulario_contenedor_textarea .contenedor_btn_formulario .btn_formulario:hover {
-  color: #F76304;
+  color: #FF41AA;
   animation: pulsate 1s ease-in-out;
-  border: 3px solid #F76304;
+  border: 3px solid #FF41AA;
 }
 .section_contacto .contacto_formulario {
   transition: all 1s ease-in-out;
 }
 .section_contacto .contacto_formulario:hover {
-  box-shadow: 3px 4px 17px rgba(236, 129, 29, 0.89);
+  box-shadow: 3px 4px 17px #FF41AA;
 }
 .section_contacto .contacto_formulario:hover .formulario_contenedor_datos h3 {
-  color: #F76304;
+  color: #FF41AA;
 }
 .section_contacto .contacto_formulario:hover .contenedor_inputs {
-  color: #F76304;
+  color: #FF41AA;
 }
 .section_contacto .contacto_formulario:hover .formulario_contenedor_textarea h3 {
-  color: #F76304;
+  color: #FF41AA;
 }
 .section_contacto .contacto_redesUbicacion {
   margin-top: 1em;
@@ -2136,7 +2736,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   -o-transition: all 1s ease-in-out;
 }
 .section_contacto .contacto_redesUbicacion .containerRedes h3:hover {
-  color: #F76304;
+  color: #FF41AA;
 }
 .section_contacto .contacto_redesUbicacion .containerRedes .contacto_redes {
   display: flex;
@@ -2158,9 +2758,9 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   color: #E0E0E0;
 }
 .section_contacto .contacto_redesUbicacion .containerRedes .contacto_redes .contacto_redes_anchord:hover {
-  color: #F76304;
+  color: #FF41AA;
   border-radius: 50%;
-  box-shadow: 2px 2px 5px rgba(236, 129, 29, 0.89);
+  box-shadow: 2px 2px 5px #FF41AA;
   transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
@@ -2206,14 +2806,14 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   text-align: center;
   font-family: "Fugaz One", cursive;
   margin-top: 2em;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
   -webkit-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
 }
 .section_contacto .contacto_calendly .contacto_calendly_title:hover {
-  color: #F76304;
+  color: #FF41AA;
 }
 .section_contacto .contacto_calendly .calendly {
   width: 60%;
@@ -2232,6 +2832,36 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+.container_calendar a {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+.container_calendar a h4 {
+  text-align: center;
+  width: 76%;
+  color: #E0E0E0;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  font-weight: bold;
+}
+.container_calendar a h4:hover {
+  color: #FF41AA;
+}
+.container_calendar a i {
+  font-size: 30px;
+  color: #E0E0E0;
 }
 
 .whatsapp {
@@ -2259,7 +2889,7 @@ header #toggler, header .contenedor_burgerMenu, header .burger_menu, header .cen
 }
 
 footer {
-  background-color: #202124;
+  background-color: #101925;
   overflow: hidden;
 }
 footer hr {
@@ -2267,6 +2897,14 @@ footer hr {
 }
 footer h5 {
   color: #E0E0E0;
+  font-family: "Fugaz One", cursive;
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+footer h5:hover {
+  color: #FF41AA;
 }
 footer a {
   text-decoration: none;
@@ -2332,7 +2970,32 @@ footer .socialMedia_anchord i:hover, footer .socialMedia_anchord img:hover {
 footer .footer__copyright {
   width: 70%;
 }
+footer #footerDatos li {
+  margin-bottom: 1em;
+}
 
+@media screen and (max-width: 1185px) {
+  .masServicios_speach .masServicios__speach__container__paragraphBeneficios {
+    margin-bottom: 1em;
+  }
+  .masServicios_speach .masServicios_speach_container_paragraph {
+    width: 90%;
+    padding: 1em;
+  }
+  .masServicios_speach .masServicios__speach__benefician {
+    margin-top: 2em;
+    margin-left: 0;
+    width: 100%;
+  }
+  .masServicios_speach .masServicios__speach__benefician .benefician_container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .masServicios_speach .masServicios__speach__benefician .benefician_container .benefician {
+    width: 30%;
+  }
+}
 @media screen and (max-width: 1100px) {
   header .contenedor_logo_header {
     width: 30%;
@@ -2354,6 +3017,7 @@ footer .footer__copyright {
     margin-right: 2em;
     margin-left: 2em;
     width: 30%;
+    min-height: 35rem;
   }
 }
 @media screen and (max-width: 998px) {
@@ -2497,10 +3161,10 @@ header .center div {
     width: 85%;
   }
 
-  .masServiciosa_speach .masServicios_brindamos .beneficios {
+  .masServicios_speach .masServicios_brindamos .beneficios {
     flex-direction: column;
   }
-  .masServiciosa_speach .masServicios_brindamos .beneficios .beneficios_item {
+  .masServicios_speach .masServicios_brindamos .beneficios .beneficios_item {
     width: 90%;
   }
 }
@@ -2509,6 +3173,9 @@ header .center div {
     margin-bottom: 1em;
   }
 
+  .section_servicios .section_servicios_paragraph {
+    width: 80%;
+  }
   .section_servicios .container_content_impulso {
     flex-direction: column;
     width: 100%;
@@ -2555,7 +3222,7 @@ header .center div {
     min-width: 130px;
   }
   .section_nosotros .nosotros_mision_container .nosotros_mision_paragraph {
-    width: 90%;
+    width: 100%;
   }
 
   .section_contacto .contacto_redesUbicacion {
@@ -2582,14 +3249,45 @@ header .center div {
     width: 90%;
   }
 
-  .masServiciosa_speach {
+  .masServicios_speach {
     width: 90%;
   }
-  .masServiciosa_speach p {
+  .masServicios_speach p {
     width: 90%;
   }
 }
 @media screen and (max-width: 520px) {
+  .masServicios_speach_container_paragraph {
+    width: 98%;
+  }
+
+  .masServicios_speach .masServicios__speach__container__paragraphBeneficios {
+    margin-bottom: 1em;
+  }
+  .masServicios_speach .masServicios_speach_container_paragraph {
+    width: 100%;
+  }
+  .masServicios_speach .masServicios__speach__benefician .benefician_container {
+    align-items: center;
+  }
+  .masServicios_speach .masServicios__speach__benefician .benefician_container .benefician {
+    width: 100%;
+  }
+
+  .masServicios_formulario .contacto_redes_container .contacto_redes {
+    width: 100%;
+  }
+
+  .masServicios_formulario form {
+    width: 90%;
+  }
+  .masServicios_formulario .formulario_contenedor_textarea {
+    margin-top: 0;
+  }
+  .masServicios_formulario .formulario_contenedor_textarea h3 {
+    margin-top: 0;
+  }
+
   .section_presentacion .contenedor_presentacion .containerCarouselButton .carouselPresentacion {
     margin-top: 1em;
   }

@@ -6,10 +6,11 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Fugaz One', cursive;
+    font-family: Arial, Helvetica, sans-serif;
+    //font-family: 'Fugaz One', cursive;
     font-display: swap;
     box-sizing: border-box;
-    background-color: $color_gris;
+    background-color: $color_azulOscuro;
     scroll-behavior: smooth;
 }
 .background{
@@ -43,6 +44,12 @@ header{
         height: 100%;
         background-color: #000000;
     }
+    .particles_transition{
+        transition: all .3s ease-in-out;
+    }
+    .particles__blue{
+        background-color:$color_azulOscuro;
+    }
     nav{
         //background-color: #000000;
         position: relative;
@@ -55,6 +62,7 @@ header{
         font-family: $letra__secundaria;
         font-weight: bold;
         width: 100%;
+        height: 100%;
         div{
             ul{
                 width: 95%;
@@ -149,6 +157,7 @@ header{
     display: flex;
     @include margin__Espaciado(0,0em);
     background: none;
+    font-family: $letra__principal;
     .contenedor_presentacion{
         width: 100%;
         height: 100%;
@@ -207,8 +216,8 @@ header{
             align-items: center;
         }
         .swiper-slide-active{
-            transition: all 2s ease-in-out;
-            color: $color_naranja_cohete;
+            transition: all 1.5s ease-in-out;
+            color: $color_general2;
         }
         .swiper-slide img {
             display: block;
@@ -277,9 +286,9 @@ header{
         border: 3px solid $color_gris_claro;
         border-radius: 10px;
         &:hover{
-            color: $color_naranja_cohete;
+            color: $color_general2;
             animation: pulsate 1s ease-in-out;
-            border: 3px solid $color_naranja_cohete
+            border: 3px solid $color_general2
         };
     }    
 }
@@ -381,7 +390,7 @@ header{
         }
         .caminoDigital_pie{
             width: 60%;
-            color: $color_naranja_cohete;
+            color: $color_general2;
             text-align: left;
             font-family: $letra__principal;
             @include margin__Espaciado(1em,1em)
@@ -402,26 +411,28 @@ header{
         width: 25%;
         max-width: 22rem;
         height: 100%;
-        min-height: 32.5rem;
+        min-height: 34rem;
         @include margin__Espaciado(1em,1em);
         box-shadow: rgba(87, 169, 218, 0.884) 3px 4px 17px;
         border-radius: 15pt;
         transition: all 1s ease-in-out;
         &:hover{
-            box-shadow: rgba(236, 129, 29, 0.89) 3px 4px 17px;
+            box-shadow: $color_general2 3px 4px 17px;
             .container_impulso_speach{
                 .impulso_title{
-                    color: $color_naranja_cohete;
+                    color: $color_general2;
                 }
             };  
         }
         .contenedor_impulso_img{
-            width: 8rem;
-            height: 8rem;
+            width: 8.5em;
+            height: 7em;
             @include flex__Center;
-            max-width: 10rem;
-            max-height: 10rem;
+            max-width: 8.5em;
+            max-height: 7em;
             overflow: hidden;
+            margin-top: .5em;
+            margin-bottom: 1em;
             .img_impulso{
                 width: 100%;
                 height: 100%;
@@ -439,7 +450,7 @@ header{
             @include margin__Espaciado(0em,1em);
         }   
         .container_impulso_speach{
-            width: 90%;
+            width: 95%;
             height: 100%;
             min-height: 12rem;
             @include flex__ColumnCenterAll;
@@ -454,7 +465,7 @@ header{
                 @include p;
                 //font-weight: bold;
                 text-align: justify;
-                width: 70%;
+                width: 90%;
             }
         }
         .btn_impulsos{
@@ -469,6 +480,65 @@ header{
             }
         }
     }
+    //Caracteristicas para cada impulso
+    #impulsoMarca{
+        &:hover{
+            box-shadow: $color_amarillo2 3px 4px 17px;
+            .container_impulso_speach{
+                .impulso_title{
+                    color: $color_amarillo2;
+                }
+            };  
+        }
+        .contenedor_btn_pulse{
+            .btn_pulse{
+                &:hover{
+                    color: $color_amarillo2;
+                    animation: pulsate-amarillo 1s ease-in-out;
+                    border: 3px solid $color_amarillo2;
+                };
+            }    
+        }
+    }
+    #impulsoVisual{
+        &:hover{
+            box-shadow: $color_verdelima 3px 4px 17px;
+            .container_impulso_speach{
+                .impulso_title{
+                    color: $color_verdelima;
+                }
+            };  
+        }
+        .contenedor_btn_pulse{
+            .btn_pulse{
+                &:hover{
+                    color: $color_verdelima;
+                    animation: pulsate-verde 1s ease-in-out;
+                    border: 3px solid $color_verdelima;
+                };
+            }    
+        }
+    }
+    #impulsoWeb{
+        &:hover{
+            box-shadow: $color_naranjaApagado 3px 4px 17px;
+            .container_impulso_speach{
+                .impulso_title{
+                    color: $color_naranjaApagado;
+                }
+            };  
+        }
+        .contenedor_btn_pulse{
+            .btn_pulse{
+                &:hover{
+                    color: $color_naranjaApagado;
+                    animation: pulsate-naranja 1s ease-in-out;
+                    border: 3px solid $color_naranjaApagado;
+                };
+            }    
+        }
+    }
+    //
     .carousel_title{
         color: $color_celeste_oscuro;
         font-family: $letra__principal;
@@ -492,9 +562,9 @@ header{
             border: 3px solid $color_gris_claro;
             border-radius: 10px;
             &:hover{
-                color: $color_naranja_cohete;
+                color: $color_general2;
                 animation: pulsate 1s ease-in-out;
-                border: 3px solid $color_naranja_cohete
+                border: 3px solid $color_general2
             };
         }
     }
@@ -515,16 +585,17 @@ header{
             border-radius: 15pt;
             transition: all 1s ease-in-out;
             &:hover{
-                box-shadow: rgba(236, 129, 29, 0.89) 3px 4px 17px;
+                box-shadow: $color_general2 3px 4px 17px;
                 .caminoDigital_container_speach{
                     .caminoDigital_title{
-                        color: $color_naranja_cohete;
+                        color: $color_general2;
                     }
                 };  
             }
             .caminoDigital_container_img{
-                width: 8rem;
+                width: 10rem;
                 height: 8rem;
+                margin-top: 1em;
                 @include flex__Center;
                 max-width: 10rem;
                 max-height: 10rem;
@@ -532,6 +603,10 @@ header{
                 .caminoDigital_img{
                     width: 100%;
                     height: 100%;
+                    max-width: 8.5em;
+                    width: 8.5em;
+                    max-height: 7em;
+                    height: 7em;
                     transition: all 500ms ease;
                     @include compatibilidad_transition(all 500ms ease);
                     &:hover{
@@ -602,6 +677,11 @@ header{
                 color: $color_celeste_oscuro;
                 font-family: $letra__principal;
                 @include camuflaje;
+            }
+        }
+        .contenedor_nosotros{
+            h2{
+                margin-top: 1em;
             }
         }
         .contenedor_nosotros_Speach{
@@ -690,8 +770,8 @@ header{
             justify-content: center;
             align-items: center;
             .hashtagRocket{
-                width: 80px;
-                height: 80px;
+                width: 6.5em;
+                height: 5em;
             }
             .nosotros_mision_hashtag{
                 font-family: $letra__principal;
@@ -740,9 +820,9 @@ header{
     h2{
         @include h2;
         @include camuflaje;
+        @include margin__Espaciado(1.5em,.5em);
     }
     .contacto_redes_container{
-        @include margin__Espaciado(1em,1em);
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -770,9 +850,9 @@ header{
                 box-shadow: $color_gris_oscuro 2px 2px 5px;
                 border-radius: 50%;
                 &:hover{
-                    color: $color_naranja_cohete;
+                    color: $color_general2;
                     border-radius: 50%;
-                    box-shadow: 2px 2px 5px rgba(236, 129, 29, 0.89);
+                    box-shadow: 2px 2px 5px $color_general2;
                     transition: all .4s ease-in-out;
                     transform: scale(1.2);
                     @include compatibilidad_transform(scale(1.2));
@@ -876,9 +956,9 @@ header{
                 border: 3px solid $color_gris_claro;
                 border-radius: 10px;
                 &:hover{
-                    color: $color_naranja_cohete;
+                    color: $color_general2;
                     animation: pulsate 1s ease-in-out;
-                    border: 3px solid $color_naranja_cohete;
+                    border: 3px solid $color_general2;
                 };
             }
         }
@@ -886,18 +966,18 @@ header{
     .contacto_formulario{
         transition: all 1s ease-in-out;
         &:hover{
-            box-shadow: 3px 4px 17px rgba(236, 129, 29, 0.89);
+            box-shadow: 3px 4px 17px $color_general2;
             .formulario_contenedor_datos{
                 h3{
-                    color: $color_naranja_cohete;
+                    color: $color_general2;
                 }
             };
             .contenedor_inputs{
-                color: $color_naranja_cohete;
+                color: $color_general2;
             }
             .formulario_contenedor_textarea{
                 h3{
-                    color: $color_naranja_cohete
+                    color: $color_general2
                 }
             }
         }
@@ -941,9 +1021,9 @@ header{
                     text-decoration: none;
                     color: $color_gris_claro;
                     &:hover{
-                        color: $color_naranja_cohete;
+                        color: $color_general2;
                         border-radius: 50%;
-                        box-shadow: 2px 2px 5px rgba(236, 129, 29, 0.89);
+                        box-shadow: 2px 2px 5px $color_general2;
                         transition: all .4s ease-in-out;
                         @include compatibilidad_transition(all .4s ease-in-out);
                         transform: scale(1.2);
@@ -985,7 +1065,7 @@ header{
             width: 60%;
             text-align: center;
             font-family: $letra__principal;
-            @include margin__Espaciado(2em,1em);
+            @include margin__Espaciado(2em,2em);
             @include camuflaje;
         }
         .calendly{
@@ -1006,6 +1086,30 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    a{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: none;
+        @include margin__Espaciado(.5em,1em);
+        h4{
+            text-align: center;
+            width: 76%;
+            color: $color_gris_claro;
+            font-family: $letra__secundaria;
+            @include camuflaje;
+            font-weight: bold;
+        }
+        i{
+            font-size: 30px;
+            color: $color_gris_claro
+        }
+    }
+
 }
 .whatsapp{
     position: fixed;
@@ -1030,13 +1134,15 @@ header{
 }
 //footer
 footer{
-    background-color: $color_gris_oscuro;
+    background-color: $color_azulOscuro2;
     overflow: hidden;
     hr{
         color: $color_gris_claro;
     }
     h5{
         color: $color_gris_claro;
+        font-family: $letra__principal;
+        @include camuflaje;
     }
     a{
         text-decoration: none;
@@ -1097,6 +1203,11 @@ footer{
     }
     .footer__copyright{
         width: 70%;
+    }
+    #footerDatos{
+        li{
+            margin-bottom: 1em;
+        }
     }
 }
 

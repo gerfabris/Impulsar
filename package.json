@@ -1,0 +1,37 @@
+{
+  "name": "impulsar",
+  "version": "1.0.0",
+  "description": "Empresa IT, desarrolladora de modelo de negocios, diseño gráfico, páginas web, softwares y herramientas web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gerfabris/Impulsar.git"
+  },
+  "keywords": [
+    "Desarrollo",
+    "web",
+    "diseño",
+    "gráfico",
+    "modelo",
+    "de",
+    "negocios",
+    "HTML",
+    "CSS",
+    "JS",
+    "SASS",
+    "SCSS",
+    "marketing",
+    "digital",
+    "redes",
+    "sociales"
+  ],
+  "author": "Germán Fabris - Impulsar Dev Solutions",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gerfabris/Impulsar/issues"
+  },
+  "homepage": "https://github.com/gerfabris/Impulsar#readme"
+}

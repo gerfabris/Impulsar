@@ -21,14 +21,13 @@ const swiperCards = new Swiper(".carousel_container", {
 
 const swiperPresentacion = new Swiper(".carouselPresentacion", {
   direction: "vertical",
-  cssMode: true,
   spaceBetween: 30,
   centeredSlides: true,
   mousewheel: false,
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,
-  }, 
+  },
 });
 
 /*var swiperTitle = new Swiper(".swiper_title", {

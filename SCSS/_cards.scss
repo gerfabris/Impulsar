@@ -24,17 +24,21 @@
     &:hover .dp{
         transform: translateY(15rem);
         @include compatibilidad_transform(translateY(15rem));
+        i{
+            color: $color_general2;
+        }
     };
     &:hover{
-        box-shadow: rgba(236, 129, 29, 0.89) 3px 4px 17px;
+        box-shadow: $color_general2 3px 4px 17px;
         .card_title{
-            color: $color_naranja_cohete;
+            color: $color_general2;
         }
     };
 }
 .dp{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     width: 100%;
     height: 100%;
@@ -52,6 +56,8 @@
     i{
         font-size: 30px;
         color: white;
+        position: absolute;
+        bottom: 10%;
     }
 }
 .card_content{
@@ -90,9 +96,9 @@
             border: 3px solid $color_gris_claro;
             border-radius: 10px;
             &:hover{
-                color: $color_naranja_cohete;
+                color: $color_general2;
                 animation: pulsate 1s ease-in-out;
-                border: 3px solid $color_naranja_cohete;
+                border: 3px solid $color_general2;
             };
         }
     }
@@ -144,11 +150,11 @@
     transition: all 1s ease-in-out;
     &:hover{
         transition: all 1s ease-in-out;
-        box-shadow: rgba(236, 129, 29, 0.89) 3px 4px 17px;
-        outline: 1px solid $color_naranja_cohete;
+        box-shadow: $color_general2 3px 4px 17px;
+        outline: 1px solid $color_general2;
         outline-offset: -8px;
         .card_title{
-            color: $color_naranja_cohete;
+            color: $color_general2;
         }
     };
     .contenedor_btn_card{
@@ -166,9 +172,9 @@
             border: 3px solid $color_gris_claro;
             border-radius: 10px;
             &:hover{
-                color: $color_naranja_cohete;
+                color: $color_general2;
                 animation: pulsate 1s ease-in-out;
-                border: 3px solid $color_naranja_cohete;
+                border: 3px solid $color_general2;
             };
         }
     }
@@ -187,5 +193,81 @@
         width: 100%;
         text-align: center;
         transition: all .1s ease-in-out;
+    }
+}
+//caracteristicas especificas segun cada pages
+#masServiciosCarouselMarca{
+    .card_masServicios{
+        &:hover{
+            box-shadow: $color_amarillo2 3px 4px 17px;
+            outline: 1px solid $color_amarillo2;
+            .card_title{
+                color: $color_amarillo2;
+            }
+        };
+        .contenedor_btn_card{
+            .btn_card{
+                &:hover{
+                    color: $color_amarillo2;
+                    animation: pulsate-amarillo 1s ease-in-out;
+                    border: 3px solid $color_amarillo2;
+                };
+            }
+        }
+    }
+    .dp_masServicios{
+        .card_title{
+            @include camuflaje-amarillo
+        }
+    }
+}
+#masServiciosCarouselVisual{
+    .card_masServicios{
+        &:hover{
+            box-shadow: $color_verdelima 3px 4px 17px;
+            outline: 1px solid $color_verdelima;
+            .card_title{
+                color: $color_verdelima;
+            }
+        };
+        .contenedor_btn_card{
+            .btn_card{
+                &:hover{
+                    color: $color_verdelima;
+                    animation: pulsate-verde 1s ease-in-out;
+                    border: 3px solid $color_verdelima;
+                };
+            }
+        }
+    }
+    .dp_masServicios{
+        .card_title{
+            @include camuflaje-verde;
+        }
+    }
+}
+#masServiciosCarouselWeb{
+    .card_masServicios{
+        &:hover{
+            box-shadow: $color_naranjaApagado 3px 4px 17px;
+            outline: 1px solid $color_naranjaApagado;
+            .card_title{
+                color: $color_naranjaApagado;
+            }
+        };
+        .contenedor_btn_card{
+            .btn_card{
+                &:hover{
+                    color: $color_naranjaApagado;
+                    animation: pulsate-naranja 1s ease-in-out;
+                    border: 3px solid $color_naranjaApagado;
+                };
+            }
+        }
+    }
+    .dp_masServicios{
+        .card_title{
+            @include camuflaje-naranja;
+        }
     }
 }
