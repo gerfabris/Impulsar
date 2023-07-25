@@ -1,0 +1,40 @@
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #000;
+    padding: 0;
+    list-style: none;
+    max-width: 320px;
+}
+.submenu-blue{
+    background-color: #131e2c;
+}
+.submenu li {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.submenu a {
+    color: #fff;
+    text-decoration: none;
+}
+.submenu a:hover {
+/*     background-color: #f0f0f0;
+ */}
+/* control hover */
+#li-servicios-container:hover .submenu {
+    display: block;
+}
+#li-servicios-container:hover .submenu-blue {
+    display: block;
+}
+/* responsive */
+@media screen and (max-width: 900px){
+    .submenu{
+        max-width: none;
+        height: 100vh;
+        top: 14%;
+    }
+}

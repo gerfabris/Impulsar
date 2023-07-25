@@ -37,6 +37,7 @@
         <!-- Estilos-->
         <link rel="stylesheet" href="../CSS/normalize.css">
         <link rel="stylesheet" href="../CSS/main.css" />
+        <link rel="stylesheet" href="../CSS/submenu.css">
         <!-- Tipografía-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,17 +45,48 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
-        <!-- Analytics-->
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-W2H4089REM"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-W2H4089REM');
-        </script>
-        <!-- styles add -->
+    <!-- Analytics-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W2H4089REM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-W2H4089REM');
+        gtag('config', 'UA-227709876-1');
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-227709876-1">
+    </script>
+    <!--  -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4YJPVNRWEW">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-4YJPVNRWEW');
+    </script>
+    <!-- campaña -->
+    <!-- Google tag (gtag.js) --> 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10980581678"></script> 
+    <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-10980581678'); 
+    </script>
+    <!-- Event snippet for Website sale conversion page --> 
+    <script> gtag('event', 'conversion', { 'send_to': 'AW-10980581678/ANZsCKyErdwDEK7C-fMo', 'transaction_id': '' }); 
+    </script>
+    <!--  Campaña etiqueta contacto -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10980581678"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-10980581678');
+    </script>        <!-- styles add -->
         <link rel="stylesheet" href="../CSS/impulsoweb.css">
     </head>
     <body>
@@ -78,6 +110,23 @@
                     <li><a id="anchordNav" class="anchord_secciones" href="../index.html#sectionServicios">¿Qué hacemos?</a></li>
                     <li><a id="anchordNav" class="anchord_secciones" href="../index.html#sectionNosotros">¿Quiénes somos?</a></li>
                     <li><a id="anchordNav" class="anchord_secciones" href="../index.html#sectionContacto">Contacto</a></li>
+                    <!-- servicios -->
+                    <li>
+                        <div class="li-servicios" id="li-servicios-container">
+                        <a id="anchordNavServicios" class="anchord_secciones" href="#">Servicios</a>
+                        <ul class="submenu" id="submenu">
+                            <li><a href="../pages/web.html" class="anchord_secciones">Sitios web & E-Commerce</a></li>
+                            <li><a href="../pages/marca.html" class="anchord_secciones">Identidad de marca</a></li>
+                            <li><a href="../pages/visual.html" class="anchord_secciones">Diseño gráfico</a></li>
+                            <li><a href="../pages/camino.html" class="anchord_secciones">Pack Camino Digital</a></li>
+                            <!-- 
+                            <li><a href="#" class="anchord_secciones">Community Manager</a></li>
+                            <li><a href="#" class="anchord_secciones">Marketing Digital</a></li> 
+                            -->
+                        </ul>
+                        </div>
+                    </li>
+                    <!-- social media -->
                     <div class="socialMedia">
                         <!-- Facebook -->
                         <a href="https://www.facebook.com/Impulsardev/" type="button" class="socialMedia_anchord" target="_blank">
@@ -324,17 +373,17 @@
                             </div>
                             <div class="mb-3 separador-leve contenedor_inputs">
                                 <label for="name" class="form-label">Nombre</label>
-                                <input class="section__formulario__contenedor__form-input" type="text" id="name" name="nombre" placeholder="Escribe tus nombres" required><br>
+                                <input class="section__formulario__contenedor__form-input" type="text" id="name" name="nombre" placeholder="Escribe tus nombres" required min="3"><br>
                             </div>
                             <div class="mb-3 separador-leve contenedor_inputs">
                                 <label for="telephone" class="form-label">Teléfono</label>
-                                <input class="section__formulario__contenedor__form-input" type="tel" name="telefono" id="telephone" placeholder="+549 2616307131"><br>
+                                <input class="section__formulario__contenedor__form-input" type="tel" name="telefono" id="telephone" placeholder="+549 2616307131" required min="9"><br>
                             </div>
                             </div>
                             <div id="formularioContenedorTextarea" class="formulario_contenedor_textarea">  
                             <h3 class="h3">¡ENVÍANOS TU MENSAJE!</h3>
                             <div class="mb-3 contenedor_inputs">
-                                <textarea class="form-control" placeholder="En breve te respondemos 😉" name="message" id="mensaje" rows="3" required></textarea>
+                                <textarea class="form-control" placeholder="En breve te respondemos 😉" name="message" id="mensaje" rows="3" required minlength="30"></textarea>
                             </div>
                             <div id="contenedorBotonFormulario" class="contenedor_btn_formulario">
                                 <button type="submit" class="btn btn_formulario">Enviar mensaje</button>
@@ -545,5 +594,6 @@
         );
         </script>    
         <script type="text/javascript" src="../js/navbarBlue.js"></script>
+        <script type="text/javascript" src="../js/submenu.js"></script>  
     </body>
 </html>
